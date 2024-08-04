@@ -1,3 +1,4 @@
+// RandomDataGenerator Class
 package org.example.utils;
 
 import org.example.CDR;
@@ -24,7 +25,7 @@ public class RandomDataGenerator {
         this.serviceTypeGenerator = serviceTypeGenerator;
         this.usageGenerator = usageGenerator;
         this.startDateTimeGenerator = startDateTimeGenerator;
-        this.names = nameExtracter.readNamesFromFile("data/names.csv", 10);
+        this.names = nameExtracter.readNamesFromFile("data/names.csv", 50);
         this.usedNames = new ArrayList<>();
         this.callLogDates = startDateTimeGenerator.randomStartDateTime(time);
     }
@@ -67,6 +68,7 @@ public class RandomDataGenerator {
         String startDateTime = recordDate();
 
         System.out.println("Generated CDR: " + anum + ", " + bnum + ", " + serviceType + ", " + usage + ", " + startDateTime);
+
         return new CDR(anum, bnum, serviceType, usage, startDateTime);
     }
 }

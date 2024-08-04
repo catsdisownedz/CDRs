@@ -1,3 +1,4 @@
+// Main Class
 package org.example;
 
 import org.example.formatters.*;
@@ -32,8 +33,13 @@ public class Main {
         );
         List<CDR> cdrList = new ArrayList<>();
         for (int i = 0; i < NUM_RECORDS; i++) {
-            cdrList.add(randomDataGenerator.generateRandomRecord());
-            System.out.println("Generated record " + (i + 1));
+            try {
+                cdrList.add(randomDataGenerator.generateRandomRecord());
+                System.out.println("Generated record " + (i + 1));
+            } catch (Exception e) {
+                System.err.println("Error generating record " + (i + 1) + ": " + e.getMessage());
+                e.printStackTrace();
+            }
         }
 
         // Formatters
@@ -51,8 +57,13 @@ public class Main {
         System.out.println("Writing formatted CDRs to files...");
         for (int i = 0; i < formatters.length; i++) {
             String fileName = Paths.get(OUTPUT_DIR, "cdr" + extensions[i]).toString();
-            formatters[i].write(fileName, cdrList);
-            System.out.println("File generated: " + fileName);
+            try {
+                formatters[i].write(fileName, cdrList);
+                System.out.println("File generated: " + fileName);
+            } catch (Exception e) {
+                System.err.println("Error writing to file " + fileName + ": " + e.getMessage());
+                e.printStackTrace();
+            }
         }
 
         System.out.println("Program finished successfully.");

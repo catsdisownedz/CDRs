@@ -1,0 +1,50 @@
+- !!org.example.CDR
+  anum: David Williams
+  bnum: Martinez Lisa
+  serviceType: CALL
+  startDateTime: 2024-08-04 07:00
+- !!org.example.CDR
+  anum: Helen White
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-04 07:56
+- !!org.example.CDR
+  anum: Harris Carol
+  bnum: Barbara Jones
+  serviceType: CALL
+  startDateTime: 2024-08-04 07:58
+- !!org.example.CDR
+  anum: Perez Melissa
+  bnum: Timothy Scott
+  serviceType: SMS
+  startDateTime: 2024-08-04 07:58
+- !!org.example.CDR
+  anum: Elizabeth Miller
+  bnum: Patricia Williams
+  serviceType: SMS
+  startDateTime: 2024-08-04 08:00
+- !!org.example.CDR
+  anum: Lisa Anderson
+  bnum: Moore Helen
+  serviceType: SMS
+  startDateTime: 2024-08-04 08:01
+- !!org.example.CDR
+  anum: Kimberly Scott
+  bnum: William Johnson
+  serviceType: SMS
+  startDateTime: 2024-08-04 08:01
+- !!org.example.CDR
+  anum: Taylor Donald
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-04 08:22
+- !!org.example.CDR
+  anum: Patricia Johnson
+  bnum: Davis Thomas
+  serviceType: CALL
+  startDateTime: 2024-08-04 08:22
+- !!org.example.CDR
+  anum: Laura King
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-04 08:24
