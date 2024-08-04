@@ -1,50 +1,50 @@
 - !!org.example.CDR
-  anum: David Williams
-  bnum: Martinez Lisa
-  serviceType: CALL
-  startDateTime: 2024-08-04 07:00
-- !!org.example.CDR
-  anum: Helen White
+  anum: Thompson Sandra
   bnum: null
   serviceType: DATA
-  startDateTime: 2024-08-04 07:56
+  startDateTime: 2024-08-04 07:00
 - !!org.example.CDR
-  anum: Harris Carol
-  bnum: Barbara Jones
-  serviceType: CALL
-  startDateTime: 2024-08-04 07:58
-- !!org.example.CDR
-  anum: Perez Melissa
-  bnum: Timothy Scott
+  anum: Jackson Helen
+  bnum: Taylor Donald
   serviceType: SMS
-  startDateTime: 2024-08-04 07:58
+  startDateTime: 2024-08-04 07:23
 - !!org.example.CDR
-  anum: Elizabeth Miller
+  anum: David Williams
+  bnum: Harris Carol
+  serviceType: CALL
+  startDateTime: 2024-08-04 07:35
+- !!org.example.CDR
+  anum: Richard Brown
   bnum: Patricia Williams
   serviceType: SMS
   startDateTime: 2024-08-04 08:00
 - !!org.example.CDR
-  anum: Lisa Anderson
-  bnum: Moore Helen
+  anum: Miller Elizabeth
+  bnum: Jackson Andrew
   serviceType: SMS
-  startDateTime: 2024-08-04 08:01
+  startDateTime: 2024-08-04 08:16
 - !!org.example.CDR
-  anum: Kimberly Scott
-  bnum: William Johnson
+  anum: Green Deborah
+  bnum: Margaret Wilson
   serviceType: SMS
-  startDateTime: 2024-08-04 08:01
+  startDateTime: 2024-08-04 08:47
 - !!org.example.CDR
-  anum: Taylor Donald
-  bnum: null
-  serviceType: DATA
-  startDateTime: 2024-08-04 08:22
-- !!org.example.CDR
-  anum: Patricia Johnson
-  bnum: Davis Thomas
+  anum: Nelson Cynthia
+  bnum: Anderson Mark
   serviceType: CALL
-  startDateTime: 2024-08-04 08:22
+  startDateTime: 2024-08-04 09:00
 - !!org.example.CDR
-  anum: Laura King
+  anum: Cynthia Walker
   bnum: null
   serviceType: DATA
-  startDateTime: 2024-08-04 08:24
+  startDateTime: 2024-08-04 09:59
+- !!org.example.CDR
+  anum: Harris Kevin
+  bnum: Kimberly Green
+  serviceType: CALL
+  startDateTime: 2024-08-04 10:00
+- !!org.example.CDR
+  anum: Davis Thomas
+  bnum: Hernandez Betty
+  serviceType: SMS
+  startDateTime: 2024-08-04 10:51

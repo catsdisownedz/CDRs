@@ -18,7 +18,8 @@ public class StartDateTimeGenerator {
         LocalDate date = now.toLocalDate();
         int startHour = 7;
         int endHour = 22;
-        int maxRepetitions = 2;
+        //to make it as random as possible :P
+        int maxRepetitions = rd.nextInt(4);
 
         for(int hour = startHour; hour <= endHour; hour++){
             for(int minute =0; minute < 60; minute+= (rd.nextInt(60)+1)){

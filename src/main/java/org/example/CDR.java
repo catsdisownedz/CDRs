@@ -1,7 +1,8 @@
 package org.example;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
 
-import java.time.LocalDateTime;
-
+//@XmlRootElement(name = "cdr")
 public class CDR {
     private String anum;
     private String bnum;
@@ -17,7 +18,6 @@ public class CDR {
         this.startDateTime = startDateTime;
     }
 
-    // Getters and Setters
     public String getAnum() { return anum; }
     public void setAnum(String anum) { this.anum = anum; }
 

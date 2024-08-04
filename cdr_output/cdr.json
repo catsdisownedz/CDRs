@@ -1,1 +1,61 @@
-[{"anum":"David Williams","bnum":"Martinez Lisa","serviceType":"CALL","usage":11.0,"startDateTime":"2024-08-04 07:00"},{"anum":"Helen White","bnum":null,"serviceType":"DATA","usage":373.0,"startDateTime":"2024-08-04 07:56"},{"anum":"Harris Carol","bnum":"Barbara Jones","serviceType":"CALL","usage":21.0,"startDateTime":"2024-08-04 07:58"},{"anum":"Perez Melissa","bnum":"Timothy Scott","serviceType":"SMS","usage":1.0,"startDateTime":"2024-08-04 07:58"},{"anum":"Elizabeth Miller","bnum":"Patricia Williams","serviceType":"SMS","usage":1.0,"startDateTime":"2024-08-04 08:00"},{"anum":"Lisa Anderson","bnum":"Moore Helen","serviceType":"SMS","usage":1.0,"startDateTime":"2024-08-04 08:01"},{"anum":"Kimberly Scott","bnum":"William Johnson","serviceType":"SMS","usage":1.0,"startDateTime":"2024-08-04 08:01"},{"anum":"Taylor Donald","bnum":null,"serviceType":"DATA","usage":770.0,"startDateTime":"2024-08-04 08:22"},{"anum":"Patricia Johnson","bnum":"Davis Thomas","serviceType":"CALL","usage":31.0,"startDateTime":"2024-08-04 08:22"},{"anum":"Laura King","bnum":null,"serviceType":"DATA","usage":331.0,"startDateTime":"2024-08-04 08:24"}]
+[ {
+  "anum" : "Thompson Sandra",
+  "bnum" : null,
+  "serviceType" : "DATA",
+  "usage" : 165.0,
+  "startDateTime" : "2024-08-04 07:00"
+}, {
+  "anum" : "Jackson Helen",
+  "bnum" : "Taylor Donald",
+  "serviceType" : "SMS",
+  "usage" : 1.0,
+  "startDateTime" : "2024-08-04 07:23"
+}, {
+  "anum" : "David Williams",
+  "bnum" : "Harris Carol",
+  "serviceType" : "CALL",
+  "usage" : 25.0,
+  "startDateTime" : "2024-08-04 07:35"
+}, {
+  "anum" : "Richard Brown",
+  "bnum" : "Patricia Williams",
+  "serviceType" : "SMS",
+  "usage" : 1.0,
+  "startDateTime" : "2024-08-04 08:00"
+}, {
+  "anum" : "Miller Elizabeth",
+  "bnum" : "Jackson Andrew",
+  "serviceType" : "SMS",
+  "usage" : 1.0,
+  "startDateTime" : "2024-08-04 08:16"
+}, {
+  "anum" : "Green Deborah",
+  "bnum" : "Margaret Wilson",
+  "serviceType" : "SMS",
+  "usage" : 1.0,
+  "startDateTime" : "2024-08-04 08:47"
+}, {
+  "anum" : "Nelson Cynthia",
+  "bnum" : "Anderson Mark",
+  "serviceType" : "CALL",
+  "usage" : 25.0,
+  "startDateTime" : "2024-08-04 09:00"
+}, {
+  "anum" : "Cynthia Walker",
+  "bnum" : null,
+  "serviceType" : "DATA",
+  "usage" : 203.0,
+  "startDateTime" : "2024-08-04 09:59"
+}, {
+  "anum" : "Harris Kevin",
+  "bnum" : "Kimberly Green",
+  "serviceType" : "CALL",
+  "usage" : 20.0,
+  "startDateTime" : "2024-08-04 10:00"
+}, {
+  "anum" : "Davis Thomas",
+  "bnum" : "Hernandez Betty",
+  "serviceType" : "SMS",
+  "usage" : 1.0,
+  "startDateTime" : "2024-08-04 10:51"
+} ]
