@@ -1,1 +1,78 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Hernandez Steven</anum>
+    <bnum>Susan Williams</bnum>
+    <serviceType>CALL</serviceType>
+    <startDateTime>2024-08-05 07:00</startDateTime>
+    <usage>58.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Anderson Mark</anum>
+    <serviceType>DATA</serviceType>
+    <startDateTime>2024-08-05 07:16</startDateTime>
+    <usage>650.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Lopez Sharon</anum>
+    <serviceType>DATA</serviceType>
+    <startDateTime>2024-08-05 07:33</startDateTime>
+    <usage>373.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Kimberly Scott</anum>
+    <bnum>Martinez Anthony</bnum>
+    <serviceType>SMS</serviceType>
+    <startDateTime>2024-08-05 08:00</startDateTime>
+    <usage>1.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Moore Helen</anum>
+    <bnum>Rodriguez Susan</bnum>
+    <serviceType>SMS</serviceType>
+    <startDateTime>2024-08-05 08:18</startDateTime>
+    <usage>1.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Charles Jones</anum>
+    <bnum>Lee George</bnum>
+    <serviceType>SMS</serviceType>
+    <startDateTime>2024-08-05 08:25</startDateTime>
+    <usage>1.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Hernandez Betty</anum>
+    <bnum>Jessica Nelson</bnum>
+    <serviceType>SMS</serviceType>
+    <startDateTime>2024-08-05 08:33</startDateTime>
+    <usage>1.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Taylor Karen</anum>
+    <bnum>Dorothy Taylor</bnum>
+    <serviceType>CALL</serviceType>
+    <startDateTime>2024-08-05 08:34</startDateTime>
+    <usage>18.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Rodriguez Daniel</anum>
+    <bnum>White Carol</bnum>
+    <serviceType>SMS</serviceType>
+    <startDateTime>2024-08-05 08:42</startDateTime>
+    <usage>1.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Cynthia Walker</anum>
+    <bnum>Harris Ruth</bnum>
+    <serviceType>CALL</serviceType>
+    <startDateTime>2024-08-05 09:00</startDateTime>
+    <usage>52.0</usage>
+</cdr>
