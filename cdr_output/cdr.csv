@@ -1,12 +1,22 @@
 ANUM,BNUM,SERVICE_TYPE,USAGE,START_DATE_TIME
 
-Hernandez Steven,Susan Williams,CALL,58.0,2024-08-05 07:00
-Anderson Mark,null,DATA,650.0,2024-08-05 07:16
-Lopez Sharon,null,DATA,373.0,2024-08-05 07:33
-Kimberly Scott,Martinez Anthony,SMS,1.0,2024-08-05 08:00
-Moore Helen,Rodriguez Susan,SMS,1.0,2024-08-05 08:18
-Charles Jones,Lee George,SMS,1.0,2024-08-05 08:25
-Hernandez Betty,Jessica Nelson,SMS,1.0,2024-08-05 08:33
-Taylor Karen,Dorothy Taylor,CALL,18.0,2024-08-05 08:34
-Rodriguez Daniel,White Carol,SMS,1.0,2024-08-05 08:42
-Cynthia Walker,Harris Ruth,CALL,52.0,2024-08-05 09:00
+Clark Laura,null,DATA,571.0,2024-08-05 07:00
+Lee George,null,DATA,928.0,2024-08-05 07:42
+Richard Brown,David Johnson,SMS,1.0,2024-08-05 08:00
+Adams Jessica,Garcia Maria,CALL,49.0,2024-08-05 08:33
+Susan Williams,null,DATA,109.0,2024-08-05 09:00
+Kevin Harris,Walker Angela,SMS,1.0,2024-08-05 09:39
+Nancy Taylor,null,DATA,682.0,2024-08-05 09:49
+Linda Brown,Lopez Brian,CALL,27.0,2024-08-05 10:00
+Mary Johnson,Hernandez Karen,CALL,11.0,2024-08-05 10:13
+Rodriguez Susan,Taylor Donald,CALL,22.0,2024-08-05 11:00
+Hall Brenda,Rodriguez Margaret,CALL,31.0,2024-08-05 11:18
+Taylor Karen,null,DATA,715.0,2024-08-05 11:44
+Hernandez Betty,Green Deborah,CALL,12.0,2024-08-05 12:00
+Jessica Nelson,Martinez Lisa,CALL,51.0,2024-08-05 12:55
+Michael Smith,John Johnson,CALL,35.0,2024-08-05 13:00
+Davis Thomas,Moore Betty,CALL,59.0,2024-08-05 13:59
+Brown Barbara,null,DATA,462.0,2024-08-05 14:00
+Kimberly Green,William Johnson,CALL,3.0,2024-08-05 14:05
+Perez Angela,Anderson Mark,SMS,1.0,2024-08-05 14:59
+Dorothy Martinez,Moore Paul,CALL,32.0,2024-08-05 15:00

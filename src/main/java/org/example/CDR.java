@@ -3,6 +3,7 @@ package org.example;
 import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 
+
 @XmlRootElement(name = "cdr")
 public class CDR {
     private String anum;

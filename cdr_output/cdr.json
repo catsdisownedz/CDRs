@@ -1,61 +1,121 @@
 [ {
-  "anum" : "Hernandez Steven",
-  "bnum" : "Susan Williams",
-  "serviceType" : "CALL",
-  "usage" : 58.0,
+  "anum" : "Clark Laura",
+  "bnum" : null,
+  "serviceType" : "DATA",
+  "usage" : 571.0,
   "startDateTime" : "2024-08-05 07:00"
 }, {
-  "anum" : "Anderson Mark",
+  "anum" : "Lee George",
   "bnum" : null,
   "serviceType" : "DATA",
-  "usage" : 650.0,
-  "startDateTime" : "2024-08-05 07:16"
+  "usage" : 928.0,
+  "startDateTime" : "2024-08-05 07:42"
 }, {
-  "anum" : "Lopez Sharon",
-  "bnum" : null,
-  "serviceType" : "DATA",
-  "usage" : 373.0,
-  "startDateTime" : "2024-08-05 07:33"
-}, {
-  "anum" : "Kimberly Scott",
-  "bnum" : "Martinez Anthony",
+  "anum" : "Richard Brown",
+  "bnum" : "David Johnson",
   "serviceType" : "SMS",
   "usage" : 1.0,
   "startDateTime" : "2024-08-05 08:00"
 }, {
-  "anum" : "Moore Helen",
-  "bnum" : "Rodriguez Susan",
-  "serviceType" : "SMS",
-  "usage" : 1.0,
-  "startDateTime" : "2024-08-05 08:18"
-}, {
-  "anum" : "Charles Jones",
-  "bnum" : "Lee George",
-  "serviceType" : "SMS",
-  "usage" : 1.0,
-  "startDateTime" : "2024-08-05 08:25"
-}, {
-  "anum" : "Hernandez Betty",
-  "bnum" : "Jessica Nelson",
-  "serviceType" : "SMS",
-  "usage" : 1.0,
+  "anum" : "Adams Jessica",
+  "bnum" : "Garcia Maria",
+  "serviceType" : "CALL",
+  "usage" : 49.0,
   "startDateTime" : "2024-08-05 08:33"
 }, {
-  "anum" : "Taylor Karen",
-  "bnum" : "Dorothy Taylor",
-  "serviceType" : "CALL",
-  "usage" : 18.0,
-  "startDateTime" : "2024-08-05 08:34"
+  "anum" : "Susan Williams",
+  "bnum" : null,
+  "serviceType" : "DATA",
+  "usage" : 109.0,
+  "startDateTime" : "2024-08-05 09:00"
 }, {
-  "anum" : "Rodriguez Daniel",
-  "bnum" : "White Carol",
+  "anum" : "Kevin Harris",
+  "bnum" : "Walker Angela",
   "serviceType" : "SMS",
   "usage" : 1.0,
-  "startDateTime" : "2024-08-05 08:42"
+  "startDateTime" : "2024-08-05 09:39"
 }, {
-  "anum" : "Cynthia Walker",
-  "bnum" : "Harris Ruth",
+  "anum" : "Nancy Taylor",
+  "bnum" : null,
+  "serviceType" : "DATA",
+  "usage" : 682.0,
+  "startDateTime" : "2024-08-05 09:49"
+}, {
+  "anum" : "Linda Brown",
+  "bnum" : "Lopez Brian",
   "serviceType" : "CALL",
-  "usage" : 52.0,
-  "startDateTime" : "2024-08-05 09:00"
+  "usage" : 27.0,
+  "startDateTime" : "2024-08-05 10:00"
+}, {
+  "anum" : "Mary Johnson",
+  "bnum" : "Hernandez Karen",
+  "serviceType" : "CALL",
+  "usage" : 11.0,
+  "startDateTime" : "2024-08-05 10:13"
+}, {
+  "anum" : "Rodriguez Susan",
+  "bnum" : "Taylor Donald",
+  "serviceType" : "CALL",
+  "usage" : 22.0,
+  "startDateTime" : "2024-08-05 11:00"
+}, {
+  "anum" : "Hall Brenda",
+  "bnum" : "Rodriguez Margaret",
+  "serviceType" : "CALL",
+  "usage" : 31.0,
+  "startDateTime" : "2024-08-05 11:18"
+}, {
+  "anum" : "Taylor Karen",
+  "bnum" : null,
+  "serviceType" : "DATA",
+  "usage" : 715.0,
+  "startDateTime" : "2024-08-05 11:44"
+}, {
+  "anum" : "Hernandez Betty",
+  "bnum" : "Green Deborah",
+  "serviceType" : "CALL",
+  "usage" : 12.0,
+  "startDateTime" : "2024-08-05 12:00"
+}, {
+  "anum" : "Jessica Nelson",
+  "bnum" : "Martinez Lisa",
+  "serviceType" : "CALL",
+  "usage" : 51.0,
+  "startDateTime" : "2024-08-05 12:55"
+}, {
+  "anum" : "Michael Smith",
+  "bnum" : "John Johnson",
+  "serviceType" : "CALL",
+  "usage" : 35.0,
+  "startDateTime" : "2024-08-05 13:00"
+}, {
+  "anum" : "Davis Thomas",
+  "bnum" : "Moore Betty",
+  "serviceType" : "CALL",
+  "usage" : 59.0,
+  "startDateTime" : "2024-08-05 13:59"
+}, {
+  "anum" : "Brown Barbara",
+  "bnum" : null,
+  "serviceType" : "DATA",
+  "usage" : 462.0,
+  "startDateTime" : "2024-08-05 14:00"
+}, {
+  "anum" : "Kimberly Green",
+  "bnum" : "William Johnson",
+  "serviceType" : "CALL",
+  "usage" : 3.0,
+  "startDateTime" : "2024-08-05 14:05"
+}, {
+  "anum" : "Perez Angela",
+  "bnum" : "Anderson Mark",
+  "serviceType" : "SMS",
+  "usage" : 1.0,
+  "startDateTime" : "2024-08-05 14:59"
+}, {
+  "anum" : "Dorothy Martinez",
+  "bnum" : "Moore Paul",
+  "serviceType" : "CALL",
+  "usage" : 32.0,
+  "startDateTime" : "2024-08-05 15:00"
 } ]

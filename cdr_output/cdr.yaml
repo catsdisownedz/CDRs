@@ -1,60 +1,140 @@
 - !!org.example.CDR
-  anum: Hernandez Steven
-  bnum: Susan Williams
-  serviceType: CALL
+  anum: Clark Laura
+  bnum: null
+  serviceType: DATA
   startDateTime: 2024-08-05 07:00
-  usage: 58.0
+  usage: 571.0
+
 - !!org.example.CDR
-  anum: Anderson Mark
+  anum: Lee George
   bnum: null
   serviceType: DATA
-  startDateTime: 2024-08-05 07:16
-  usage: 650.0
+  startDateTime: 2024-08-05 07:42
+  usage: 928.0
+
 - !!org.example.CDR
-  anum: Lopez Sharon
-  bnum: null
-  serviceType: DATA
-  startDateTime: 2024-08-05 07:33
-  usage: 373.0
-- !!org.example.CDR
-  anum: Kimberly Scott
-  bnum: Martinez Anthony
+  anum: Richard Brown
+  bnum: David Johnson
   serviceType: SMS
   startDateTime: 2024-08-05 08:00
   usage: 1.0
+
 - !!org.example.CDR
-  anum: Moore Helen
-  bnum: Rodriguez Susan
-  serviceType: SMS
-  startDateTime: 2024-08-05 08:18
-  usage: 1.0
-- !!org.example.CDR
-  anum: Charles Jones
-  bnum: Lee George
-  serviceType: SMS
-  startDateTime: 2024-08-05 08:25
-  usage: 1.0
-- !!org.example.CDR
-  anum: Hernandez Betty
-  bnum: Jessica Nelson
-  serviceType: SMS
+  anum: Adams Jessica
+  bnum: Garcia Maria
+  serviceType: CALL
   startDateTime: 2024-08-05 08:33
+  usage: 49.0
+
+- !!org.example.CDR
+  anum: Susan Williams
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-05 09:00
+  usage: 109.0
+
+- !!org.example.CDR
+  anum: Kevin Harris
+  bnum: Walker Angela
+  serviceType: SMS
+  startDateTime: 2024-08-05 09:39
   usage: 1.0
+
+- !!org.example.CDR
+  anum: Nancy Taylor
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-05 09:49
+  usage: 682.0
+
+- !!org.example.CDR
+  anum: Linda Brown
+  bnum: Lopez Brian
+  serviceType: CALL
+  startDateTime: 2024-08-05 10:00
+  usage: 27.0
+
+- !!org.example.CDR
+  anum: Mary Johnson
+  bnum: Hernandez Karen
+  serviceType: CALL
+  startDateTime: 2024-08-05 10:13
+  usage: 11.0
+
+- !!org.example.CDR
+  anum: Rodriguez Susan
+  bnum: Taylor Donald
+  serviceType: CALL
+  startDateTime: 2024-08-05 11:00
+  usage: 22.0
+
+- !!org.example.CDR
+  anum: Hall Brenda
+  bnum: Rodriguez Margaret
+  serviceType: CALL
+  startDateTime: 2024-08-05 11:18
+  usage: 31.0
+
 - !!org.example.CDR
   anum: Taylor Karen
-  bnum: Dorothy Taylor
-  serviceType: CALL
-  startDateTime: 2024-08-05 08:34
-  usage: 18.0
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-05 11:44
+  usage: 715.0
+
 - !!org.example.CDR
-  anum: Rodriguez Daniel
-  bnum: White Carol
+  anum: Hernandez Betty
+  bnum: Green Deborah
+  serviceType: CALL
+  startDateTime: 2024-08-05 12:00
+  usage: 12.0
+
+- !!org.example.CDR
+  anum: Jessica Nelson
+  bnum: Martinez Lisa
+  serviceType: CALL
+  startDateTime: 2024-08-05 12:55
+  usage: 51.0
+
+- !!org.example.CDR
+  anum: Michael Smith
+  bnum: John Johnson
+  serviceType: CALL
+  startDateTime: 2024-08-05 13:00
+  usage: 35.0
+
+- !!org.example.CDR
+  anum: Davis Thomas
+  bnum: Moore Betty
+  serviceType: CALL
+  startDateTime: 2024-08-05 13:59
+  usage: 59.0
+
+- !!org.example.CDR
+  anum: Brown Barbara
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-05 14:00
+  usage: 462.0
+
+- !!org.example.CDR
+  anum: Kimberly Green
+  bnum: William Johnson
+  serviceType: CALL
+  startDateTime: 2024-08-05 14:05
+  usage: 3.0
+
+- !!org.example.CDR
+  anum: Perez Angela
+  bnum: Anderson Mark
   serviceType: SMS
-  startDateTime: 2024-08-05 08:42
+  startDateTime: 2024-08-05 14:59
   usage: 1.0
+
 - !!org.example.CDR
-  anum: Cynthia Walker
-  bnum: Harris Ruth
+  anum: Dorothy Martinez
+  bnum: Moore Paul
   serviceType: CALL
-  startDateTime: 2024-08-05 09:00
-  usage: 52.0
+  startDateTime: 2024-08-05 15:00
+  usage: 32.0
+
