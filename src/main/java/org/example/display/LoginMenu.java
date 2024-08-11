@@ -49,7 +49,13 @@ public class LoginMenu {
                 handleSignUp(scanner);
                 break;
             default:
-                System.out.println(Color.colorText("Invalid option.", Color.red));
+                System.out.println(Color.colorText("Invalid option. Enter 1 or 2.\n", Color.red));
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+                display();
                 break;
         }
     }
@@ -69,6 +75,11 @@ public class LoginMenu {
             }
         }
         System.out.println(Color.colorText("Invalid username or password.", Color.red));
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         display();
     }
 
@@ -112,7 +123,13 @@ public class LoginMenu {
             e.printStackTrace();
         }
 
-        System.out.println(Color.colorText("User created successfully!",Color.green));
+        System.out.println(Color.colorText("User created successfully!\n",Color.green));
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println(Color.colorText("Verify your credentials please", Color.italic_grey));
         handleLogin(scanner);
     }
 }

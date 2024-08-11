@@ -8,6 +8,7 @@ import org.example.utils.*;
 import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeParseException;
 import java.util.*;
 
 import static org.example.Main.OUTPUT_DIR;
@@ -34,8 +35,19 @@ public class Menu {
             System.out.println(Color.colorText("4)", Color.lavender) + " Revenue calculator");
             System.out.println(Color.colorText("5)", Color.red) + " Logout");
             System.out.print("Choose an option: ");
-            int choice = scanner.nextInt();
-            scanner.nextLine();
+            int choice = 0;
+            try{
+                choice = scanner.nextInt();
+                scanner.nextLine();
+            } catch (IllegalArgumentException ex) {
+                System.out.println(Color.colorText("You need to enter a Number. Choose from numbers 1-5", Color.red));
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+                display();
+            }
 
             switch (choice) {
                 case 1:
@@ -48,8 +60,15 @@ public class Menu {
                     System.out.println("Options: ");
                     System.out.println("1) View today's most " +  Color.colorText("heated", Color.red) + " service records");
                     System.out.println("2) View certain service volume (call / sms / data) records");
-                    int which = scanner.nextInt();
-                    scanner.nextLine();
+                    int which = 0;
+
+                    try{
+                        which = scanner.nextInt();
+                        scanner.nextLine();
+                    }catch(IllegalArgumentException ex) {
+                        System.out.println(Color.colorText("You need to enter a Number. Choose 1 or 2", Color.red));
+                    }
+
                     viewServiceTypeVolume(scanner, which);
                     break;
                 case 4:
@@ -60,7 +79,13 @@ public class Menu {
                     mn.display();
                     return;
                 default:
-                    System.out.println("Invalid option.");
+                    System.out.println(Color.colorText("Invalid option.", Color.red));
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+                    display();
                     break;
             }
         }
@@ -78,8 +103,14 @@ public class Menu {
         System.out.println("3) Usage Rates");
         System.out.println(Color.colorText("4)", Color.red) +" Go Back");
         System.out.print("\nChoose an option: ");
-        int choice = scanner.nextInt();
-        scanner.nextLine();
+        int choice = 0;
+
+        try{
+            choice = scanner.nextInt();
+            scanner.nextLine();
+        }catch(IllegalArgumentException ex) {
+            System.out.println(Color.colorText("You need to enter a number between 1-4", Color.red));
+        }
 
         List<CDR> sortedList = new ArrayList<>();
         switch (choice) {
@@ -92,13 +123,33 @@ public class Menu {
                 else if(num.equals("bnum")){
                     sortedList = CSVFormatter.sortByBnum();
                 }
+                else{
+                    System.out.println(Color.colorText("Type either anum or bnum (Capitalization doesn't matter)", Color.red));
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+                    filterResultsBy(scanner);
+                }
                 break;
             case 2:
                 System.out.println("Filter by service type:");
                 typeChoiceDisplay();
                 System.out.print("Choose an option: ");
-                int typeChoice = scanner.nextInt();
-                scanner.nextLine();
+                int typeChoice = 0;
+                try{
+                    typeChoice = scanner.nextInt();
+                    scanner.nextLine();
+                }catch(IllegalArgumentException ex) {
+                    System.out.println(Color.colorText("You need to choose a Number between 1-3", Color.red));
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+                    display();
+                }
                 sortedList= CSVFormatter.filterByServiceType(typeChoice);
                 break;
             case 3:
@@ -106,7 +157,12 @@ public class Menu {
             case 4:
                 display();
             default:
-                System.out.println("Invalid option.");
+                System.out.println(Color.colorText("Invalid option.", Color.red));
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
                 display();
                 break;
         }
@@ -127,14 +183,31 @@ public class Menu {
             System.out.println("View service type volume:");
             typeChoiceDisplay();
             System.out.print("Choose an option: ");
-            int choice2 = scanner.nextInt();
-            scanner.nextLine();
+            int choice2 = 0;
+            try{
+                choice2 = scanner.nextInt();
+                scanner.nextLine();
+            }catch(IllegalArgumentException ex) {
+                System.out.println(Color.colorText("You need to choose a Number between 1-3", Color.red));
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+                display();
+            }
+
             filteredList = CSVFormatter.filterByServiceType(choice2);
             printList(filteredList);
             openFileOrExit(scanner, filteredList);
         }
         else{
-            System.out.println("Invalid choice.");
+            System.out.println(Color.colorText("Invalid choice.", Color.red));
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
             display();
         }
 
@@ -148,14 +221,28 @@ public class Menu {
 
 
     private static void revenueCalculator(Scanner scanner) {
+        Boolean validDate = false;
+        LocalDateTime specificDate = null;
+
         System.out.println(Color.colorText("\nRevenue calculator:", Color.blue));
         System.out.println("1) Today");
         System.out.println("2) Yesterday");
         System.out.println("3) Other..");
         System.out.println("4) Go Back");
         System.out.print("Choose: ");
-        int choice = scanner.nextInt();
-        scanner.nextLine();
+        int choice = 0;
+        try{
+            choice= scanner.nextInt();
+            scanner.nextLine();
+        }catch(IllegalArgumentException ex) {
+            System.out.println(Color.colorText("You need to choose a Number between 1-4", Color.red));
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+            revenueCalculator(scanner);
+        }
 
         List<CDR> cdrList = new ArrayList<>();
 
@@ -170,17 +257,32 @@ public class Menu {
                 calculateAndPrintRevenue(cdrList, yesterday.toLocalDate().toString(), scanner);
                 break;
             case 3:
-                System.out.print("Enter date (YYYY-MM-DD): ");
-                String dateStr = scanner.nextLine();
-                LocalDateTime specificDate = LocalDate.parse(dateStr).atStartOfDay();
+                String dateStr = null;
+                while (!validDate) {
+                    try {
+                        System.out.print("Enter date (YYYY-MM-DD): ");
+                        dateStr = scanner.nextLine();
+                        specificDate = LocalDate.parse(dateStr).atStartOfDay();
+                        validDate = true;
+                    } catch (DateTimeParseException e) {
+                        System.out.println(Color.colorText("Invalid date format. Please enter the date in the format YYYY-MM-DD.", Color.red));
+                        try {
+                            Thread.sleep(1000);
+                        } catch (InterruptedException ex) {
+                            throw new RuntimeException(e);
+                        }
+                        revenueCalculator(scanner);
+                    }
+                }
                 cdrList = generateAndSaveRecordsForDate(specificDate, scanner);
                 calculateAndPrintRevenue(cdrList, dateStr, scanner);
+
                 break;
             case 4:
                 display();
                 return;
             default:
-                System.out.println("Invalid option.");
+                System.out.println(Color.colorText("Invalid option.", Color.red));
                 display();
                 break;
         }
@@ -210,7 +312,7 @@ public class Menu {
         CSVFormatter csvFormatter = new CSVFormatter();
         csvFormatter.write(fileName, cdrList);
 
-        System.out.println("New CDR records for " + dateStr + " generated and saved to " + fileName);
+        System.out.println(Color.colorText("New CDR records for " + dateStr + " generated and saved to " + fileName, Color.green));
 
         return cdrList;
     }
@@ -271,31 +373,55 @@ public class Menu {
         return LocalDate.now().toString();
     }
 
-    private static String getYesterdayDate() {
-        return LocalDate.now().minusDays(1).toString();
-    }
-
     private static void openFileOrExit(Scanner scanner, List<CDR> filteredList){
         System.out.println(Color.colorText("\n\nWould you like to export this info to a file?",  Color.yellow));
         System.out.println("1) Yes");
-        System.out.println("2) No (EXIT)");
+        System.out.println("2) No "+ Color.colorText("(EXIT)", Color.red));
         System.out.print("Choose: ");
-        int choice = scanner.nextInt();
-        scanner.nextLine();
+        int choice = 0;
+        try{
+            choice = scanner.nextInt();
+            scanner.nextLine();
+        }catch(IllegalArgumentException e){
+            System.out.println(Color.colorText("You need to enter a Number. Choose 1 or 2.", Color.red));
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException exception) {
+                throw new RuntimeException(e);
+            }
+            openFileOrExit(scanner, filteredList);
+        }
 
         switch (choice) {
             case 1:
-                System.out.print(Color.colorText("In what format? (XML, JSON, YAML, CSV)\nType it here: ", Color.lavender));
-                String format = scanner.nextLine().toLowerCase();
+                String format = "";
+                while (true) {
+                    System.out.print(Color.colorText("In what format? (XML, JSON, YAML, CSV)\nType it here: ", Color.lavender));
+                    format = scanner.nextLine().toLowerCase();
+                    if (format.equals("xml") || format.equals("json") || format.equals("yaml") || format.equals("csv")) {
+                        break; // Valid format, exit loop
+                    } else {
+                        System.out.println(Color.colorText("Invalid file type. Please enter one of the following formats: XML, JSON, YAML, CSV. (Capitalization doesn't matter)", Color.red));
+                        try {
+                            Thread.sleep(1000);
+                        } catch (InterruptedException e) {
+                            throw new RuntimeException(e);
+                        }
+                        openFileOrExit(scanner, filteredList);
+                    }
+                }
+
                 System.out.println("Name your file: ");
                 String name = scanner.nextLine();
                 String fileName = Paths.get(OUTPUT_DIR, name + "." + format).toString();
-                System.out.println(Color.colorText("Your file (" + fileName + ") was created successfully in cdr_output directory. ", Color.green));
+                System.out.println(Color.colorText("Your file (" + fileName + ") was created successfully in cdr_output directory.", Color.green));
+
                 BaseFormatter fm = getFormatter(format);
                 if (fm != null) {
                     fm.write(fileName, filteredList);
                 }
-                DirectoryControls.openFile(fileName);
+              //  DirectoryControls.openFile(fileName);
+                break;
 
             case 2:
                 LoginMenu.displayRedirectingMessage();

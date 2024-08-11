@@ -1,420 +1,420 @@
 - !!org.example.CDR
-  anum: Lopez Ruth
-  bnum: Ryan Hall
-  serviceType: CALL
-  startDateTime: 2024-08-11 07:00
-  usage: 39.0
-
-- !!org.example.CDR
-  anum: Lopez Sharon
+  anum: Khaled Al-Siddiq
   bnum: null
   serviceType: DATA
   startDateTime: 2024-08-11 07:00
-  usage: 317.0
+  usage: 638.0
 
 - !!org.example.CDR
-  anum: Clark Edward
+  anum: Nahla Kamal
+  bnum: Nabeel Zain
+  serviceType: SMS
+  startDateTime: 2024-08-11 07:00
+  usage: 1.0
+
+- !!org.example.CDR
+  anum: Aisha Al-Mubarak
+  bnum: Yasmeen Al-Faisal
+  serviceType: SMS
+  startDateTime: 2024-08-11 07:00
+  usage: 1.0
+
+- !!org.example.CDR
+  anum: Israa Tariq
   bnum: null
   serviceType: DATA
-  startDateTime: 2024-08-11 07:04
-  usage: 924.0
+  startDateTime: 2024-08-11 07:09
+  usage: 344.0
 
 - !!org.example.CDR
-  anum: Rodriguez Daniel
-  bnum: Nancy Taylor
-  serviceType: SMS
-  startDateTime: 2024-08-11 07:04
-  usage: 1.0
+  anum: Rodriguez Susan
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-11 07:09
+  usage: 110.0
 
 - !!org.example.CDR
-  anum: Layla Al-Qadir
-  bnum: David Johnson
-  serviceType: SMS
-  startDateTime: 2024-08-11 07:06
-  usage: 1.0
+  anum: Barbara Brown
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-11 07:09
+  usage: 898.0
 
 - !!org.example.CDR
-  anum: Michael Brown
-  bnum: Adams Jessica
+  anum: Davis Thomas
+  bnum: Samer Najm
   serviceType: CALL
-  startDateTime: 2024-08-11 07:06
-  usage: 31.0
+  startDateTime: 2024-08-11 07:27
+  usage: 35.0
 
 - !!org.example.CDR
-  anum: Cynthia Walker
-  bnum: Steven Thompson
-  serviceType: CALL
-  startDateTime: 2024-08-11 07:19
-  usage: 28.0
-
-- !!org.example.CDR
-  anum: Zeina Al-Aziz
-  bnum: White Donna
-  serviceType: SMS
-  startDateTime: 2024-08-11 07:19
-  usage: 1.0
-
-- !!org.example.CDR
-  anum: Garcia Susan
-  bnum: Mary Johnson
-  serviceType: SMS
-  startDateTime: 2024-08-11 07:21
-  usage: 1.0
-
-- !!org.example.CDR
-  anum: Amin Al-Muhammad
-  bnum: Faris Al-Din
-  serviceType: SMS
-  startDateTime: 2024-08-11 07:45
-  usage: 1.0
-
-- !!org.example.CDR
-  anum: Brown Barbara
+  anum: Yasmin Al-Din
   bnum: null
   serviceType: DATA
   startDateTime: 2024-08-11 07:45
-  usage: 13.0
+  usage: 764.0
 
 - !!org.example.CDR
-  anum: Thompson Sandra
-  bnum: Zeina Al-Hassan
+  anum: William Johnson
+  bnum: Daniel Rodriguez
+  serviceType: SMS
+  startDateTime: 2024-08-11 08:00
+  usage: 1.0
+
+- !!org.example.CDR
+  anum: Ali Al-Amin
+  bnum: Green Jason
   serviceType: CALL
   startDateTime: 2024-08-11 08:00
-  usage: 6.0
+  usage: 2.0
 
 - !!org.example.CDR
-  anum: Richard Brown
-  bnum: Huda Al-Bashir
-  serviceType: CALL
-  startDateTime: 2024-08-11 08:01
-  usage: 14.0
-
-- !!org.example.CDR
-  anum: Taylor Karen
-  bnum: Miller Jennifer
-  serviceType: CALL
-  startDateTime: 2024-08-11 08:20
-  usage: 36.0
-
-- !!org.example.CDR
-  anum: Jamal Munir
-  bnum: Hana Nasser
-  serviceType: SMS
-  startDateTime: 2024-08-11 08:20
-  usage: 1.0
-
-- !!org.example.CDR
-  anum: Clark Laura
+  anum: Nelson Cynthia
   bnum: null
   serviceType: DATA
-  startDateTime: 2024-08-11 08:40
-  usage: 835.0
-
-- !!org.example.CDR
-  anum: Ayman Sami
-  bnum: Patricia Williams
-  serviceType: SMS
-  startDateTime: 2024-08-11 09:00
-  usage: 1.0
+  startDateTime: 2024-08-11 08:00
+  usage: 453.0
 
 - !!org.example.CDR
   anum: Jackson Sandra
   bnum: null
   serviceType: DATA
-  startDateTime: 2024-08-11 09:00
-  usage: 783.0
+  startDateTime: 2024-08-11 08:22
+  usage: 54.0
 
 - !!org.example.CDR
-  anum: Nelson Cynthia
-  bnum: ''
+  anum: Taylor Karen
+  bnum: Imad Al-Mansour
   serviceType: SMS
-  startDateTime: 2024-08-11 09:07
+  startDateTime: 2024-08-11 08:22
   usage: 1.0
 
 - !!org.example.CDR
-  anum: Nahla Kamal
-  bnum: Ahmed Al-Mansour
+  anum: Dorothy Martinez
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-11 08:44
+  usage: 182.0
+
+- !!org.example.CDR
+  anum: Layla Al-Karim
+  bnum: Yasmin Al-Mubarak
+  serviceType: SMS
+  startDateTime: 2024-08-11 08:46
+  usage: 1.0
+
+- !!org.example.CDR
+  anum: Jackson Helen
+  bnum: Steven Thompson
   serviceType: CALL
-  startDateTime: 2024-08-11 09:07
-  usage: 2.0
+  startDateTime: 2024-08-11 08:46
+  usage: 40.0
 
 - !!org.example.CDR
-  anum: Kenneth Thompson
-  bnum: Basma Zaki
+  anum: Hala Rafat
+  bnum: Moore Helen
   serviceType: SMS
-  startDateTime: 2024-08-11 09:28
+  startDateTime: 2024-08-11 08:46
   usage: 1.0
 
 - !!org.example.CDR
-  anum: Fatima Al-Amin
-  bnum: Harris Ruth
+  anum: Davis Maria
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-11 08:46
+  usage: 172.0
+
+- !!org.example.CDR
+  anum: Nisreen Al-Amin
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-11 08:46
+  usage: 544.0
+
+- !!org.example.CDR
+  anum: Hall Brenda
+  bnum: Rania Al-Khaled
+  serviceType: CALL
+  startDateTime: 2024-08-11 09:00
+  usage: 49.0
+
+- !!org.example.CDR
+  anum: Michael Brown
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-11 09:00
+  usage: 137.0
+
+- !!org.example.CDR
+  anum: Layla Al-Amin
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-11 09:00
+  usage: 278.0
+
+- !!org.example.CDR
+  anum: Rana Al-Qadir
+  bnum: Lopez Ruth
   serviceType: SMS
-  startDateTime: 2024-08-11 09:38
+  startDateTime: 2024-08-11 09:00
   usage: 1.0
+
+- !!org.example.CDR
+  anum: Miller Jennifer
+  bnum: Brian Lopez
+  serviceType: CALL
+  startDateTime: 2024-08-11 09:00
+  usage: 14.0
+
+- !!org.example.CDR
+  anum: Harris Ruth
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-11 09:19
+  usage: 998.0
+
+- !!org.example.CDR
+  anum: King Sarah
+  bnum: Thompson Kenneth
+  serviceType: CALL
+  startDateTime: 2024-08-11 09:19
+  usage: 42.0
+
+- !!org.example.CDR
+  anum: Rania Al-Farouq
+  bnum: Rodriguez Margaret
+  serviceType: CALL
+  startDateTime: 2024-08-11 09:39
+  usage: 42.0
+
+- !!org.example.CDR
+  anum: Robert Williams
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-11 09:39
+  usage: 208.0
+
+- !!org.example.CDR
+  anum: Yasmeen Al-Mahdi
+  bnum: Michelle Clark
+  serviceType: SMS
+  startDateTime: 2024-08-11 09:39
+  usage: 1.0
+
+- !!org.example.CDR
+  anum: Jason Walker
+  bnum: Brown Barbara
+  serviceType: SMS
+  startDateTime: 2024-08-11 09:39
+  usage: 1.0
+
+- !!org.example.CDR
+  anum: King Ronald
+  bnum: Hernandez Karen
+  serviceType: CALL
+  startDateTime: 2024-08-11 09:39
+  usage: 13.0
+
+- !!org.example.CDR
+  anum: Susan Williams
+  bnum: Yasmin Al-Faisal
+  serviceType: CALL
+  startDateTime: 2024-08-11 09:45
+  usage: 56.0
 
 - !!org.example.CDR
   anum: Harris Carol
-  bnum: Hernandez Karen
+  bnum: Mustafa Al-Maamoun
   serviceType: CALL
-  startDateTime: 2024-08-11 09:38
-  usage: 7.0
+  startDateTime: 2024-08-11 09:56
+  usage: 32.0
 
 - !!org.example.CDR
-  anum: Dina Al-Khalil
-  bnum: Thompson Donna
-  serviceType: SMS
-  startDateTime: 2024-08-11 09:46
-  usage: 1.0
+  anum: Bilal Al-Mansour
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-11 09:56
+  usage: 766.0
 
 - !!org.example.CDR
-  anum: Saeed Al-Mansour
-  bnum: Riyad Jawad
-  serviceType: SMS
-  startDateTime: 2024-08-11 09:46
-  usage: 1.0
-
-- !!org.example.CDR
-  anum: Elizabeth Miller
-  bnum: Hernandez Betty
+  anum: Adams Jeffrey
+  bnum: Salma Al-Mansour
   serviceType: SMS
   startDateTime: 2024-08-11 10:00
+  usage: 1.0
+
+- !!org.example.CDR
+  anum: Sarah Scott
+  bnum: Ahmed Al-Mansour
+  serviceType: CALL
+  startDateTime: 2024-08-11 10:00
+  usage: 33.0
+
+- !!org.example.CDR
+  anum: Lopez Brian
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-11 10:00
+  usage: 926.0
+
+- !!org.example.CDR
+  anum: Rana Al-Khatib
+  bnum: Maha Al-Amin
+  serviceType: SMS
+  startDateTime: 2024-08-11 10:00
+  usage: 1.0
+
+- !!org.example.CDR
+  anum: Mahmoud Al-Zain
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-11 10:11
+  usage: 448.0
+
+- !!org.example.CDR
+  anum: Lee Michelle
+  bnum: Margaret Wilson
+  serviceType: SMS
+  startDateTime: 2024-08-11 10:11
   usage: 1.0
 
 - !!org.example.CDR
   anum: Kimberly Green
-  bnum: null
-  serviceType: DATA
-  startDateTime: 2024-08-11 10:00
-  usage: 262.0
-
-- !!org.example.CDR
-  anum: Zaki Munir
-  bnum: Farah Al-Din
-  serviceType: CALL
-  startDateTime: 2024-08-11 10:21
-  usage: 16.0
-
-- !!org.example.CDR
-  anum: Garcia Maria
-  bnum: null
-  serviceType: DATA
-  startDateTime: 2024-08-11 10:21
-  usage: 6.0
-
-- !!org.example.CDR
-  anum: Moore Helen
-  bnum: null
-  serviceType: DATA
-  startDateTime: 2024-08-11 10:26
-  usage: 935.0
-
-- !!org.example.CDR
-  anum: Jessica Nelson
-  bnum: null
-  serviceType: DATA
-  startDateTime: 2024-08-11 10:26
-  usage: 906.0
-
-- !!org.example.CDR
-  anum: Christopher Martinez
-  bnum: Anas Al-Zain
+  bnum: Reem Nizar
   serviceType: SMS
-  startDateTime: 2024-08-11 10:47
+  startDateTime: 2024-08-11 10:11
   usage: 1.0
 
 - !!org.example.CDR
-  anum: Perez Melissa
-  bnum: Maria Davis
+  anum: Jamal Munir
+  bnum: Rodriguez Daniel
+  serviceType: CALL
+  startDateTime: 2024-08-11 10:11
+  usage: 59.0
+
+- !!org.example.CDR
+  anum: Anthony Hernandez
+  bnum: White Donna
   serviceType: SMS
-  startDateTime: 2024-08-11 10:47
+  startDateTime: 2024-08-11 10:11
   usage: 1.0
 
 - !!org.example.CDR
-  anum: Ronald Adams
-  bnum: Adnan Al-Mansour
-  serviceType: CALL
-  startDateTime: 2024-08-11 10:54
-  usage: 28.0
-
-- !!org.example.CDR
-  anum: White Carol
-  bnum: Melissa Hall
-  serviceType: CALL
-  startDateTime: 2024-08-11 10:54
-  usage: 41.0
-
-- !!org.example.CDR
-  anum: Rodriguez Margaret
-  bnum: Mark Moore
+  anum: Yasmeen Al-Hassan
+  bnum: Ruba Al-Najjar
   serviceType: SMS
-  startDateTime: 2024-08-11 11:00
+  startDateTime: 2024-08-11 10:14
   usage: 1.0
 
 - !!org.example.CDR
-  anum: Khalid Al-Muhannadi
-  bnum: Hernandez Steven
+  anum: Layla Al-Muhammad
+  bnum: Jackson Andrew
   serviceType: CALL
-  startDateTime: 2024-08-11 11:00
-  usage: 29.0
+  startDateTime: 2024-08-11 10:14
+  usage: 44.0
 
 - !!org.example.CDR
-  anum: Miller Joseph
-  bnum: null
-  serviceType: DATA
-  startDateTime: 2024-08-11 11:27
-  usage: 182.0
-
-- !!org.example.CDR
-  anum: Susan Williams
-  bnum: Donald Taylor
+  anum: Hernandez Steven
+  bnum: Youssef Al-Din
   serviceType: CALL
-  startDateTime: 2024-08-11 11:40
-  usage: 18.0
-
-- !!org.example.CDR
-  anum: Carol Lee
-  bnum: null
-  serviceType: DATA
-  startDateTime: 2024-08-11 11:42
-  usage: 333.0
-
-- !!org.example.CDR
-  anum: Maria Garcia
-  bnum: Barbara Jones
-  serviceType: CALL
-  startDateTime: 2024-08-11 12:00
-  usage: 31.0
-
-- !!org.example.CDR
-  anum: Anderson Mark
-  bnum: null
-  serviceType: DATA
-  startDateTime: 2024-08-11 12:00
-  usage: 116.0
-
-- !!org.example.CDR
-  anum: Bassem Al-Din
-  bnum: White Joshua
-  serviceType: SMS
-  startDateTime: 2024-08-11 12:23
-  usage: 1.0
-
-- !!org.example.CDR
-  anum: Davis Jennifer
-  bnum: Deborah Adams
-  serviceType: SMS
-  startDateTime: 2024-08-11 12:23
-  usage: 1.0
-
-- !!org.example.CDR
-  anum: Harris Kevin
-  bnum: null
-  serviceType: DATA
-  startDateTime: 2024-08-11 12:31
-  usage: 424.0
-
-- !!org.example.CDR
-  anum: Taylor Donald
-  bnum: Saeed Al-Din
-  serviceType: CALL
-  startDateTime: 2024-08-11 12:44
+  startDateTime: 2024-08-11 10:14
   usage: 7.0
 
 - !!org.example.CDR
-  anum: King Sarah
-  bnum: Green Jason
-  serviceType: SMS
-  startDateTime: 2024-08-11 12:44
-  usage: 1.0
-
-- !!org.example.CDR
-  anum: Kimberly Scott
-  bnum: William Johnson
-  serviceType: SMS
-  startDateTime: 2024-08-11 13:00
-  usage: 1.0
-
-- !!org.example.CDR
-  anum: Nasir Al-Muhannadi
-  bnum: Imran Al-Mubarak
-  serviceType: SMS
-  startDateTime: 2024-08-11 13:05
-  usage: 1.0
-
-- !!org.example.CDR
-  anum: Amina Al-Jabari
-  bnum: Samir Hassan
-  serviceType: CALL
-  startDateTime: 2024-08-11 13:05
-  usage: 52.0
-
-- !!org.example.CDR
-  anum: Rami Al-Muhanna
-  bnum: Youssef Al-Din
-  serviceType: CALL
-  startDateTime: 2024-08-11 13:29
-  usage: 37.0
-
-- !!org.example.CDR
-  anum: Jones Elizabeth
-  bnum: Thomas Wilson
-  serviceType: CALL
-  startDateTime: 2024-08-11 13:44
-  usage: 39.0
-
-- !!org.example.CDR
-  anum: Adams Jeffrey
-  bnum: Huda Al-Zain
-  serviceType: SMS
-  startDateTime: 2024-08-11 13:47
-  usage: 1.0
-
-- !!org.example.CDR
-  anum: Lee Michelle
+  anum: Moore Betty
   bnum: null
   serviceType: DATA
-  startDateTime: 2024-08-11 13:48
-  usage: 997.0
+  startDateTime: 2024-08-11 10:31
+  usage: 127.0
 
 - !!org.example.CDR
-  anum: Sara Al-Karim
-  bnum: Huda Al-Faisal
+  anum: Saeed Al-Mansour
+  bnum: Nancy Taylor
+  serviceType: CALL
+  startDateTime: 2024-08-11 10:31
+  usage: 6.0
+
+- !!org.example.CDR
+  anum: Davis Jennifer
+  bnum: Lee George
+  serviceType: CALL
+  startDateTime: 2024-08-11 10:31
+  usage: 8.0
+
+- !!org.example.CDR
+  anum: Michael Smith
+  bnum: Susan Martinez
+  serviceType: CALL
+  startDateTime: 2024-08-11 10:31
+  usage: 5.0
+
+- !!org.example.CDR
+  anum: Anwar Al-Muhammad
+  bnum: Omar Al-Khatib
   serviceType: SMS
-  startDateTime: 2024-08-11 14:00
+  startDateTime: 2024-08-11 10:31
   usage: 1.0
 
 - !!org.example.CDR
-  anum: Michelle Clark
+  anum: Hiba Al-Mahdi
   bnum: null
   serviceType: DATA
-  startDateTime: 2024-08-11 14:28
-  usage: 757.0
+  startDateTime: 2024-08-11 10:54
+  usage: 101.0
 
 - !!org.example.CDR
-  anum: Munir Zubair
-  bnum: Ruba Al-Qadir
+  anum: Nelson Ryan
+  bnum: Wilson Dorothy
   serviceType: SMS
-  startDateTime: 2024-08-11 14:57
+  startDateTime: 2024-08-11 10:54
   usage: 1.0
 
 - !!org.example.CDR
-  anum: Mariam Al-Hassan
-  bnum: Tariq Al-Hassan
+  anum: Brenda Smith
+  bnum: Linda Brown
+  serviceType: SMS
+  startDateTime: 2024-08-11 11:00
+  usage: 1.0
+
+- !!org.example.CDR
+  anum: Basil Mahmoud
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-11 11:03
+  usage: 17.0
+
+- !!org.example.CDR
+  anum: Harris Kevin
+  bnum: Khalid Al-Muhannadi
   serviceType: CALL
-  startDateTime: 2024-08-11 14:57
+  startDateTime: 2024-08-11 11:03
+  usage: 27.0
+
+- !!org.example.CDR
+  anum: Kevin Clark
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-11 11:03
+  usage: 352.0
+
+- !!org.example.CDR
+  anum: Patricia Johnson
+  bnum: Noor Al-Amin
+  serviceType: CALL
+  startDateTime: 2024-08-11 11:28
   usage: 50.0
 
 - !!org.example.CDR
-  anum: Yasmin Al-Farouq
-  bnum: Rodriguez Susan
+  anum: Laura King
+  bnum: Miller Joseph
   serviceType: SMS
-  startDateTime: 2024-08-11 15:00
+  startDateTime: 2024-08-11 11:28
   usage: 1.0
 
 - !!org.example.CDR
-  anum: Laila Majid
-  bnum: Linda Brown
-  serviceType: SMS
-  startDateTime: 2024-08-11 15:29
-  usage: 1.0
+  anum: Maha Al-Bashir
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-11 11:50
+  usage: 784.0
 

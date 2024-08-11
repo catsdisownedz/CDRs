@@ -1,361 +1,361 @@
 [ {
-  "anum" : "Lopez Ruth",
-  "bnum" : "Ryan Hall",
-  "serviceType" : "CALL",
-  "usage" : 39.0,
+  "anum" : "Khaled Al-Siddiq",
+  "bnum" : null,
+  "serviceType" : "DATA",
+  "usage" : 638.0,
   "startDateTime" : "2024-08-11 07:00"
 }, {
-  "anum" : "Lopez Sharon",
-  "bnum" : null,
-  "serviceType" : "DATA",
-  "usage" : 317.0,
+  "anum" : "Nahla Kamal",
+  "bnum" : "Nabeel Zain",
+  "serviceType" : "SMS",
+  "usage" : 1.0,
   "startDateTime" : "2024-08-11 07:00"
 }, {
-  "anum" : "Clark Edward",
+  "anum" : "Aisha Al-Mubarak",
+  "bnum" : "Yasmeen Al-Faisal",
+  "serviceType" : "SMS",
+  "usage" : 1.0,
+  "startDateTime" : "2024-08-11 07:00"
+}, {
+  "anum" : "Israa Tariq",
   "bnum" : null,
   "serviceType" : "DATA",
-  "usage" : 924.0,
-  "startDateTime" : "2024-08-11 07:04"
+  "usage" : 344.0,
+  "startDateTime" : "2024-08-11 07:09"
 }, {
-  "anum" : "Rodriguez Daniel",
-  "bnum" : "Nancy Taylor",
-  "serviceType" : "SMS",
-  "usage" : 1.0,
-  "startDateTime" : "2024-08-11 07:04"
-}, {
-  "anum" : "Layla Al-Qadir",
-  "bnum" : "David Johnson",
-  "serviceType" : "SMS",
-  "usage" : 1.0,
-  "startDateTime" : "2024-08-11 07:06"
-}, {
-  "anum" : "Michael Brown",
-  "bnum" : "Adams Jessica",
-  "serviceType" : "CALL",
-  "usage" : 31.0,
-  "startDateTime" : "2024-08-11 07:06"
-}, {
-  "anum" : "Cynthia Walker",
-  "bnum" : "Steven Thompson",
-  "serviceType" : "CALL",
-  "usage" : 28.0,
-  "startDateTime" : "2024-08-11 07:19"
-}, {
-  "anum" : "Zeina Al-Aziz",
-  "bnum" : "White Donna",
-  "serviceType" : "SMS",
-  "usage" : 1.0,
-  "startDateTime" : "2024-08-11 07:19"
-}, {
-  "anum" : "Garcia Susan",
-  "bnum" : "Mary Johnson",
-  "serviceType" : "SMS",
-  "usage" : 1.0,
-  "startDateTime" : "2024-08-11 07:21"
-}, {
-  "anum" : "Amin Al-Muhammad",
-  "bnum" : "Faris Al-Din",
-  "serviceType" : "SMS",
-  "usage" : 1.0,
-  "startDateTime" : "2024-08-11 07:45"
-}, {
-  "anum" : "Brown Barbara",
+  "anum" : "Rodriguez Susan",
   "bnum" : null,
   "serviceType" : "DATA",
-  "usage" : 13.0,
+  "usage" : 110.0,
+  "startDateTime" : "2024-08-11 07:09"
+}, {
+  "anum" : "Barbara Brown",
+  "bnum" : null,
+  "serviceType" : "DATA",
+  "usage" : 898.0,
+  "startDateTime" : "2024-08-11 07:09"
+}, {
+  "anum" : "Davis Thomas",
+  "bnum" : "Samer Najm",
+  "serviceType" : "CALL",
+  "usage" : 35.0,
+  "startDateTime" : "2024-08-11 07:27"
+}, {
+  "anum" : "Yasmin Al-Din",
+  "bnum" : null,
+  "serviceType" : "DATA",
+  "usage" : 764.0,
   "startDateTime" : "2024-08-11 07:45"
 }, {
-  "anum" : "Thompson Sandra",
-  "bnum" : "Zeina Al-Hassan",
-  "serviceType" : "CALL",
-  "usage" : 6.0,
+  "anum" : "William Johnson",
+  "bnum" : "Daniel Rodriguez",
+  "serviceType" : "SMS",
+  "usage" : 1.0,
   "startDateTime" : "2024-08-11 08:00"
 }, {
-  "anum" : "Richard Brown",
-  "bnum" : "Huda Al-Bashir",
+  "anum" : "Ali Al-Amin",
+  "bnum" : "Green Jason",
   "serviceType" : "CALL",
-  "usage" : 14.0,
-  "startDateTime" : "2024-08-11 08:01"
+  "usage" : 2.0,
+  "startDateTime" : "2024-08-11 08:00"
 }, {
-  "anum" : "Taylor Karen",
-  "bnum" : "Miller Jennifer",
-  "serviceType" : "CALL",
-  "usage" : 36.0,
-  "startDateTime" : "2024-08-11 08:20"
-}, {
-  "anum" : "Jamal Munir",
-  "bnum" : "Hana Nasser",
-  "serviceType" : "SMS",
-  "usage" : 1.0,
-  "startDateTime" : "2024-08-11 08:20"
-}, {
-  "anum" : "Clark Laura",
+  "anum" : "Nelson Cynthia",
   "bnum" : null,
   "serviceType" : "DATA",
-  "usage" : 835.0,
-  "startDateTime" : "2024-08-11 08:40"
-}, {
-  "anum" : "Ayman Sami",
-  "bnum" : "Patricia Williams",
-  "serviceType" : "SMS",
-  "usage" : 1.0,
-  "startDateTime" : "2024-08-11 09:00"
+  "usage" : 453.0,
+  "startDateTime" : "2024-08-11 08:00"
 }, {
   "anum" : "Jackson Sandra",
   "bnum" : null,
   "serviceType" : "DATA",
-  "usage" : 783.0,
-  "startDateTime" : "2024-08-11 09:00"
+  "usage" : 54.0,
+  "startDateTime" : "2024-08-11 08:22"
 }, {
-  "anum" : "Nelson Cynthia",
-  "bnum" : "",
+  "anum" : "Taylor Karen",
+  "bnum" : "Imad Al-Mansour",
   "serviceType" : "SMS",
   "usage" : 1.0,
-  "startDateTime" : "2024-08-11 09:07"
+  "startDateTime" : "2024-08-11 08:22"
 }, {
-  "anum" : "Nahla Kamal",
-  "bnum" : "Ahmed Al-Mansour",
-  "serviceType" : "CALL",
-  "usage" : 2.0,
-  "startDateTime" : "2024-08-11 09:07"
-}, {
-  "anum" : "Kenneth Thompson",
-  "bnum" : "Basma Zaki",
-  "serviceType" : "SMS",
-  "usage" : 1.0,
-  "startDateTime" : "2024-08-11 09:28"
-}, {
-  "anum" : "Fatima Al-Amin",
-  "bnum" : "Harris Ruth",
-  "serviceType" : "SMS",
-  "usage" : 1.0,
-  "startDateTime" : "2024-08-11 09:38"
-}, {
-  "anum" : "Harris Carol",
-  "bnum" : "Hernandez Karen",
-  "serviceType" : "CALL",
-  "usage" : 7.0,
-  "startDateTime" : "2024-08-11 09:38"
-}, {
-  "anum" : "Dina Al-Khalil",
-  "bnum" : "Thompson Donna",
-  "serviceType" : "SMS",
-  "usage" : 1.0,
-  "startDateTime" : "2024-08-11 09:46"
-}, {
-  "anum" : "Saeed Al-Mansour",
-  "bnum" : "Riyad Jawad",
-  "serviceType" : "SMS",
-  "usage" : 1.0,
-  "startDateTime" : "2024-08-11 09:46"
-}, {
-  "anum" : "Elizabeth Miller",
-  "bnum" : "Hernandez Betty",
-  "serviceType" : "SMS",
-  "usage" : 1.0,
-  "startDateTime" : "2024-08-11 10:00"
-}, {
-  "anum" : "Kimberly Green",
-  "bnum" : null,
-  "serviceType" : "DATA",
-  "usage" : 262.0,
-  "startDateTime" : "2024-08-11 10:00"
-}, {
-  "anum" : "Zaki Munir",
-  "bnum" : "Farah Al-Din",
-  "serviceType" : "CALL",
-  "usage" : 16.0,
-  "startDateTime" : "2024-08-11 10:21"
-}, {
-  "anum" : "Garcia Maria",
-  "bnum" : null,
-  "serviceType" : "DATA",
-  "usage" : 6.0,
-  "startDateTime" : "2024-08-11 10:21"
-}, {
-  "anum" : "Moore Helen",
-  "bnum" : null,
-  "serviceType" : "DATA",
-  "usage" : 935.0,
-  "startDateTime" : "2024-08-11 10:26"
-}, {
-  "anum" : "Jessica Nelson",
-  "bnum" : null,
-  "serviceType" : "DATA",
-  "usage" : 906.0,
-  "startDateTime" : "2024-08-11 10:26"
-}, {
-  "anum" : "Christopher Martinez",
-  "bnum" : "Anas Al-Zain",
-  "serviceType" : "SMS",
-  "usage" : 1.0,
-  "startDateTime" : "2024-08-11 10:47"
-}, {
-  "anum" : "Perez Melissa",
-  "bnum" : "Maria Davis",
-  "serviceType" : "SMS",
-  "usage" : 1.0,
-  "startDateTime" : "2024-08-11 10:47"
-}, {
-  "anum" : "Ronald Adams",
-  "bnum" : "Adnan Al-Mansour",
-  "serviceType" : "CALL",
-  "usage" : 28.0,
-  "startDateTime" : "2024-08-11 10:54"
-}, {
-  "anum" : "White Carol",
-  "bnum" : "Melissa Hall",
-  "serviceType" : "CALL",
-  "usage" : 41.0,
-  "startDateTime" : "2024-08-11 10:54"
-}, {
-  "anum" : "Rodriguez Margaret",
-  "bnum" : "Mark Moore",
-  "serviceType" : "SMS",
-  "usage" : 1.0,
-  "startDateTime" : "2024-08-11 11:00"
-}, {
-  "anum" : "Khalid Al-Muhannadi",
-  "bnum" : "Hernandez Steven",
-  "serviceType" : "CALL",
-  "usage" : 29.0,
-  "startDateTime" : "2024-08-11 11:00"
-}, {
-  "anum" : "Miller Joseph",
+  "anum" : "Dorothy Martinez",
   "bnum" : null,
   "serviceType" : "DATA",
   "usage" : 182.0,
-  "startDateTime" : "2024-08-11 11:27"
+  "startDateTime" : "2024-08-11 08:44"
 }, {
-  "anum" : "Susan Williams",
-  "bnum" : "Donald Taylor",
-  "serviceType" : "CALL",
-  "usage" : 18.0,
-  "startDateTime" : "2024-08-11 11:40"
-}, {
-  "anum" : "Carol Lee",
-  "bnum" : null,
-  "serviceType" : "DATA",
-  "usage" : 333.0,
-  "startDateTime" : "2024-08-11 11:42"
-}, {
-  "anum" : "Maria Garcia",
-  "bnum" : "Barbara Jones",
-  "serviceType" : "CALL",
-  "usage" : 31.0,
-  "startDateTime" : "2024-08-11 12:00"
-}, {
-  "anum" : "Anderson Mark",
-  "bnum" : null,
-  "serviceType" : "DATA",
-  "usage" : 116.0,
-  "startDateTime" : "2024-08-11 12:00"
-}, {
-  "anum" : "Bassem Al-Din",
-  "bnum" : "White Joshua",
+  "anum" : "Layla Al-Karim",
+  "bnum" : "Yasmin Al-Mubarak",
   "serviceType" : "SMS",
   "usage" : 1.0,
-  "startDateTime" : "2024-08-11 12:23"
+  "startDateTime" : "2024-08-11 08:46"
 }, {
-  "anum" : "Davis Jennifer",
-  "bnum" : "Deborah Adams",
+  "anum" : "Jackson Helen",
+  "bnum" : "Steven Thompson",
+  "serviceType" : "CALL",
+  "usage" : 40.0,
+  "startDateTime" : "2024-08-11 08:46"
+}, {
+  "anum" : "Hala Rafat",
+  "bnum" : "Moore Helen",
   "serviceType" : "SMS",
   "usage" : 1.0,
-  "startDateTime" : "2024-08-11 12:23"
+  "startDateTime" : "2024-08-11 08:46"
 }, {
-  "anum" : "Harris Kevin",
+  "anum" : "Davis Maria",
   "bnum" : null,
   "serviceType" : "DATA",
-  "usage" : 424.0,
-  "startDateTime" : "2024-08-11 12:31"
+  "usage" : 172.0,
+  "startDateTime" : "2024-08-11 08:46"
 }, {
-  "anum" : "Taylor Donald",
-  "bnum" : "Saeed Al-Din",
+  "anum" : "Nisreen Al-Amin",
+  "bnum" : null,
+  "serviceType" : "DATA",
+  "usage" : 544.0,
+  "startDateTime" : "2024-08-11 08:46"
+}, {
+  "anum" : "Hall Brenda",
+  "bnum" : "Rania Al-Khaled",
   "serviceType" : "CALL",
-  "usage" : 7.0,
-  "startDateTime" : "2024-08-11 12:44"
+  "usage" : 49.0,
+  "startDateTime" : "2024-08-11 09:00"
+}, {
+  "anum" : "Michael Brown",
+  "bnum" : null,
+  "serviceType" : "DATA",
+  "usage" : 137.0,
+  "startDateTime" : "2024-08-11 09:00"
+}, {
+  "anum" : "Layla Al-Amin",
+  "bnum" : null,
+  "serviceType" : "DATA",
+  "usage" : 278.0,
+  "startDateTime" : "2024-08-11 09:00"
+}, {
+  "anum" : "Rana Al-Qadir",
+  "bnum" : "Lopez Ruth",
+  "serviceType" : "SMS",
+  "usage" : 1.0,
+  "startDateTime" : "2024-08-11 09:00"
+}, {
+  "anum" : "Miller Jennifer",
+  "bnum" : "Brian Lopez",
+  "serviceType" : "CALL",
+  "usage" : 14.0,
+  "startDateTime" : "2024-08-11 09:00"
+}, {
+  "anum" : "Harris Ruth",
+  "bnum" : null,
+  "serviceType" : "DATA",
+  "usage" : 998.0,
+  "startDateTime" : "2024-08-11 09:19"
 }, {
   "anum" : "King Sarah",
-  "bnum" : "Green Jason",
+  "bnum" : "Thompson Kenneth",
+  "serviceType" : "CALL",
+  "usage" : 42.0,
+  "startDateTime" : "2024-08-11 09:19"
+}, {
+  "anum" : "Rania Al-Farouq",
+  "bnum" : "Rodriguez Margaret",
+  "serviceType" : "CALL",
+  "usage" : 42.0,
+  "startDateTime" : "2024-08-11 09:39"
+}, {
+  "anum" : "Robert Williams",
+  "bnum" : null,
+  "serviceType" : "DATA",
+  "usage" : 208.0,
+  "startDateTime" : "2024-08-11 09:39"
+}, {
+  "anum" : "Yasmeen Al-Mahdi",
+  "bnum" : "Michelle Clark",
   "serviceType" : "SMS",
   "usage" : 1.0,
-  "startDateTime" : "2024-08-11 12:44"
+  "startDateTime" : "2024-08-11 09:39"
 }, {
-  "anum" : "Kimberly Scott",
-  "bnum" : "William Johnson",
+  "anum" : "Jason Walker",
+  "bnum" : "Brown Barbara",
   "serviceType" : "SMS",
   "usage" : 1.0,
-  "startDateTime" : "2024-08-11 13:00"
+  "startDateTime" : "2024-08-11 09:39"
 }, {
-  "anum" : "Nasir Al-Muhannadi",
-  "bnum" : "Imran Al-Mubarak",
-  "serviceType" : "SMS",
-  "usage" : 1.0,
-  "startDateTime" : "2024-08-11 13:05"
-}, {
-  "anum" : "Amina Al-Jabari",
-  "bnum" : "Samir Hassan",
+  "anum" : "King Ronald",
+  "bnum" : "Hernandez Karen",
   "serviceType" : "CALL",
-  "usage" : 52.0,
-  "startDateTime" : "2024-08-11 13:05"
+  "usage" : 13.0,
+  "startDateTime" : "2024-08-11 09:39"
 }, {
-  "anum" : "Rami Al-Muhanna",
-  "bnum" : "Youssef Al-Din",
+  "anum" : "Susan Williams",
+  "bnum" : "Yasmin Al-Faisal",
   "serviceType" : "CALL",
-  "usage" : 37.0,
-  "startDateTime" : "2024-08-11 13:29"
+  "usage" : 56.0,
+  "startDateTime" : "2024-08-11 09:45"
 }, {
-  "anum" : "Jones Elizabeth",
-  "bnum" : "Thomas Wilson",
+  "anum" : "Harris Carol",
+  "bnum" : "Mustafa Al-Maamoun",
   "serviceType" : "CALL",
-  "usage" : 39.0,
-  "startDateTime" : "2024-08-11 13:44"
+  "usage" : 32.0,
+  "startDateTime" : "2024-08-11 09:56"
+}, {
+  "anum" : "Bilal Al-Mansour",
+  "bnum" : null,
+  "serviceType" : "DATA",
+  "usage" : 766.0,
+  "startDateTime" : "2024-08-11 09:56"
 }, {
   "anum" : "Adams Jeffrey",
-  "bnum" : "Huda Al-Zain",
+  "bnum" : "Salma Al-Mansour",
   "serviceType" : "SMS",
   "usage" : 1.0,
-  "startDateTime" : "2024-08-11 13:47"
+  "startDateTime" : "2024-08-11 10:00"
+}, {
+  "anum" : "Sarah Scott",
+  "bnum" : "Ahmed Al-Mansour",
+  "serviceType" : "CALL",
+  "usage" : 33.0,
+  "startDateTime" : "2024-08-11 10:00"
+}, {
+  "anum" : "Lopez Brian",
+  "bnum" : null,
+  "serviceType" : "DATA",
+  "usage" : 926.0,
+  "startDateTime" : "2024-08-11 10:00"
+}, {
+  "anum" : "Rana Al-Khatib",
+  "bnum" : "Maha Al-Amin",
+  "serviceType" : "SMS",
+  "usage" : 1.0,
+  "startDateTime" : "2024-08-11 10:00"
+}, {
+  "anum" : "Mahmoud Al-Zain",
+  "bnum" : null,
+  "serviceType" : "DATA",
+  "usage" : 448.0,
+  "startDateTime" : "2024-08-11 10:11"
 }, {
   "anum" : "Lee Michelle",
-  "bnum" : null,
-  "serviceType" : "DATA",
-  "usage" : 997.0,
-  "startDateTime" : "2024-08-11 13:48"
-}, {
-  "anum" : "Sara Al-Karim",
-  "bnum" : "Huda Al-Faisal",
+  "bnum" : "Margaret Wilson",
   "serviceType" : "SMS",
   "usage" : 1.0,
-  "startDateTime" : "2024-08-11 14:00"
+  "startDateTime" : "2024-08-11 10:11"
 }, {
-  "anum" : "Michelle Clark",
-  "bnum" : null,
-  "serviceType" : "DATA",
-  "usage" : 757.0,
-  "startDateTime" : "2024-08-11 14:28"
-}, {
-  "anum" : "Munir Zubair",
-  "bnum" : "Ruba Al-Qadir",
+  "anum" : "Kimberly Green",
+  "bnum" : "Reem Nizar",
   "serviceType" : "SMS",
   "usage" : 1.0,
-  "startDateTime" : "2024-08-11 14:57"
+  "startDateTime" : "2024-08-11 10:11"
 }, {
-  "anum" : "Mariam Al-Hassan",
-  "bnum" : "Tariq Al-Hassan",
+  "anum" : "Jamal Munir",
+  "bnum" : "Rodriguez Daniel",
   "serviceType" : "CALL",
-  "usage" : 50.0,
-  "startDateTime" : "2024-08-11 14:57"
+  "usage" : 59.0,
+  "startDateTime" : "2024-08-11 10:11"
 }, {
-  "anum" : "Yasmin Al-Farouq",
-  "bnum" : "Rodriguez Susan",
+  "anum" : "Anthony Hernandez",
+  "bnum" : "White Donna",
   "serviceType" : "SMS",
   "usage" : 1.0,
-  "startDateTime" : "2024-08-11 15:00"
+  "startDateTime" : "2024-08-11 10:11"
 }, {
-  "anum" : "Laila Majid",
+  "anum" : "Yasmeen Al-Hassan",
+  "bnum" : "Ruba Al-Najjar",
+  "serviceType" : "SMS",
+  "usage" : 1.0,
+  "startDateTime" : "2024-08-11 10:14"
+}, {
+  "anum" : "Layla Al-Muhammad",
+  "bnum" : "Jackson Andrew",
+  "serviceType" : "CALL",
+  "usage" : 44.0,
+  "startDateTime" : "2024-08-11 10:14"
+}, {
+  "anum" : "Hernandez Steven",
+  "bnum" : "Youssef Al-Din",
+  "serviceType" : "CALL",
+  "usage" : 7.0,
+  "startDateTime" : "2024-08-11 10:14"
+}, {
+  "anum" : "Moore Betty",
+  "bnum" : null,
+  "serviceType" : "DATA",
+  "usage" : 127.0,
+  "startDateTime" : "2024-08-11 10:31"
+}, {
+  "anum" : "Saeed Al-Mansour",
+  "bnum" : "Nancy Taylor",
+  "serviceType" : "CALL",
+  "usage" : 6.0,
+  "startDateTime" : "2024-08-11 10:31"
+}, {
+  "anum" : "Davis Jennifer",
+  "bnum" : "Lee George",
+  "serviceType" : "CALL",
+  "usage" : 8.0,
+  "startDateTime" : "2024-08-11 10:31"
+}, {
+  "anum" : "Michael Smith",
+  "bnum" : "Susan Martinez",
+  "serviceType" : "CALL",
+  "usage" : 5.0,
+  "startDateTime" : "2024-08-11 10:31"
+}, {
+  "anum" : "Anwar Al-Muhammad",
+  "bnum" : "Omar Al-Khatib",
+  "serviceType" : "SMS",
+  "usage" : 1.0,
+  "startDateTime" : "2024-08-11 10:31"
+}, {
+  "anum" : "Hiba Al-Mahdi",
+  "bnum" : null,
+  "serviceType" : "DATA",
+  "usage" : 101.0,
+  "startDateTime" : "2024-08-11 10:54"
+}, {
+  "anum" : "Nelson Ryan",
+  "bnum" : "Wilson Dorothy",
+  "serviceType" : "SMS",
+  "usage" : 1.0,
+  "startDateTime" : "2024-08-11 10:54"
+}, {
+  "anum" : "Brenda Smith",
   "bnum" : "Linda Brown",
   "serviceType" : "SMS",
   "usage" : 1.0,
-  "startDateTime" : "2024-08-11 15:29"
+  "startDateTime" : "2024-08-11 11:00"
+}, {
+  "anum" : "Basil Mahmoud",
+  "bnum" : null,
+  "serviceType" : "DATA",
+  "usage" : 17.0,
+  "startDateTime" : "2024-08-11 11:03"
+}, {
+  "anum" : "Harris Kevin",
+  "bnum" : "Khalid Al-Muhannadi",
+  "serviceType" : "CALL",
+  "usage" : 27.0,
+  "startDateTime" : "2024-08-11 11:03"
+}, {
+  "anum" : "Kevin Clark",
+  "bnum" : null,
+  "serviceType" : "DATA",
+  "usage" : 352.0,
+  "startDateTime" : "2024-08-11 11:03"
+}, {
+  "anum" : "Patricia Johnson",
+  "bnum" : "Noor Al-Amin",
+  "serviceType" : "CALL",
+  "usage" : 50.0,
+  "startDateTime" : "2024-08-11 11:28"
+}, {
+  "anum" : "Laura King",
+  "bnum" : "Miller Joseph",
+  "serviceType" : "SMS",
+  "usage" : 1.0,
+  "startDateTime" : "2024-08-11 11:28"
+}, {
+  "anum" : "Maha Al-Bashir",
+  "bnum" : null,
+  "serviceType" : "DATA",
+  "usage" : 784.0,
+  "startDateTime" : "2024-08-11 11:50"
 } ]
