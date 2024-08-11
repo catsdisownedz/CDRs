@@ -40,7 +40,7 @@ public class Menu {
                 choice = scanner.nextInt();
                 scanner.nextLine();
             } catch (IllegalArgumentException ex) {
-                System.out.println(Color.colorText("You need to enter a Number. Choose from numbers 1-5", Color.red));
+                System.out.println(Color.colorText("You need to enter a Number. Choose from numbers 1-5\n", Color.red));
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
@@ -66,7 +66,7 @@ public class Menu {
                         which = scanner.nextInt();
                         scanner.nextLine();
                     }catch(IllegalArgumentException ex) {
-                        System.out.println(Color.colorText("You need to enter a Number. Choose 1 or 2", Color.red));
+                        System.out.println(Color.colorText("You need to enter a Number. Choose 1 or 2\n", Color.red));
                     }
 
                     viewServiceTypeVolume(scanner, which);
@@ -79,7 +79,7 @@ public class Menu {
                     mn.display();
                     return;
                 default:
-                    System.out.println(Color.colorText("Invalid option.", Color.red));
+                    System.out.println(Color.colorText("You need to enter a Number. Choose from numbers 1-5\n", Color.red));
                     try {
                         Thread.sleep(1000);
                     } catch (InterruptedException e) {
@@ -109,7 +109,7 @@ public class Menu {
             choice = scanner.nextInt();
             scanner.nextLine();
         }catch(IllegalArgumentException ex) {
-            System.out.println(Color.colorText("You need to enter a number between 1-4", Color.red));
+            System.out.println(Color.colorText("You need to enter a number between 1-4\n", Color.red));
         }
 
         List<CDR> sortedList = new ArrayList<>();
@@ -157,7 +157,7 @@ public class Menu {
             case 4:
                 display();
             default:
-                System.out.println(Color.colorText("Invalid option.", Color.red));
+                System.out.println(Color.colorText("You need to enter a number between 1-4\n", Color.red));
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
@@ -188,7 +188,7 @@ public class Menu {
                 choice2 = scanner.nextInt();
                 scanner.nextLine();
             }catch(IllegalArgumentException ex) {
-                System.out.println(Color.colorText("You need to choose a Number between 1-3", Color.red));
+                System.out.println(Color.colorText("You need to choose a Number between 1-3\n", Color.red));
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
@@ -202,7 +202,7 @@ public class Menu {
             openFileOrExit(scanner, filteredList);
         }
         else{
-            System.out.println(Color.colorText("Invalid choice.", Color.red));
+            System.out.println(Color.colorText("Invalid. Choose 1 or 2.\n", Color.red));
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
@@ -235,7 +235,7 @@ public class Menu {
             choice= scanner.nextInt();
             scanner.nextLine();
         }catch(IllegalArgumentException ex) {
-            System.out.println(Color.colorText("You need to choose a Number between 1-4", Color.red));
+            System.out.println(Color.colorText("You need to choose a Number between 1-4\n", Color.red));
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
@@ -265,7 +265,7 @@ public class Menu {
                         specificDate = LocalDate.parse(dateStr).atStartOfDay();
                         validDate = true;
                     } catch (DateTimeParseException e) {
-                        System.out.println(Color.colorText("Invalid date format. Please enter the date in the format YYYY-MM-DD.", Color.red));
+                        System.out.println(Color.colorText("Invalid date format. Please enter the date in the format YYYY-MM-DD.\n", Color.red));
                         try {
                             Thread.sleep(1000);
                         } catch (InterruptedException ex) {
@@ -282,7 +282,7 @@ public class Menu {
                 display();
                 return;
             default:
-                System.out.println(Color.colorText("Invalid option.", Color.red));
+                System.out.println(Color.colorText("You need to enter a number between 1-4\n", Color.red));
                 display();
                 break;
         }
@@ -383,7 +383,7 @@ public class Menu {
             choice = scanner.nextInt();
             scanner.nextLine();
         }catch(IllegalArgumentException e){
-            System.out.println(Color.colorText("You need to enter a Number. Choose 1 or 2.", Color.red));
+            System.out.println(Color.colorText("You need to enter a Number. Choose 1 or 2.\n", Color.red));
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException exception) {
@@ -401,7 +401,7 @@ public class Menu {
                     if (format.equals("xml") || format.equals("json") || format.equals("yaml") || format.equals("csv")) {
                         break; // Valid format, exit loop
                     } else {
-                        System.out.println(Color.colorText("Invalid file type. Please enter one of the following formats: XML, JSON, YAML, CSV. (Capitalization doesn't matter)", Color.red));
+                        System.out.println(Color.colorText("Invalid file type. Please enter one of the following formats: \nXML, JSON, YAML, CSV. (Capitalization doesn't matter)\n", Color.red));
                         try {
                             Thread.sleep(1000);
                         } catch (InterruptedException e) {

@@ -1,458 +1,461 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cdr>
-    <anum>Khaled Al-Siddiq</anum>
-    <serviceType>DATA</serviceType>
-    <startDateTime>2024-08-11 07:00</startDateTime>
-    <usage>638.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>Nahla Kamal</anum>
-    <bnum>Nabeel Zain</bnum>
-    <serviceType>SMS</serviceType>
-    <startDateTime>2024-08-11 07:00</startDateTime>
-    <usage>1.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>Aisha Al-Mubarak</anum>
-    <bnum>Yasmeen Al-Faisal</bnum>
-    <serviceType>SMS</serviceType>
-    <startDateTime>2024-08-11 07:00</startDateTime>
-    <usage>1.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>Israa Tariq</anum>
-    <serviceType>DATA</serviceType>
-    <startDateTime>2024-08-11 07:09</startDateTime>
-    <usage>344.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>Rodriguez Susan</anum>
-    <serviceType>DATA</serviceType>
-    <startDateTime>2024-08-11 07:09</startDateTime>
-    <usage>110.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>Barbara Brown</anum>
-    <serviceType>DATA</serviceType>
-    <startDateTime>2024-08-11 07:09</startDateTime>
-    <usage>898.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>Davis Thomas</anum>
-    <bnum>Samer Najm</bnum>
+    <anum>Anas Al-Din</anum>
+    <bnum>Jackson Andrew</bnum>
     <serviceType>CALL</serviceType>
-    <startDateTime>2024-08-11 07:27</startDateTime>
-    <usage>35.0</usage>
+    <startDateTime>2024-08-11 07:00</startDateTime>
+    <usage>5.0</usage>
 </cdr>
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cdr>
-    <anum>Yasmin Al-Din</anum>
-    <serviceType>DATA</serviceType>
-    <startDateTime>2024-08-11 07:45</startDateTime>
-    <usage>764.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>William Johnson</anum>
-    <bnum>Daniel Rodriguez</bnum>
+    <anum>Kevin Clark</anum>
+    <bnum>Lee Michelle</bnum>
     <serviceType>SMS</serviceType>
-    <startDateTime>2024-08-11 08:00</startDateTime>
+    <startDateTime>2024-08-11 07:08</startDateTime>
     <usage>1.0</usage>
 </cdr>
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cdr>
-    <anum>Ali Al-Amin</anum>
-    <bnum>Green Jason</bnum>
-    <serviceType>CALL</serviceType>
-    <startDateTime>2024-08-11 08:00</startDateTime>
-    <usage>2.0</usage>
+    <anum>Anderson Nancy</anum>
+    <bnum>Kareem Al-Hadi</bnum>
+    <serviceType>SMS</serviceType>
+    <startDateTime>2024-08-11 07:26</startDateTime>
+    <usage>1.0</usage>
 </cdr>
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cdr>
-    <anum>Nelson Cynthia</anum>
+    <anum>Fahad Al-Mansour</anum>
     <serviceType>DATA</serviceType>
+    <startDateTime>2024-08-11 07:44</startDateTime>
+    <usage>848.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Lee Sharon</anum>
+    <bnum>Asad Ziad</bnum>
+    <serviceType>SMS</serviceType>
     <startDateTime>2024-08-11 08:00</startDateTime>
-    <usage>453.0</usage>
+    <usage>1.0</usage>
 </cdr>
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cdr>
     <anum>Jackson Sandra</anum>
     <serviceType>DATA</serviceType>
-    <startDateTime>2024-08-11 08:22</startDateTime>
-    <usage>54.0</usage>
+    <startDateTime>2024-08-11 08:08</startDateTime>
+    <usage>625.0</usage>
 </cdr>
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cdr>
-    <anum>Taylor Karen</anum>
-    <bnum>Imad Al-Mansour</bnum>
-    <serviceType>SMS</serviceType>
-    <startDateTime>2024-08-11 08:22</startDateTime>
-    <usage>1.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>Dorothy Martinez</anum>
-    <serviceType>DATA</serviceType>
-    <startDateTime>2024-08-11 08:44</startDateTime>
-    <usage>182.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>Layla Al-Karim</anum>
-    <bnum>Yasmin Al-Mubarak</bnum>
-    <serviceType>SMS</serviceType>
-    <startDateTime>2024-08-11 08:46</startDateTime>
-    <usage>1.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>Jackson Helen</anum>
-    <bnum>Steven Thompson</bnum>
+    <anum>Leila Al-Khatib</anum>
+    <bnum>Imad Al-Rashid</bnum>
     <serviceType>CALL</serviceType>
-    <startDateTime>2024-08-11 08:46</startDateTime>
-    <usage>40.0</usage>
+    <startDateTime>2024-08-11 08:29</startDateTime>
+    <usage>57.0</usage>
 </cdr>
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cdr>
-    <anum>Hala Rafat</anum>
-    <bnum>Moore Helen</bnum>
+    <anum>Yasmin Al-Mubarak</anum>
+    <bnum>Adams Jessica</bnum>
     <serviceType>SMS</serviceType>
-    <startDateTime>2024-08-11 08:46</startDateTime>
+    <startDateTime>2024-08-11 08:37</startDateTime>
     <usage>1.0</usage>
 </cdr>
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cdr>
-    <anum>Davis Maria</anum>
-    <serviceType>DATA</serviceType>
-    <startDateTime>2024-08-11 08:46</startDateTime>
-    <usage>172.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>Nisreen Al-Amin</anum>
-    <serviceType>DATA</serviceType>
-    <startDateTime>2024-08-11 08:46</startDateTime>
-    <usage>544.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>Hall Brenda</anum>
-    <bnum>Rania Al-Khaled</bnum>
+    <anum>Amira Riad</anum>
+    <bnum>Cynthia Walker</bnum>
     <serviceType>CALL</serviceType>
     <startDateTime>2024-08-11 09:00</startDateTime>
-    <usage>49.0</usage>
+    <usage>58.0</usage>
 </cdr>
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cdr>
-    <anum>Michael Brown</anum>
+    <anum>Nelson Cynthia</anum>
+    <bnum>Lina Al-Saadi</bnum>
+    <serviceType>CALL</serviceType>
+    <startDateTime>2024-08-11 09:27</startDateTime>
+    <usage>0.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Hanan Al-Rashid</anum>
     <serviceType>DATA</serviceType>
-    <startDateTime>2024-08-11 09:00</startDateTime>
-    <usage>137.0</usage>
+    <startDateTime>2024-08-11 09:28</startDateTime>
+    <usage>127.0</usage>
 </cdr>
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cdr>
-    <anum>Layla Al-Amin</anum>
+    <anum>Leila Adel</anum>
     <serviceType>DATA</serviceType>
-    <startDateTime>2024-08-11 09:00</startDateTime>
-    <usage>278.0</usage>
+    <startDateTime>2024-08-11 09:35</startDateTime>
+    <usage>347.0</usage>
 </cdr>
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cdr>
-    <anum>Rana Al-Qadir</anum>
-    <bnum>Lopez Ruth</bnum>
+    <anum>Basil Mahmoud</anum>
+    <bnum>Harris Carol</bnum>
+    <serviceType>CALL</serviceType>
+    <startDateTime>2024-08-11 09:57</startDateTime>
+    <usage>25.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Michelle Clark</anum>
+    <bnum>Maysa Emad</bnum>
+    <serviceType>CALL</serviceType>
+    <startDateTime>2024-08-11 10:00</startDateTime>
+    <usage>23.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Margaret Anderson</anum>
+    <bnum>Hernandez Steven</bnum>
     <serviceType>SMS</serviceType>
-    <startDateTime>2024-08-11 09:00</startDateTime>
+    <startDateTime>2024-08-11 10:25</startDateTime>
     <usage>1.0</usage>
 </cdr>
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cdr>
-    <anum>Miller Jennifer</anum>
-    <bnum>Brian Lopez</bnum>
-    <serviceType>CALL</serviceType>
-    <startDateTime>2024-08-11 09:00</startDateTime>
-    <usage>14.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>Harris Ruth</anum>
-    <serviceType>DATA</serviceType>
-    <startDateTime>2024-08-11 09:19</startDateTime>
-    <usage>998.0</usage>
+    <anum>Richard Brown</anum>
+    <bnum>Mira Adel</bnum>
+    <serviceType>SMS</serviceType>
+    <startDateTime>2024-08-11 10:36</startDateTime>
+    <usage>1.0</usage>
 </cdr>
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cdr>
     <anum>King Sarah</anum>
-    <bnum>Thompson Kenneth</bnum>
-    <serviceType>CALL</serviceType>
-    <startDateTime>2024-08-11 09:19</startDateTime>
-    <usage>42.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>Rania Al-Farouq</anum>
-    <bnum>Rodriguez Margaret</bnum>
-    <serviceType>CALL</serviceType>
-    <startDateTime>2024-08-11 09:39</startDateTime>
-    <usage>42.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>Robert Williams</anum>
-    <serviceType>DATA</serviceType>
-    <startDateTime>2024-08-11 09:39</startDateTime>
-    <usage>208.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>Yasmeen Al-Mahdi</anum>
-    <bnum>Michelle Clark</bnum>
+    <bnum>Bassam Al-Nasser</bnum>
     <serviceType>SMS</serviceType>
-    <startDateTime>2024-08-11 09:39</startDateTime>
-    <usage>1.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>Jason Walker</anum>
-    <bnum>Brown Barbara</bnum>
-    <serviceType>SMS</serviceType>
-    <startDateTime>2024-08-11 09:39</startDateTime>
-    <usage>1.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>King Ronald</anum>
-    <bnum>Hernandez Karen</bnum>
-    <serviceType>CALL</serviceType>
-    <startDateTime>2024-08-11 09:39</startDateTime>
-    <usage>13.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>Susan Williams</anum>
-    <bnum>Yasmin Al-Faisal</bnum>
-    <serviceType>CALL</serviceType>
-    <startDateTime>2024-08-11 09:45</startDateTime>
-    <usage>56.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>Harris Carol</anum>
-    <bnum>Mustafa Al-Maamoun</bnum>
-    <serviceType>CALL</serviceType>
-    <startDateTime>2024-08-11 09:56</startDateTime>
-    <usage>32.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>Bilal Al-Mansour</anum>
-    <serviceType>DATA</serviceType>
-    <startDateTime>2024-08-11 09:56</startDateTime>
-    <usage>766.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>Adams Jeffrey</anum>
-    <bnum>Salma Al-Mansour</bnum>
-    <serviceType>SMS</serviceType>
-    <startDateTime>2024-08-11 10:00</startDateTime>
+    <startDateTime>2024-08-11 10:50</startDateTime>
     <usage>1.0</usage>
 </cdr>
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cdr>
     <anum>Sarah Scott</anum>
-    <bnum>Ahmed Al-Mansour</bnum>
-    <serviceType>CALL</serviceType>
-    <startDateTime>2024-08-11 10:00</startDateTime>
-    <usage>33.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>Lopez Brian</anum>
     <serviceType>DATA</serviceType>
-    <startDateTime>2024-08-11 10:00</startDateTime>
-    <usage>926.0</usage>
+    <startDateTime>2024-08-11 11:00</startDateTime>
+    <usage>812.0</usage>
 </cdr>
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cdr>
-    <anum>Rana Al-Khatib</anum>
-    <bnum>Maha Al-Amin</bnum>
-    <serviceType>SMS</serviceType>
-    <startDateTime>2024-08-11 10:00</startDateTime>
-    <usage>1.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>Mahmoud Al-Zain</anum>
+    <anum>Lopez Sharon</anum>
     <serviceType>DATA</serviceType>
-    <startDateTime>2024-08-11 10:11</startDateTime>
-    <usage>448.0</usage>
+    <startDateTime>2024-08-11 11:03</startDateTime>
+    <usage>218.0</usage>
 </cdr>
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cdr>
-    <anum>Lee Michelle</anum>
-    <bnum>Margaret Wilson</bnum>
-    <serviceType>SMS</serviceType>
-    <startDateTime>2024-08-11 10:11</startDateTime>
-    <usage>1.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>Kimberly Green</anum>
-    <bnum>Reem Nizar</bnum>
-    <serviceType>SMS</serviceType>
-    <startDateTime>2024-08-11 10:11</startDateTime>
-    <usage>1.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>Jamal Munir</anum>
-    <bnum>Rodriguez Daniel</bnum>
-    <serviceType>CALL</serviceType>
-    <startDateTime>2024-08-11 10:11</startDateTime>
-    <usage>59.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>Anthony Hernandez</anum>
-    <bnum>White Donna</bnum>
-    <serviceType>SMS</serviceType>
-    <startDateTime>2024-08-11 10:11</startDateTime>
-    <usage>1.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>Yasmeen Al-Hassan</anum>
-    <bnum>Ruba Al-Najjar</bnum>
-    <serviceType>SMS</serviceType>
-    <startDateTime>2024-08-11 10:14</startDateTime>
-    <usage>1.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>Layla Al-Muhammad</anum>
-    <bnum>Jackson Andrew</bnum>
-    <serviceType>CALL</serviceType>
-    <startDateTime>2024-08-11 10:14</startDateTime>
-    <usage>44.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>Hernandez Steven</anum>
-    <bnum>Youssef Al-Din</bnum>
-    <serviceType>CALL</serviceType>
-    <startDateTime>2024-08-11 10:14</startDateTime>
-    <usage>7.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>Moore Betty</anum>
+    <anum>Jones Elizabeth</anum>
     <serviceType>DATA</serviceType>
-    <startDateTime>2024-08-11 10:31</startDateTime>
-    <usage>127.0</usage>
+    <startDateTime>2024-08-11 11:33</startDateTime>
+    <usage>389.0</usage>
 </cdr>
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cdr>
-    <anum>Saeed Al-Mansour</anum>
-    <bnum>Nancy Taylor</bnum>
-    <serviceType>CALL</serviceType>
-    <startDateTime>2024-08-11 10:31</startDateTime>
-    <usage>6.0</usage>
+    <anum>Mark Anderson</anum>
+    <bnum>Green Deborah</bnum>
+    <serviceType>SMS</serviceType>
+    <startDateTime>2024-08-11 11:47</startDateTime>
+    <usage>1.0</usage>
 </cdr>
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cdr>
-    <anum>Davis Jennifer</anum>
-    <bnum>Lee George</bnum>
+    <anum>Adams Jeffrey</anum>
+    <bnum>George Lee</bnum>
     <serviceType>CALL</serviceType>
-    <startDateTime>2024-08-11 10:31</startDateTime>
-    <usage>8.0</usage>
+    <startDateTime>2024-08-11 11:56</startDateTime>
+    <usage>23.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Nabil Al-Din</anum>
+    <bnum>Karim Al-Saad</bnum>
+    <serviceType>SMS</serviceType>
+    <startDateTime>2024-08-11 12:00</startDateTime>
+    <usage>1.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Ali Al-Karim</anum>
+    <bnum>Steven Hernandez</bnum>
+    <serviceType>SMS</serviceType>
+    <startDateTime>2024-08-11 12:09</startDateTime>
+    <usage>1.0</usage>
 </cdr>
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cdr>
     <anum>Michael Smith</anum>
+    <bnum>Timothy Nelson</bnum>
+    <serviceType>CALL</serviceType>
+    <startDateTime>2024-08-11 12:26</startDateTime>
+    <usage>47.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Taylor Karen</anum>
+    <bnum>Martinez Lisa</bnum>
+    <serviceType>SMS</serviceType>
+    <startDateTime>2024-08-11 12:31</startDateTime>
+    <usage>1.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Charles Jones</anum>
+    <serviceType>DATA</serviceType>
+    <startDateTime>2024-08-11 12:36</startDateTime>
+    <usage>148.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Davis Jennifer</anum>
+    <bnum>Rana Al-Farouq</bnum>
+    <serviceType>CALL</serviceType>
+    <startDateTime>2024-08-11 13:00</startDateTime>
+    <usage>15.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Taylor Donald</anum>
+    <serviceType>DATA</serviceType>
+    <startDateTime>2024-08-11 13:08</startDateTime>
+    <usage>435.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Martinez Anthony</anum>
+    <bnum>Anderson Mark</bnum>
+    <serviceType>SMS</serviceType>
+    <startDateTime>2024-08-11 13:14</startDateTime>
+    <usage>1.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Anthony Hernandez</anum>
+    <bnum>Thompson Donna</bnum>
+    <serviceType>SMS</serviceType>
+    <startDateTime>2024-08-11 13:27</startDateTime>
+    <usage>1.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Clark Laura</anum>
+    <serviceType>DATA</serviceType>
+    <startDateTime>2024-08-11 13:29</startDateTime>
+    <usage>502.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Moore Paul</anum>
+    <serviceType>DATA</serviceType>
+    <startDateTime>2024-08-11 13:58</startDateTime>
+    <usage>642.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Layla Sameer</anum>
+    <bnum>Rania Al-Saadi</bnum>
+    <serviceType>CALL</serviceType>
+    <startDateTime>2024-08-11 14:00</startDateTime>
+    <usage>52.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Lisa Anderson</anum>
+    <bnum>Kareem Al-Din</bnum>
+    <serviceType>CALL</serviceType>
+    <startDateTime>2024-08-11 14:15</startDateTime>
+    <usage>41.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>David Johnson</anum>
+    <bnum>Lopez Ruth</bnum>
+    <serviceType>SMS</serviceType>
+    <startDateTime>2024-08-11 14:20</startDateTime>
+    <usage>1.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Moore Betty</anum>
+    <bnum>Dina Al-Khalil</bnum>
+    <serviceType>SMS</serviceType>
+    <startDateTime>2024-08-11 14:34</startDateTime>
+    <usage>1.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Nancy Taylor</anum>
     <bnum>Susan Martinez</bnum>
+    <serviceType>SMS</serviceType>
+    <startDateTime>2024-08-11 14:39</startDateTime>
+    <usage>1.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Adnan Al-Tamimi</anum>
+    <bnum>Deborah Adams</bnum>
+    <serviceType>SMS</serviceType>
+    <startDateTime>2024-08-11 14:54</startDateTime>
+    <usage>1.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Sami Al-Muhannadi</anum>
+    <bnum>Green Jason</bnum>
     <serviceType>CALL</serviceType>
-    <startDateTime>2024-08-11 10:31</startDateTime>
-    <usage>5.0</usage>
+    <startDateTime>2024-08-11 15:00</startDateTime>
+    <usage>40.0</usage>
 </cdr>
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cdr>
-    <anum>Anwar Al-Muhammad</anum>
-    <bnum>Omar Al-Khatib</bnum>
+    <anum>Melissa Hall</anum>
+    <bnum>Perez Angela</bnum>
     <serviceType>SMS</serviceType>
-    <startDateTime>2024-08-11 10:31</startDateTime>
+    <startDateTime>2024-08-11 15:30</startDateTime>
     <usage>1.0</usage>
 </cdr>
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cdr>
-    <anum>Hiba Al-Mahdi</anum>
+    <anum>Malik Al-Aziz</anum>
+    <bnum>David Williams</bnum>
+    <serviceType>SMS</serviceType>
+    <startDateTime>2024-08-11 15:44</startDateTime>
+    <usage>1.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Anas AlSenaidy</anum>
     <serviceType>DATA</serviceType>
-    <startDateTime>2024-08-11 10:54</startDateTime>
-    <usage>101.0</usage>
+    <startDateTime>2024-08-11 15:53</startDateTime>
+    <usage>541.0</usage>
 </cdr>
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cdr>
-    <anum>Nelson Ryan</anum>
-    <bnum>Wilson Dorothy</bnum>
-    <serviceType>SMS</serviceType>
-    <startDateTime>2024-08-11 10:54</startDateTime>
-    <usage>1.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>Brenda Smith</anum>
-    <bnum>Linda Brown</bnum>
-    <serviceType>SMS</serviceType>
-    <startDateTime>2024-08-11 11:00</startDateTime>
-    <usage>1.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>Basil Mahmoud</anum>
+    <anum>Adnan Al-Mansour</anum>
     <serviceType>DATA</serviceType>
-    <startDateTime>2024-08-11 11:03</startDateTime>
-    <usage>17.0</usage>
+    <startDateTime>2024-08-11 16:00</startDateTime>
+    <usage>607.0</usage>
 </cdr>
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cdr>
-    <anum>Harris Kevin</anum>
-    <bnum>Khalid Al-Muhannadi</bnum>
+    <anum>Walker Angela</anum>
+    <bnum>Sami Al-Mansour</bnum>
+    <serviceType>SMS</serviceType>
+    <startDateTime>2024-08-11 16:13</startDateTime>
+    <usage>1.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Amin Al-Muhammad</anum>
+    <bnum>Nelson Ryan</bnum>
     <serviceType>CALL</serviceType>
-    <startDateTime>2024-08-11 11:03</startDateTime>
-    <usage>27.0</usage>
+    <startDateTime>2024-08-11 16:41</startDateTime>
+    <usage>48.0</usage>
 </cdr>
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cdr>
-    <anum>Kevin Clark</anum>
-    <serviceType>DATA</serviceType>
-    <startDateTime>2024-08-11 11:03</startDateTime>
-    <usage>352.0</usage>
-</cdr>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cdr>
-    <anum>Patricia Johnson</anum>
-    <bnum>Noor Al-Amin</bnum>
+    <anum>Nabil Al-Mansour</anum>
+    <bnum>Amina Al-Jabari</bnum>
     <serviceType>CALL</serviceType>
-    <startDateTime>2024-08-11 11:28</startDateTime>
-    <usage>50.0</usage>
+    <startDateTime>2024-08-11 17:00</startDateTime>
+    <usage>28.0</usage>
 </cdr>
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cdr>
-    <anum>Laura King</anum>
-    <bnum>Miller Joseph</bnum>
+    <anum>Miller Joseph</anum>
+    <bnum>Nada Murad</bnum>
     <serviceType>SMS</serviceType>
-    <startDateTime>2024-08-11 11:28</startDateTime>
+    <startDateTime>2024-08-11 17:19</startDateTime>
     <usage>1.0</usage>
 </cdr>
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cdr>
-    <anum>Maha Al-Bashir</anum>
+    <anum>Rodriguez Susan</anum>
     <serviceType>DATA</serviceType>
-    <startDateTime>2024-08-11 11:50</startDateTime>
-    <usage>784.0</usage>
+    <startDateTime>2024-08-11 17:43</startDateTime>
+    <usage>559.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Rana Al-Qadir</anum>
+    <bnum>Davis Maria</bnum>
+    <serviceType>CALL</serviceType>
+    <startDateTime>2024-08-11 17:50</startDateTime>
+    <usage>53.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Tariq Sameh</anum>
+    <serviceType>DATA</serviceType>
+    <startDateTime>2024-08-11 17:57</startDateTime>
+    <usage>283.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Zeina Al-Siddiq</anum>
+    <bnum>Jane Smith</bnum>
+    <serviceType>CALL</serviceType>
+    <startDateTime>2024-08-11 18:00</startDateTime>
+    <usage>33.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Yusra Kamal</anum>
+    <bnum>Nabeel Zain</bnum>
+    <serviceType>SMS</serviceType>
+    <startDateTime>2024-08-11 18:21</startDateTime>
+    <usage>1.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Carol Lee</anum>
+    <serviceType>DATA</serviceType>
+    <startDateTime>2024-08-11 18:30</startDateTime>
+    <usage>272.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Zeina Al-Sabbagh</anum>
+    <serviceType>DATA</serviceType>
+    <startDateTime>2024-08-11 18:58</startDateTime>
+    <usage>220.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Jessica Nelson</anum>
+    <serviceType>DATA</serviceType>
+    <startDateTime>2024-08-11 19:00</startDateTime>
+    <usage>367.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Clark Edward</anum>
+    <serviceType>DATA</serviceType>
+    <startDateTime>2024-08-11 19:28</startDateTime>
+    <usage>628.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Thompson Sandra</anum>
+    <bnum>Joshua Lee</bnum>
+    <serviceType>SMS</serviceType>
+    <startDateTime>2024-08-11 19:36</startDateTime>
+    <usage>1.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Ronald King</anum>
+    <bnum>Patricia Williams</bnum>
+    <serviceType>CALL</serviceType>
+    <startDateTime>2024-08-11 19:58</startDateTime>
+    <usage>51.0</usage>
+</cdr>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cdr>
+    <anum>Perez Melissa</anum>
+    <bnum>Ruba Al-Saadi</bnum>
+    <serviceType>SMS</serviceType>
+    <startDateTime>2024-08-11 20:00</startDateTime>
+    <usage>1.0</usage>
 </cdr>

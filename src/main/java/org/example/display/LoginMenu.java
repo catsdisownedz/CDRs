@@ -110,7 +110,12 @@ public class LoginMenu {
 
         for (User user : users) {
             if (user.getUsername().equals(username)) {
-                System.out.println(Color.colorText("Username already exists.", Color.red));
+                System.out.println(Color.colorText("Username already exists.\n", Color.red));
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
                 display();
             }
         }
