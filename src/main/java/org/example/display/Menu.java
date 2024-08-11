@@ -39,7 +39,7 @@ public class Menu {
             try{
                 choice = scanner.nextInt();
                 scanner.nextLine();
-            } catch (IllegalArgumentException ex) {
+            } catch (Exception ex) {
                 System.out.println(Color.colorText("You need to enter a Number. Choose from numbers 1-5\n", Color.red));
                 try {
                     Thread.sleep(1000);
@@ -65,7 +65,7 @@ public class Menu {
                     try{
                         which = scanner.nextInt();
                         scanner.nextLine();
-                    }catch(IllegalArgumentException ex) {
+                    }catch(Exception ex) {
                         System.out.println(Color.colorText("You need to enter a Number. Choose 1 or 2\n", Color.red));
                     }
 
@@ -108,7 +108,7 @@ public class Menu {
         try{
             choice = scanner.nextInt();
             scanner.nextLine();
-        }catch(IllegalArgumentException ex) {
+        }catch(Exception ex) {
             System.out.println(Color.colorText("You need to enter a number between 1-4\n", Color.red));
         }
 
@@ -141,7 +141,7 @@ public class Menu {
                 try{
                     typeChoice = scanner.nextInt();
                     scanner.nextLine();
-                }catch(IllegalArgumentException ex) {
+                }catch(Exception ex) {
                     System.out.println(Color.colorText("You need to choose a Number between 1-3", Color.red));
                     try {
                         Thread.sleep(1000);
@@ -187,7 +187,7 @@ public class Menu {
             try{
                 choice2 = scanner.nextInt();
                 scanner.nextLine();
-            }catch(IllegalArgumentException ex) {
+            }catch(Exception ex) {
                 System.out.println(Color.colorText("You need to choose a Number between 1-3\n", Color.red));
                 try {
                     Thread.sleep(1000);
@@ -234,7 +234,7 @@ public class Menu {
         try{
             choice= scanner.nextInt();
             scanner.nextLine();
-        }catch(IllegalArgumentException ex) {
+        }catch(Exception ex) {
             System.out.println(Color.colorText("You need to choose a Number between 1-4\n", Color.red));
             try {
                 Thread.sleep(1000);
@@ -302,7 +302,7 @@ public class Menu {
         for(int i=0; i< num; i++){
             try{
                cdrList.add(randomDataGenerator.generateRecordsForDate(specificDate));
-            }catch(IllegalArgumentException e){
+            }catch(Exception ex){
                 i--;
             }
         }
@@ -382,12 +382,12 @@ public class Menu {
         try{
             choice = scanner.nextInt();
             scanner.nextLine();
-        }catch(IllegalArgumentException e){
+        }catch(Exception ex){
             System.out.println(Color.colorText("You need to enter a Number. Choose 1 or 2.\n", Color.red));
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException exception) {
-                throw new RuntimeException(e);
+                throw new RuntimeException(exception);
             }
             openFileOrExit(scanner, filteredList);
         }
