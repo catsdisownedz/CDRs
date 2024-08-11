@@ -1,29 +1,41 @@
 package org.example.display;
 
-import java.io.File;
-import java.io.IOException;
+import org.example.CDR;
+import org.example.formatters.BaseFormatter;
+import org.example.formatters.CSVFormatter;
+import org.example.utils.*;
+
+import java.nio.file.Paths;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.*;
 
-public class Menu {
-    private String username;
+import static org.example.Main.OUTPUT_DIR;
 
-    public Menu(String username) {
+public class Menu {
+    private static BaseFormatter[] formatters = new BaseFormatter[0];
+    private static String username;
+    public static LoginMenu mn = new LoginMenu(formatters);
+    private static Random rd = new Random();
+
+    public Menu(String username, BaseFormatter[] formatters) {
         this.username = username;
+        this.formatters = formatters;
     }
 
-    public void display() {
+    public static void display() {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("Hello, " + username + "!");
-            System.out.println("1) View Data files");
-            System.out.println("2) Filter results by");
-            System.out.println("3) View Service type volume");
-            System.out.println("4) Revenue calculator");
-            System.out.println("5) Logout");
+            System.out.println(Color.colorText("Hello", Color.underline ) + ", " + Color.colorText(username,Color.blue) + "!");
+            System.out.println(Color.colorText("1)", Color.baby_blue) +" View Data files");
+            System.out.println(Color.colorText("2)", Color.green) + " Filter Results By");
+            System.out.println(Color.colorText("3)", Color.orange) + " View Service Type Volume");
+            System.out.println(Color.colorText("4)", Color.lavender) + " Revenue calculator");
+            System.out.println(Color.colorText("5)", Color.red) + " Logout");
             System.out.print("Choose an option: ");
             int choice = scanner.nextInt();
-            scanner.nextLine(); // consume newline
+            scanner.nextLine();
 
             switch (choice) {
                 case 1:
@@ -33,13 +45,19 @@ public class Menu {
                     filterResultsBy(scanner);
                     break;
                 case 3:
-                    viewServiceTypeVolume(scanner);
+                    System.out.println("Options: ");
+                    System.out.println("1) View today's most " +  Color.colorText("heated", Color.red) + " service records");
+                    System.out.println("2) View certain service volume (call / sms / data) records");
+                    int which = scanner.nextInt();
+                    scanner.nextLine();
+                    viewServiceTypeVolume(scanner, which);
                     break;
                 case 4:
                     revenueCalculator(scanner);
                     break;
                 case 5:
-                    System.out.println("Logging out...");
+                    System.out.println("Logging out...\n");
+                    mn.display();
                     return;
                 default:
                     System.out.println("Invalid option.");
@@ -48,96 +66,257 @@ public class Menu {
         }
     }
 
-    private void viewDataFiles(Scanner scanner) {
-        System.out.println("Choose file type to view:");
-        System.out.println("1) XML");
-        System.out.println("2) YML");
-        System.out.println("3) CSV");
-        System.out.println("4) JSON");
-        int choice = scanner.nextInt();
-        scanner.nextLine(); // consume newline
-        String extension = "";
-
-        switch (choice) {
-            case 1: extension = "xml"; break;
-            case 2: extension = "yaml"; break;
-            case 3: extension = "csv"; break;
-            case 4: extension = "json"; break;
-            default: System.out.println("Invalid option."); return;
-        }
-
-        try {
-            File file = new File("cdr_output/cdr." + extension);
-            if (file.exists()) {
-                java.awt.Desktop.getDesktop().open(file);
-            } else {
-                System.out.println("File does not exist.");
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    private static void viewDataFiles(Scanner scanner) {
+        List<CDR> cdrList = CSVFormatter.normalList();
+        printList(cdrList);
     }
 
-    private void filterResultsBy(Scanner scanner) {
-        System.out.println("Filter results by:");
+    private static void filterResultsBy(Scanner scanner) {
+        System.out.println(Color.colorText("\nFilter results by:", Color.green));
         System.out.println("1) Alphabetical order");
         System.out.println("2) Service type");
+        System.out.println("3) Usage Rates");
+        System.out.println(Color.colorText("4)", Color.red) +"Go Back");
+        System.out.print("\nChoose an option: ");
         int choice = scanner.nextInt();
-        scanner.nextLine(); // consume newline
+        scanner.nextLine();
 
+        List<CDR> sortedList = new ArrayList<>();
         switch (choice) {
             case 1:
-                // Implement alphabetical order filtering
+                System.out.print("Anum or Bnum? Type here: ");
+                String num= scanner.nextLine().toLowerCase();
+                if(num.equals("anum")){
+                    sortedList = CSVFormatter.sortByAnum();
+                }
+                else if(num.equals("bnum")){
+                    sortedList = CSVFormatter.sortByBnum();
+                }
                 break;
             case 2:
                 System.out.println("Filter by service type:");
-                System.out.println("1) SMS");
-                System.out.println("2) CALL");
-                System.out.println("3) DATA");
+                typeChoiceDisplay();
+                System.out.print("Choose an option: ");
                 int typeChoice = scanner.nextInt();
-                scanner.nextLine(); // consume newline
-                // Implement service type filtering based on typeChoice
+                scanner.nextLine();
+                sortedList= CSVFormatter.filterByServiceType(typeChoice);
                 break;
+            case 3:
+                sortedList = CSVFormatter.sortByUsage();
+            case 4:
+                display();
             default:
                 System.out.println("Invalid option.");
+                display();
+                break;
+        }
+        System.out.println(Color.colorText("Filtered Results:", Color.green));
+        printList(sortedList);
+        openFileOrExit(scanner, sortedList);
+    }
+
+    //finished function
+    private static void viewServiceTypeVolume(Scanner scanner, int choice) {
+        List<CDR> filteredList = new ArrayList<>();
+        if(choice == 1){
+            filteredList = CSVFormatter.getServiceTypeList();
+            System.out.print("\nToday's most repeated service: "+ Color.colorText(filteredList.getFirst().getServiceType().toUpperCase(),Color.red));
+            printList(filteredList);
+            openFileOrExit(scanner, filteredList);
+        } else if(choice == 2){
+            System.out.println("View service type volume:");
+            typeChoiceDisplay();
+            System.out.print("Choose an option: ");
+            int choice2 = scanner.nextInt();
+            scanner.nextLine();
+            filteredList = CSVFormatter.filterByServiceType(choice2);
+            printList(filteredList);
+            openFileOrExit(scanner, filteredList);
+        }
+        else{
+            System.out.println("Invalid choice.");
+            display();
+        }
+
+    }
+
+    private static void typeChoiceDisplay() {
+        System.out.println(Color.colorText("1) Call", Color.yellow));
+        System.out.println(Color.colorText("2) SMS", Color.purple));
+        System.out.println(Color.colorText("3) Data", Color.cyan));
+    }
+
+
+    private static void revenueCalculator(Scanner scanner) {
+        System.out.println(Color.colorText("\nRevenue calculator:", Color.blue));
+        System.out.println("1) Today");
+        System.out.println("2) Yesterday");
+        System.out.println("3) Other..");
+        System.out.println("4) Go Back");
+        System.out.print("Choose: ");
+        int choice = scanner.nextInt();
+        scanner.nextLine();
+
+        List<CDR> cdrList = new ArrayList<>();
+
+        switch (choice) {
+            case 1:
+                cdrList = CSVFormatter.normalList(); // Existing list for today
+                calculateAndPrintRevenue(cdrList, getCurrentDate(), scanner);
+                break;
+            case 2:
+                LocalDateTime yesterday = LocalDate.now().minusDays(1).atStartOfDay();
+                cdrList = generateAndSaveRecordsForDate(yesterday, scanner);
+                calculateAndPrintRevenue(cdrList, yesterday.toLocalDate().toString(), scanner);
+                break;
+            case 3:
+                System.out.print("Enter date (YYYY-MM-DD): ");
+                String dateStr = scanner.nextLine();
+                LocalDateTime specificDate = LocalDate.parse(dateStr).atStartOfDay();
+                cdrList = generateAndSaveRecordsForDate(specificDate, scanner);
+                calculateAndPrintRevenue(cdrList, dateStr, scanner);
+                break;
+            case 4:
+                display();
+                return;
+            default:
+                System.out.println("Invalid option.");
+                display();
                 break;
         }
     }
 
-    private void viewServiceTypeVolume(Scanner scanner) {
-        System.out.println("View service type volume:");
-        System.out.println("1) Call");
-        System.out.println("2) SMS");
-        System.out.println("3) Data");
-        int choice = scanner.nextInt();
-        scanner.nextLine(); // consume newline
+    // Helper method to generate and save CDR records for a specific date
+    private static List<CDR> generateAndSaveRecordsForDate(LocalDateTime specificDate, Scanner scanner) {
+        RandomDataGenerator randomDataGenerator = new RandomDataGenerator(
+                new NameExtracter(),
+                new ServiceTypeGenerator(),
+                new UsageGenerator(),
+                new StartDateTimeGenerator()
+        );
 
-        // Implement service type volume view based on choice
+        List<CDR> cdrList = new ArrayList<>();
+        int num = 50;
+        for(int i=0; i< num; i++){
+            try{
+               cdrList.add(randomDataGenerator.generateRecordsForDate(specificDate));
+            }catch(IllegalArgumentException e){
+                i--;
+            }
+        }
+        String dateStr = specificDate.toLocalDate().toString();
+        String fileName = Paths.get(OUTPUT_DIR, dateStr + ".csv").toString();
+
+        CSVFormatter csvFormatter = new CSVFormatter();
+        csvFormatter.write(fileName, cdrList);
+
+        System.out.println("New CDR records for " + dateStr + " generated and saved to " + fileName);
+
+        return cdrList;
     }
 
-    private void revenueCalculator(Scanner scanner) {
-        System.out.println("Revenue calculator:");
-        System.out.println("1) Today");
-        System.out.println("2) Yesterday");
-        System.out.println("3) Other");
+
+
+    private static void calculateAndPrintRevenue(List<CDR> cdrList, String date,Scanner scanner) {
+        double smsRevenue = 0;
+        double dataRevenue = 0;
+        double callRevenue = 0;
+
+        for (CDR cdr : cdrList) {
+            if (cdr.getStartDateTime().startsWith(date)) {
+                switch (cdr.getServiceType().toLowerCase()) {
+                    case "sms":
+                        smsRevenue += cdr.getUsage() * 0.25;
+                        break;
+                    case "data":
+                        dataRevenue += cdr.getUsage() * 0.50;
+                        break;
+                    case "call":
+                        callRevenue += cdr.getUsage() * 0.50;
+                        break;
+                }
+            }
+        }
+
+        double smsRevenuePerMinute = smsRevenue;
+        double dataRevenuePerMinute = dataRevenue;
+        double callRevenuePerMinute = callRevenue;
+
+        double smsRevenuePerHour = smsRevenue * 60;
+        double dataRevenuePerHour = dataRevenue * 60;
+        double callRevenuePerHour = callRevenue * 60;
+
+        System.out.println("Revenue Stats for " + date + ":");
+        System.out.println(Color.colorText("SMS:", Color.yellow));
+        System.out.printf("    Revenue per minute: $%.2f\n", smsRevenuePerMinute);
+        System.out.printf("    Revenue per hour: $%.2f\n", smsRevenuePerHour);
+        System.out.printf("    Total revenue on this day: $%.2f\n", smsRevenue);
+        System.out.println(Color.colorText("CALL:", Color.purple));
+        System.out.printf("    Revenue per minute: $%.2f\n", callRevenuePerMinute);
+        System.out.printf("    Revenue per hour: $%.2f\n", callRevenuePerHour);
+        System.out.printf("    Total revenue on this day: $%.2f\n", callRevenue);
+        System.out.println(Color.colorText("DATA:", Color.cyan));
+        System.out.printf("    Revenue per minute: $%.2f\n", dataRevenuePerMinute);
+        System.out.printf("    Revenue per hour: $%.2f\n", dataRevenuePerHour);
+        System.out.printf("    Total revenue on this day: $%.2f\n", dataRevenue);
+
+        double totalRevenue = smsRevenue + dataRevenue + callRevenue;
+        System.out.printf("Total Revenue: $%.2f\n", totalRevenue);
+        //openFileOrExit(scanner,listaya );
+    }
+
+
+
+    private static String getCurrentDate() {
+        return LocalDate.now().toString();
+    }
+
+    private static String getYesterdayDate() {
+        return LocalDate.now().minusDays(1).toString();
+    }
+
+    private static void openFileOrExit(Scanner scanner, List<CDR> filteredList){
+        System.out.println(Color.colorText("\n\nWould you like to export this info to a file?",  Color.yellow));
+        System.out.println("1) Yes");
+        System.out.println("2) No (EXIT)");
+        System.out.print("Choose: ");
         int choice = scanner.nextInt();
-        scanner.nextLine(); // consume newline
+        scanner.nextLine();
 
         switch (choice) {
             case 1:
-                // Implement today's revenue calculation
-                break;
+                System.out.print(Color.colorText("In what format? (XML, JSON, YAML, CSV)\nType it here: ", Color.lavender));
+                String format = scanner.nextLine().toLowerCase();
+                System.out.println("Name your file: ");
+                String name = scanner.nextLine();
+                String fileName = Paths.get(OUTPUT_DIR, name + "." + format).toString();
+                System.out.println(Color.colorText("Your file (" + fileName + ") was created successfully in cdr_output directory. ", Color.green));
+                BaseFormatter fm = getFormatter(format);
+                if (fm != null) {
+                    fm.write(fileName, filteredList);
+                }
+                DirectoryControls.openFile(fileName);
+
             case 2:
-                // Implement yesterday's revenue calculation
-                break;
-            case 3:
-                System.out.print("Enter date (YYYY-MM-DD): ");
-                String date = scanner.nextLine();
-                // Implement revenue calculation for the given date
-                break;
-            default:
-                System.out.println("Invalid option.");
-                break;
+                LoginMenu.displayRedirectingMessage();
+                display();
+        }
+    }
+
+    private static BaseFormatter getFormatter(String format) {
+        for (BaseFormatter formatter : formatters) {
+            if (formatter.getClass().getSimpleName().toLowerCase().contains(format)) {
+                return formatter;
+            }
+        }
+        return null;
+    }
+
+    private static void printList(List<CDR> list) {
+        int index = 1;
+        for (CDR cdr : list) {
+            System.out.println(cdr.toString(index));
+            index++;
         }
     }
 }

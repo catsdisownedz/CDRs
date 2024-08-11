@@ -1,15 +1,19 @@
 package org.example.display;
 
 import org.example.User;
+import org.example.formatters.BaseFormatter;
+import org.example.utils.TerminalUtils;
 
 import java.io.*;
 import java.util.*;
 
 public class LoginMenu {
     private static final String USERS_FILE = "data/users.csv";
+    private final BaseFormatter[] formatters;
     private List<User> users;
 
-    public LoginMenu() {
+    public LoginMenu(BaseFormatter[] formatters) {
+        this.formatters = formatters;
         users = new ArrayList<>();
         loadUsers();
     }
@@ -30,12 +34,12 @@ public class LoginMenu {
 
     public void display() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Hello, user!");
+        System.out.println(Color.colorText("Hello, user!", Color.baby_pink));
         System.out.println("1) Login");
         System.out.println("2) New user? Sign up");
-        System.out.print("Choose an option: ");
+        System.out.print("\nChoose an option: ");
         int choice = scanner.nextInt();
-        scanner.nextLine(); // consume newline
+        scanner.nextLine();
 
         switch (choice) {
             case 1:
@@ -45,7 +49,7 @@ public class LoginMenu {
                 handleSignUp(scanner);
                 break;
             default:
-                System.out.println("Invalid option.");
+                System.out.println(Color.colorText("Invalid option.", Color.red));
                 break;
         }
     }
@@ -59,25 +63,28 @@ public class LoginMenu {
         for (User user : users) {
             if (user.getUsername().equals(username) && user.verifyPassword(password)) {
                 displayRedirectingMessage();
-                new Menu(username).display();
+                Menu main = new Menu(username, formatters);
+                main.display();
                 return;
             }
         }
-        System.out.println("Invalid username or password.");
+        System.out.println(Color.colorText("Invalid username or password.", Color.red));
+        display();
     }
 
-    private static void displayRedirectingMessage() {
+    public static void displayRedirectingMessage() {
+        System.out.println("\n");
         String baseMessage = "Redirecting to main menu";
         try {
-            for (int i = 0; i < 9; i++) {  // Adjust the loop count as needed
+            for (int i = 0; i < 9; i++) { //9 times
                 StringBuilder message = new StringBuilder(baseMessage);
-                for (int j = 0; j <= i % 3; j++) {
+                for (int j = 0; j <= i % 3; j++) { //how many dots and the cycle they go through
                     message.append(".");
                 }
-                System.out.print("\r" + message);  // Print message with carriage return to overwrite the line
+                System.out.print(Color.colorText("\r" + message, Color.italic_grey));  // Print message with carriage return to overwrite the line
                 Thread.sleep(300);  // 0.4 seconds delay
             }
-            System.out.println();  // Move to the next line after the animation
+            TerminalUtils.clearTerminal();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -89,13 +96,10 @@ public class LoginMenu {
         System.out.print("Choose a password: ");
         String password = scanner.nextLine();
 
-//        if(password.length() < 4){
-//            System.out.println("Password must be at least 4 characters.");
-//        }
 
         for (User user : users) {
             if (user.getUsername().equals(username)) {
-                System.out.println("Username already exists.");
+                System.out.println(Color.colorText("Username already exists.", Color.red));
                 return;
             }
         }
@@ -108,7 +112,7 @@ public class LoginMenu {
             e.printStackTrace();
         }
 
-        System.out.println("User created successfully!");
+        System.out.println(Color.colorText("User created successfully!",Color.green));
         handleLogin(scanner);
     }
 }

@@ -13,7 +13,7 @@ public class RandomDataGenerator {
     private final ServiceTypeGenerator serviceTypeGenerator;
     private final UsageGenerator usageGenerator;
     private final StartDateTimeGenerator startDateTimeGenerator;
-    private static final LocalDateTime time = LocalDateTime.now();
+    public static final LocalDateTime time = LocalDateTime.now();
     private List<String> callLogDates;
 
     private final List<String> names;
@@ -25,7 +25,7 @@ public class RandomDataGenerator {
         this.serviceTypeGenerator = serviceTypeGenerator;
         this.usageGenerator = usageGenerator;
         this.startDateTimeGenerator = startDateTimeGenerator;
-        this.names = nameExtracter.readNamesFromFile("data/names.csv", 50);
+        this.names = nameExtracter.readNamesFromFile("data/names.csv", 200);
         this.usedNames = new ArrayList<>();
         this.callLogDates = startDateTimeGenerator.randomStartDateTime(time);
     }
@@ -36,24 +36,24 @@ public class RandomDataGenerator {
             person = names.get(rd.nextInt(names.size()));
         } while (usedNames.contains(person));
         usedNames.add(person);
-        System.out.println("Generated person: " + person);
+        //System.out.println("Generated person: " + person);
         return person;
     }
 
-    // Retrieves a date for the record and ensures no duplication
+    // retrieves a date for the record and ensures no duplication
     public String recordDate() {
         if (callLogDates.isEmpty()) {
             throw new IllegalStateException("No more dates available for records");
         }
         String date = callLogDates.get(0);
         callLogDates.remove(0);
-        System.out.println("Generated record date: " + date);
+        //System.out.println("Generated record date: " + date);
         return date;
     }
 
     // Generates a random CDR record
     public CDR generateRandomRecord() {
-        System.out.println("Generating random record...");
+        //System.out.println("Generating random record...");
         String anum = personGenerator();
         String bnum = null;
         String serviceType = serviceTypeGenerator.randomServiceType();
@@ -67,8 +67,25 @@ public class RandomDataGenerator {
         float usage = usageGenerator.activateRandomUsage(serviceType);
         String startDateTime = recordDate();
 
-        System.out.println("Generated CDR: " + anum + ", " + bnum + ", " + serviceType + ", " + usage + ", " + startDateTime);
+        return new CDR(anum, bnum, serviceType, usage, startDateTime);
+    }
+
+    public CDR generateRecordsForDate(LocalDateTime specificDate) {
+        String anum = personGenerator();
+        String bnum = null;
+        String serviceType = serviceTypeGenerator.randomServiceType();
+
+        if (!serviceType.equals("DATA")) {
+            do {
+                bnum = personGenerator();
+            } while (bnum.equals(anum));
+        }
+
+        float usage = usageGenerator.activateRandomUsage(serviceType);
+        callLogDates = startDateTimeGenerator.randomStartDateTime(specificDate);
+        String startDateTime = recordDate();
 
         return new CDR(anum, bnum, serviceType, usage, startDateTime);
     }
+
 }

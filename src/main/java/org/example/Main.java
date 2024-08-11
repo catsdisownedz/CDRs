@@ -8,10 +8,12 @@ import org.example.utils.*;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Main {
-    private static final String OUTPUT_DIR = "cdr_output";
-    private static final int NUM_RECORDS = 20;  // Number of CDR records to generate
+    public static final String OUTPUT_DIR = "cdr_output";
+    private static Random rd = new Random();
+    public static int NUM_RECORDS = 50;
 
     public static void main(String[] args) {
         DirectoryControls dir = new DirectoryControls();
@@ -26,8 +28,13 @@ public class Main {
                 new StartDateTimeGenerator()
         );
         List<CDR> cdrList = new ArrayList<>();
+
         for (int i = 0; i < NUM_RECORDS; i++) {
-            cdrList.add(randomDataGenerator.generateRandomRecord());
+            try {
+                cdrList.add(randomDataGenerator.generateRandomRecord());
+            } catch (IllegalArgumentException e) {
+                i--;
+            }
         }
 
         BaseFormatter[] formatters = {
@@ -45,13 +52,8 @@ public class Main {
             System.out.println("Data uploaded into " + extensions[i].substring(1).toUpperCase() + " successfully.");
         }
 
-        System.out.println("Redirecting to main menu...");
-        try {
-            Thread.sleep(2000); // Sleep for 2 seconds
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        new LoginMenu().display();
+        LoginMenu.displayRedirectingMessage();
+        TerminalUtils.clearTerminal();
+        new LoginMenu(formatters).display();
     }
 }

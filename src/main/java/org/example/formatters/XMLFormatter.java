@@ -13,7 +13,6 @@ public class XMLFormatter implements BaseFormatter {
     @Override
     public void write(String fileName, List<CDR> records) {
         try {
-            System.out.println("Entered XML formatter");
             JAXBContext context = JAXBContext.newInstance(CDR.class);
             Marshaller marshaller = context.createMarshaller();
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
@@ -27,4 +26,5 @@ public class XMLFormatter implements BaseFormatter {
             e.printStackTrace();
         }
     }
+
 }

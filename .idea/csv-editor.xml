@@ -10,6 +10,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\cdr_output\file.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\data\names.csv">
           <value>
             <Attribute>

@@ -2,6 +2,7 @@ package org.example;
 
 import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
+import org.example.display.Color;
 
 
 @XmlRootElement(name = "cdr")
@@ -67,5 +68,16 @@ public class CDR {
 
     public void setStartDateTime(String startDateTime) {
         this.startDateTime = startDateTime;
+    }
+
+
+    public String toString(int index) {
+        return(Color.colorText("\nCDR number (" + index + ")\n", Color.underline) +
+                Color.colorText("   Anum: ", Color.baby_blue) + anum + '\n' +
+                Color.colorText("   Bnum: ", Color.lavender) + bnum + '\n' +
+                Color.colorText("   Service: " , Color.baby_pink)+ serviceType + '\n' +
+                Color.colorText("   Date: ", Color.grey) + startDateTime + '\n' +
+                Color.colorText("   Usage: ", Color.orange) + usage +
+                "\n-------");
     }
 }
