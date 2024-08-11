@@ -76,7 +76,7 @@ public class Menu {
         System.out.println("1) Alphabetical order");
         System.out.println("2) Service type");
         System.out.println("3) Usage Rates");
-        System.out.println(Color.colorText("4)", Color.red) +"Go Back");
+        System.out.println(Color.colorText("4)", Color.red) +" Go Back");
         System.out.print("\nChoose an option: ");
         int choice = scanner.nextInt();
         scanner.nextLine();
@@ -196,7 +196,7 @@ public class Menu {
         );
 
         List<CDR> cdrList = new ArrayList<>();
-        int num = 50;
+        int num = 60;
         for(int i=0; i< num; i++){
             try{
                cdrList.add(randomDataGenerator.generateRecordsForDate(specificDate));

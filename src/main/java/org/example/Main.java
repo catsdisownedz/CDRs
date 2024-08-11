@@ -13,7 +13,7 @@ import java.util.Random;
 public class Main {
     public static final String OUTPUT_DIR = "cdr_output";
     private static Random rd = new Random();
-    public static int NUM_RECORDS = 50;
+    public static int NUM_RECORDS = 60;
 
     public static void main(String[] args) {
         DirectoryControls dir = new DirectoryControls();
