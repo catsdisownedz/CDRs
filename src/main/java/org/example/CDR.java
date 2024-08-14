@@ -13,7 +13,7 @@ public class CDR {
     private double usage;
     private String startDateTime;
 
-    // Default no-arg constructor required for JAXB
+    //default no-arg constructor required for JAXB
     public CDR() {
     }
 
