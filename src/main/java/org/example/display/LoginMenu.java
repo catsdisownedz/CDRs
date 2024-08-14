@@ -38,8 +38,18 @@ public class LoginMenu {
         System.out.println("1) Login");
         System.out.println("2) New user? Sign up");
         System.out.print("\nChoose an option: ");
-        int choice = scanner.nextInt();
-        scanner.nextLine();
+        int choice = 0;
+        try{
+            choice =scanner.nextInt();
+            scanner.nextLine();
+        }catch(Exception e){
+            System.out.println(Color.colorText("Invalid option. Choose 1 or 2.\n", Color.red));
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException ex) {
+                throw new RuntimeException(ex);
+            }
+        }
 
         switch (choice) {
             case 1:
