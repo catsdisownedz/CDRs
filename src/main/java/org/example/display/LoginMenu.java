@@ -38,16 +38,16 @@ public class LoginMenu {
         System.out.println("1) Login");
         System.out.println("2) New user? Sign up");
         System.out.print("\nChoose an option: ");
+
         int choice = 0;
-        try{
-            choice =scanner.nextInt();
-            scanner.nextLine();
-        }catch(Exception e){
-            System.out.println(Color.colorText("Invalid option. Choose 1 or 2.\n", Color.red));
+        while (true) {
             try {
-                Thread.sleep(1000);
-            } catch (InterruptedException ex) {
-                throw new RuntimeException(ex);
+                choice = scanner.nextInt();
+                scanner.nextLine();
+                break;
+            } catch (InputMismatchException e) {
+                System.out.println(Color.colorText("Invalid option. Choose 1 or 2.\n", Color.red));
+                scanner.next(); // Clear the invalid input
             }
         }
 
@@ -63,12 +63,13 @@ public class LoginMenu {
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
-                    throw new RuntimeException(e);
+                    e.printStackTrace();
                 }
                 display();
                 break;
         }
     }
+
 
     private void handleLogin(Scanner scanner) {
         System.out.print("Username: ");
@@ -76,21 +77,62 @@ public class LoginMenu {
         System.out.print("Password: ");
         String password = scanner.nextLine();
 
-        for (User user : users) {
-            if (user.getUsername().equals(username) && user.verifyPassword(password)) {
-                displayRedirectingMessage();
-                Menu main = new Menu(username, formatters);
-                main.display();
-                return;
+        boolean authenticated = users.stream()
+                .anyMatch(user -> user.getUsername().equals(username) && user.verifyPassword(password));
+
+        if (authenticated) {
+            displayRedirectingMessage();
+            Menu main = new Menu(username, formatters);
+            main.display();
+        } else {
+            System.out.println(Color.colorText("Invalid username or password.", Color.red));
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
+            display();
         }
-        System.out.println(Color.colorText("Invalid username or password.", Color.red));
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
+    }
+
+    private void handleSignUp(Scanner scanner) {
+        System.out.print("Choose a username: ");
+        String username = scanner.nextLine();
+        System.out.print("Choose a password: ");
+        String password = scanner.nextLine();
+
+        boolean userExists = users.stream()
+                .anyMatch(user -> user.getUsername().equals(username));
+
+        if (userExists) {
+            System.out.println(Color.colorText("Username already exists.\n", Color.red));
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            display();
+        } else {
+            users.add(new User(username, password));
+            saveUserToFile(username, password);
+            System.out.println(Color.colorText("User created successfully!\n", Color.green));
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println(Color.colorText("Verify your credentials please", Color.italic_grey));
+            handleLogin(scanner);
         }
-        display();
+    }
+
+    private void saveUserToFile(String username, String password) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(USERS_FILE, true))) {
+            writer.write(username + "," + password);
+            writer.newLine();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public static void displayRedirectingMessage() {
@@ -110,41 +152,5 @@ public class LoginMenu {
             e.printStackTrace();
         }
     }
-
-    private void handleSignUp(Scanner scanner) {
-        System.out.print("Choose a username: ");
-        String username = scanner.nextLine();
-        System.out.print("Choose a password: ");
-        String password = scanner.nextLine();
-
-
-        for (User user : users) {
-            if (user.getUsername().equals(username)) {
-                System.out.println(Color.colorText("Username already exists.\n", Color.red));
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    throw new RuntimeException(e);
-                }
-                display();
-            }
-        }
-
-        users.add(new User(username, password));
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(USERS_FILE, true))) {
-            writer.write(username + "," + password);
-            writer.newLine();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        System.out.println(Color.colorText("User created successfully!\n",Color.green));
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        System.out.println(Color.colorText("Verify your credentials please", Color.italic_grey));
-        handleLogin(scanner);
-    }
 }
+

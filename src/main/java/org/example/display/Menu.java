@@ -28,15 +28,15 @@ public class Menu {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println(Color.colorText("Hello", Color.underline ) + ", " + Color.colorText(username,Color.blue) + "!");
-            System.out.println(Color.colorText("1)", Color.baby_blue) +" View Data files");
+            System.out.println(Color.colorText("Hello", Color.underline) + ", " + Color.colorText(username, Color.blue) + "!");
+            System.out.println(Color.colorText("1)", Color.baby_blue) + " View Data files");
             System.out.println(Color.colorText("2)", Color.green) + " Filter Results By");
             System.out.println(Color.colorText("3)", Color.orange) + " View Service Type Volume");
             System.out.println(Color.colorText("4)", Color.lavender) + " Revenue calculator");
             System.out.println(Color.colorText("5)", Color.red) + " Logout");
             System.out.print("Choose an option: ");
             int choice = 0;
-            try{
+            try {
                 choice = scanner.nextInt();
                 scanner.nextLine();
             } catch (Exception ex) {
@@ -58,14 +58,14 @@ public class Menu {
                     break;
                 case 3:
                     System.out.println("Options: ");
-                    System.out.println("1) View today's most " +  Color.colorText("heated", Color.red) + " service records");
+                    System.out.println("1) View today's most " + Color.colorText("heated", Color.red) + " service records");
                     System.out.println("2) View certain service volume (call / sms / data) records");
                     int which = 0;
 
-                    try{
+                    try {
                         which = scanner.nextInt();
                         scanner.nextLine();
-                    }catch(Exception ex) {
+                    } catch (Exception ex) {
                         System.out.println(Color.colorText("You need to enter a Number. Choose 1 or 2\n", Color.red));
                     }
 
@@ -101,14 +101,14 @@ public class Menu {
         System.out.println("1) Alphabetical order");
         System.out.println("2) Service type");
         System.out.println("3) Usage Rates");
-        System.out.println(Color.colorText("4)", Color.red) +" Go Back");
+        System.out.println(Color.colorText("4)", Color.red) + " Go Back");
         System.out.print("\nChoose an option: ");
         int choice = 0;
 
-        try{
+        try {
             choice = scanner.nextInt();
             scanner.nextLine();
-        }catch(Exception ex) {
+        } catch (Exception ex) {
             System.out.println(Color.colorText("You need to enter a number between 1-4\n", Color.red));
         }
 
@@ -116,14 +116,12 @@ public class Menu {
         switch (choice) {
             case 1:
                 System.out.print("Anum or Bnum? Type here: ");
-                String num= scanner.nextLine().toLowerCase();
-                if(num.equals("anum")){
+                String num = scanner.nextLine().toLowerCase();
+                if (num.equals("anum")) {
                     sortedList = CSVFormatter.sortByAnum();
-                }
-                else if(num.equals("bnum")){
+                } else if (num.equals("bnum")) {
                     sortedList = CSVFormatter.sortByBnum();
-                }
-                else{
+                } else {
                     System.out.println(Color.colorText("Type either anum or bnum (Capitalization doesn't matter)", Color.red));
                     try {
                         Thread.sleep(1000);
@@ -138,10 +136,10 @@ public class Menu {
                 typeChoiceDisplay();
                 System.out.print("Choose an option: ");
                 int typeChoice = 0;
-                try{
+                try {
                     typeChoice = scanner.nextInt();
                     scanner.nextLine();
-                }catch(Exception ex) {
+                } catch (Exception ex) {
                     System.out.println(Color.colorText("You need to choose a Number between 1-3", Color.red));
                     try {
                         Thread.sleep(1000);
@@ -150,7 +148,7 @@ public class Menu {
                     }
                     display();
                 }
-                sortedList= CSVFormatter.filterByServiceType(typeChoice);
+                sortedList = CSVFormatter.filterByServiceType(typeChoice);
                 break;
             case 3:
                 sortedList = CSVFormatter.sortByUsage();
@@ -174,20 +172,20 @@ public class Menu {
     //finished function
     private static void viewServiceTypeVolume(Scanner scanner, int choice) {
         List<CDR> filteredList = new ArrayList<>();
-        if(choice == 1){
+        if (choice == 1) {
             filteredList = CSVFormatter.getServiceTypeList();
-            System.out.print("\nToday's most repeated service: "+ Color.colorText(filteredList.getFirst().getServiceType().toUpperCase(),Color.red));
+            System.out.print("\nToday's most repeated service: " + Color.colorText(filteredList.getFirst().getServiceType().toUpperCase(), Color.red));
             printList(filteredList);
             openFileOrExit(scanner, filteredList);
-        } else if(choice == 2){
+        } else if (choice == 2) {
             System.out.println("View service type volume:");
             typeChoiceDisplay();
             System.out.print("Choose an option: ");
             int choice2 = 0;
-            try{
+            try {
                 choice2 = scanner.nextInt();
                 scanner.nextLine();
-            }catch(Exception ex) {
+            } catch (Exception ex) {
                 System.out.println(Color.colorText("You need to choose a Number between 1-3\n", Color.red));
                 try {
                     Thread.sleep(1000);
@@ -200,8 +198,7 @@ public class Menu {
             filteredList = CSVFormatter.filterByServiceType(choice2);
             printList(filteredList);
             openFileOrExit(scanner, filteredList);
-        }
-        else{
+        } else {
             System.out.println(Color.colorText("Invalid. Choose 1 or 2.\n", Color.red));
             try {
                 Thread.sleep(1000);
@@ -231,10 +228,10 @@ public class Menu {
         System.out.println("4) Go Back");
         System.out.print("Choose: ");
         int choice = 0;
-        try{
-            choice= scanner.nextInt();
+        try {
+            choice = scanner.nextInt();
             scanner.nextLine();
-        }catch(Exception ex) {
+        } catch (Exception ex) {
             System.out.println(Color.colorText("You need to choose a Number between 1-4\n", Color.red));
             try {
                 Thread.sleep(1000);
@@ -299,10 +296,10 @@ public class Menu {
 
         List<CDR> cdrList = new ArrayList<>();
         int num = 60;
-        for(int i=0; i< num; i++){
-            try{
-               cdrList.add(randomDataGenerator.generateRecordsForDate(specificDate));
-            }catch(Exception ex){
+        for (int i = 0; i < num; i++) {
+            try {
+                cdrList.add(randomDataGenerator.generateRecordsForDate(specificDate));
+            } catch (Exception ex) {
                 i--;
             }
         }
@@ -318,8 +315,7 @@ public class Menu {
     }
 
 
-
-    private static void calculateAndPrintRevenue(List<CDR> cdrList, String date,Scanner scanner) {
+    private static void calculateAndPrintRevenue(List<CDR> cdrList, String date, Scanner scanner) {
         double smsRevenue = 0;
         double dataRevenue = 0;
         double callRevenue = 0;
@@ -368,21 +364,20 @@ public class Menu {
     }
 
 
-
     private static String getCurrentDate() {
         return LocalDate.now().toString();
     }
 
-    private static void openFileOrExit(Scanner scanner, List<CDR> filteredList){
-        System.out.println(Color.colorText("\n\nWould you like to export this info to a file?",  Color.yellow));
+    private static void openFileOrExit(Scanner scanner, List<CDR> filteredList) {
+        System.out.println(Color.colorText("\n\nWould you like to export this info to a file?", Color.yellow));
         System.out.println("1) Yes");
-        System.out.println("2) No "+ Color.colorText("(EXIT)", Color.red));
+        System.out.println("2) No " + Color.colorText("(EXIT)", Color.red));
         System.out.print("Choose: ");
         int choice = 0;
-        try{
+        try {
             choice = scanner.nextInt();
             scanner.nextLine();
-        }catch(Exception ex){
+        } catch (Exception ex) {
             System.out.println(Color.colorText("You need to enter a Number. Choose 1 or 2.\n", Color.red));
             try {
                 Thread.sleep(1000);
@@ -420,7 +415,7 @@ public class Menu {
                 if (fm != null) {
                     fm.write(fileName, filteredList);
                 }
-              //  DirectoryControls.openFile(fileName);
+                //  DirectoryControls.openFile(fileName);
                 break;
 
             case 2:

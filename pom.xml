@@ -62,7 +62,6 @@
         </dependency>
 
 
-
         <!-- YAML dependency -->
         <dependency>
             <groupId>org.yaml</groupId>
@@ -99,9 +98,7 @@
         </dependency>
 
 
-
     </dependencies>
-
 
 
 </project>
