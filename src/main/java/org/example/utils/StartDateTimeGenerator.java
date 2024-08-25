@@ -27,7 +27,7 @@ public class StartDateTimeGenerator {
             final int currentHour = hour;
             tasks.add(() -> {
                 List<String> hourDates = new ArrayList<>();
-                for (int minute = 0; minute < 60; minute += (rd.nextInt(15) + 1)) {
+                for (int minute = 0; minute < 60; minute += (rd.nextInt(30) + 1)) {
                     LocalTime time = LocalTime.of(currentHour, minute);
                     int repetitions = rd.nextInt(maxRepetitions) + 1;
                     for (int i = 0; i < repetitions; i++) {

@@ -17,7 +17,7 @@ import java.util.concurrent.TimeUnit;
 public class Main {
     public static final String OUTPUT_DIR = "cdr_output";
     private static final Random rd = new Random();
-    public static int NUM_RECORDS = rd.nextInt(500)+100;
+    public static int NUM_RECORDS = rd.nextInt(300)+100;
     private static final BlockingQueue<CDR> cdrQueue = new LinkedBlockingQueue<>();
 
     public static void main(String[] args) throws InterruptedException {
@@ -88,13 +88,6 @@ public class Main {
             multiThreader.executorService.shutdownNow();
             Thread.currentThread().interrupt();
         }
-
-//        while (cdrList.size() < NUM_RECORDS) {
-//            CDR cdr = cdrQueue.poll(50, TimeUnit.MILLISECONDS);
-//            if (cdr != null) {
-//                cdrList.add(cdr);
-//            }
-//        }
 
         String[] extensions = {".csv", ".json", ".xml", ".yaml"};
 
