@@ -1,6 +1,6 @@
 package org.example.display;
 
-import org.example.User;
+import org.example.database.entity.User;
 import org.example.formatters.BaseFormatter;
 import org.example.utils.TerminalUtils;
 

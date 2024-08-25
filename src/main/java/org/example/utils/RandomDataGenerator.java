@@ -1,7 +1,9 @@
 // RandomDataGenerator Class
 package org.example.utils;
 
-import org.example.CDR;
+import org.example.Main;
+import org.example.database.entity.CDR;
+import org.example.database.service.MultiThreader;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -14,18 +16,18 @@ public class RandomDataGenerator {
     private final UsageGenerator usageGenerator;
     private final StartDateTimeGenerator startDateTimeGenerator;
     public static final LocalDateTime time = LocalDateTime.now();
-    private List<String> callLogDates;
-
+    public static List<String> callLogDates;
+   // private final MultiThreader multi;
     private final List<String> names;
     private final List<String> usedNames;
     private final Random rd = new Random();
-
+   // public static int numNames = rd.nextInt(500)+200;
     public RandomDataGenerator(NameExtracter nameExtracter, ServiceTypeGenerator serviceTypeGenerator, UsageGenerator usageGenerator, StartDateTimeGenerator startDateTimeGenerator) {
         this.nameExtracter = nameExtracter;
         this.serviceTypeGenerator = serviceTypeGenerator;
         this.usageGenerator = usageGenerator;
         this.startDateTimeGenerator = startDateTimeGenerator;
-        this.names = nameExtracter.readNamesFromFile("data/names.csv", 200);
+        this.names = nameExtracter.readNamesFromFile("data/names.csv", Main.NUM_RECORDS);
         this.usedNames = new ArrayList<>();
         this.callLogDates = startDateTimeGenerator.randomStartDateTime(time);
     }
@@ -36,7 +38,6 @@ public class RandomDataGenerator {
             person = names.get(rd.nextInt(names.size()));
         } while (usedNames.contains(person));
         usedNames.add(person);
-        //System.out.println("Generated person: " + person);
         return person;
     }
 

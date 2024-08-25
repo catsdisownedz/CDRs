@@ -3,7 +3,7 @@ package org.example.formatters;
 import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.JAXBException;
 import jakarta.xml.bind.Marshaller;
-import org.example.CDR;
+import org.example.database.entity.CDR;
 
 import java.io.FileWriter;
 import java.io.IOException;

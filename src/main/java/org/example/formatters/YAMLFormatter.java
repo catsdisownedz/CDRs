@@ -1,9 +1,9 @@
 package org.example.formatters;
 
-import org.example.CDR;
+import org.example.database.entity.CDR;
 import org.yaml.snakeyaml.DumperOptions;
 import org.yaml.snakeyaml.Yaml;
-import org.yaml.snakeyaml.representer.Representer;
+
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;

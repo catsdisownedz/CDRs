@@ -1,6 +1,6 @@
 package org.example.display;
 
-import org.example.CDR;
+import org.example.database.entity.CDR;
 import org.example.formatters.BaseFormatter;
 import org.example.formatters.CSVFormatter;
 import org.example.utils.*;

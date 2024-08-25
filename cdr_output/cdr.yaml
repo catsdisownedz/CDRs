@@ -1,0 +1,1386 @@
+- !!org.example.database.entity.CDR
+  anum: Martinez Anthony
+  bnum: Khaled Al-Mansour
+  serviceType: SMS
+  startDateTime: 2024-08-26 00:00
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Khalid Al-Siddiq
+  bnum: King Ronald
+  serviceType: CALL
+  startDateTime: 2024-08-26 00:00
+  usage: 16.0
+
+- !!org.example.database.entity.CDR
+  anum: Tariq Mahdi
+  bnum: Moore Helen
+  serviceType: CALL
+  startDateTime: 2024-08-26 00:06
+  usage: 34.0
+
+- !!org.example.database.entity.CDR
+  anum: Basim Al-Saleh
+  bnum: Miller Joseph
+  serviceType: CALL
+  startDateTime: 2024-08-26 00:20
+  usage: 37.0
+
+- !!org.example.database.entity.CDR
+  anum: Adams Jessica
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 00:20
+  usage: 639.0
+
+- !!org.example.database.entity.CDR
+  anum: Nelson Ryan
+  bnum: Perez Angela
+  serviceType: CALL
+  startDateTime: 2024-08-26 00:20
+  usage: 5.0
+
+- !!org.example.database.entity.CDR
+  anum: Green Jason
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 00:29
+  usage: 271.0
+
+- !!org.example.database.entity.CDR
+  anum: Lopez Ruth
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 00:37
+  usage: 700.0
+
+- !!org.example.database.entity.CDR
+  anum: Lisa Anderson
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 00:37
+  usage: 358.0
+
+- !!org.example.database.entity.CDR
+  anum: Huda Al-Qadir
+  bnum: Garcia Maria
+  serviceType: CALL
+  startDateTime: 2024-08-26 00:42
+  usage: 32.0
+
+- !!org.example.database.entity.CDR
+  anum: Sarah Scott
+  bnum: Scott Timothy
+  serviceType: SMS
+  startDateTime: 2024-08-26 00:42
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Garcia Christopher
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 00:42
+  usage: 340.0
+
+- !!org.example.database.entity.CDR
+  anum: Lopez Sharon
+  bnum: Anwar Al-Muhammad
+  serviceType: SMS
+  startDateTime: 2024-08-26 00:50
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Rodriguez Daniel
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 00:59
+  usage: 969.0
+
+- !!org.example.database.entity.CDR
+  anum: Amin Al-Muhannadi
+  bnum: Taylor Donald
+  serviceType: CALL
+  startDateTime: 2024-08-26 00:59
+  usage: 45.0
+
+- !!org.example.database.entity.CDR
+  anum: Harris Carol
+  bnum: Layla Al-Muhammad
+  serviceType: CALL
+  startDateTime: 2024-08-26 00:59
+  usage: 43.0
+
+- !!org.example.database.entity.CDR
+  anum: Jones Elizabeth
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 01:00
+  usage: 307.0
+
+- !!org.example.database.entity.CDR
+  anum: Noura Iman
+  bnum: Tariq Al-Muhannadi
+  serviceType: SMS
+  startDateTime: 2024-08-26 01:09
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Wilson Matthew
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 01:13
+  usage: 582.0
+
+- !!org.example.database.entity.CDR
+  anum: Layla Al-Hassan
+  bnum: Hatem Abbas
+  serviceType: SMS
+  startDateTime: 2024-08-26 01:27
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Tariq Jawad
+  bnum: Sami Al-Mansour
+  serviceType: CALL
+  startDateTime: 2024-08-26 01:35
+  usage: 49.0
+
+- !!org.example.database.entity.CDR
+  anum: Kimberly Scott
+  bnum: Brian King
+  serviceType: CALL
+  startDateTime: 2024-08-26 01:35
+  usage: 32.0
+
+- !!org.example.database.entity.CDR
+  anum: White Carol
+  bnum: Jackson Sandra
+  serviceType: CALL
+  startDateTime: 2024-08-26 01:35
+  usage: 4.0
+
+- !!org.example.database.entity.CDR
+  anum: Tariq Al-Hassan
+  bnum: Garcia Susan
+  serviceType: CALL
+  startDateTime: 2024-08-26 01:49
+  usage: 26.0
+
+- !!org.example.database.entity.CDR
+  anum: Linda Williams
+  bnum: Ryan Nelson
+  serviceType: SMS
+  startDateTime: 2024-08-26 01:57
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Hernandez Betty
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 02:00
+  usage: 585.0
+
+- !!org.example.database.entity.CDR
+  anum: Yasmin Al-Faisal
+  bnum: David Williams
+  serviceType: CALL
+  startDateTime: 2024-08-26 02:00
+  usage: 36.0
+
+- !!org.example.database.entity.CDR
+  anum: Miller Jennifer
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 02:14
+  usage: 357.0
+
+- !!org.example.database.entity.CDR
+  anum: Noor Al-Amin
+  bnum: Murad Jamal
+  serviceType: SMS
+  startDateTime: 2024-08-26 02:18
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Bilal Al-Mansour
+  bnum: Kenneth Lopez
+  serviceType: SMS
+  startDateTime: 2024-08-26 02:26
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Michael Brown
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 02:26
+  usage: 940.0
+
+- !!org.example.database.entity.CDR
+  anum: Sahar Ziyad
+  bnum: Amin Al-Din
+  serviceType: CALL
+  startDateTime: 2024-08-26 02:26
+  usage: 43.0
+
+- !!org.example.database.entity.CDR
+  anum: Adams Jeffrey
+  bnum: Anderson Nancy
+  serviceType: SMS
+  startDateTime: 2024-08-26 02:36
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Nehad Mohamed
+  bnum: Joseph Miller
+  serviceType: CALL
+  startDateTime: 2024-08-26 02:36
+  usage: 49.0
+
+- !!org.example.database.entity.CDR
+  anum: Samir Al-Hakim
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 02:36
+  usage: 231.0
+
+- !!org.example.database.entity.CDR
+  anum: Farah Al-Din
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 02:45
+  usage: 735.0
+
+- !!org.example.database.entity.CDR
+  anum: Basma Zaki
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 02:45
+  usage: 348.0
+
+- !!org.example.database.entity.CDR
+  anum: Nelson Cynthia
+  bnum: Helen White
+  serviceType: CALL
+  startDateTime: 2024-08-26 02:45
+  usage: 56.0
+
+- !!org.example.database.entity.CDR
+  anum: Yasmin Al-Zain
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 02:52
+  usage: 92.0
+
+- !!org.example.database.entity.CDR
+  anum: Lopez Brian
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 02:52
+  usage: 345.0
+
+- !!org.example.database.entity.CDR
+  anum: Kevin Harris
+  bnum: Ruba Al-Saadi
+  serviceType: SMS
+  startDateTime: 2024-08-26 02:52
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Daniel Rodriguez
+  bnum: Ziad Al-Majid
+  serviceType: SMS
+  startDateTime: 2024-08-26 02:54
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Nancy Taylor
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 02:57
+  usage: 914.0
+
+- !!org.example.database.entity.CDR
+  anum: Rana Al-Mansour
+  bnum: Sandra Harris
+  serviceType: SMS
+  startDateTime: 2024-08-26 02:57
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Hanan Al-Rashid
+  bnum: Margaret Wilson
+  serviceType: SMS
+  startDateTime: 2024-08-26 02:57
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Kimberly Green
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 03:00
+  usage: 224.0
+
+- !!org.example.database.entity.CDR
+  anum: Zeina Al-Karim
+  bnum: David Johnson
+  serviceType: SMS
+  startDateTime: 2024-08-26 03:00
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Martinez Lisa
+  bnum: Davis Thomas
+  serviceType: CALL
+  startDateTime: 2024-08-26 03:13
+  usage: 3.0
+
+- !!org.example.database.entity.CDR
+  anum: Tariq Al-Din
+  bnum: Jackson Helen
+  serviceType: CALL
+  startDateTime: 2024-08-26 03:13
+  usage: 25.0
+
+- !!org.example.database.entity.CDR
+  anum: Richard Brown
+  bnum: Noor Adel
+  serviceType: SMS
+  startDateTime: 2024-08-26 03:25
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Charles Jones
+  bnum: Nabil Al-Muhannadi
+  serviceType: SMS
+  startDateTime: 2024-08-26 03:33
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Faris Al-Din
+  bnum: Saeed Adnan
+  serviceType: SMS
+  startDateTime: 2024-08-26 03:39
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Mustafa Al-Maamoun
+  bnum: Thompson Donna
+  serviceType: SMS
+  startDateTime: 2024-08-26 03:39
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Faisal Al-Amin
+  bnum: Green Deborah
+  serviceType: SMS
+  startDateTime: 2024-08-26 03:39
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Zain Al-Khalil
+  bnum: Salma Amin
+  serviceType: SMS
+  startDateTime: 2024-08-26 03:41
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Harris Ruth
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 03:41
+  usage: 160.0
+
+- !!org.example.database.entity.CDR
+  anum: William Johnson
+  bnum: Sami Al-Muhannadi
+  serviceType: CALL
+  startDateTime: 2024-08-26 03:55
+  usage: 49.0
+
+- !!org.example.database.entity.CDR
+  anum: Hernandez Karen
+  bnum: Barbara Brown
+  serviceType: SMS
+  startDateTime: 2024-08-26 04:00
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Raed Fadi
+  bnum: Moore Paul
+  serviceType: SMS
+  startDateTime: 2024-08-26 04:00
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Susan Williams
+  bnum: Mariam Al-Hassan
+  serviceType: CALL
+  startDateTime: 2024-08-26 04:00
+  usage: 44.0
+
+- !!org.example.database.entity.CDR
+  anum: Thompson Sandra
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 04:05
+  usage: 544.0
+
+- !!org.example.database.entity.CDR
+  anum: Majid Al-Rashid
+  bnum: Melissa Hall
+  serviceType: CALL
+  startDateTime: 2024-08-26 04:05
+  usage: 39.0
+
+- !!org.example.database.entity.CDR
+  anum: Walid Al-Qadir
+  bnum: Yasmeen Al-Hassan
+  serviceType: SMS
+  startDateTime: 2024-08-26 04:08
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Rima Walid
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 04:08
+  usage: 15.0
+
+- !!org.example.database.entity.CDR
+  anum: Maha Al-Bashir
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 04:08
+  usage: 122.0
+
+- !!org.example.database.entity.CDR
+  anum: Amina Al-Jabari
+  bnum: Thompson Kenneth
+  serviceType: SMS
+  startDateTime: 2024-08-26 04:22
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Zaki Munir
+  bnum: Layla Al-Karim
+  serviceType: SMS
+  startDateTime: 2024-08-26 04:22
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Yasmeen Al-Karim
+  bnum: Clark Edward
+  serviceType: CALL
+  startDateTime: 2024-08-26 04:27
+  usage: 17.0
+
+- !!org.example.database.entity.CDR
+  anum: Zeina Al-Siddiq
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 04:41
+  usage: 740.0
+
+- !!org.example.database.entity.CDR
+  anum: Nasir Al-Muhannadi
+  bnum: Yasmeen Al-Khaled
+  serviceType: SMS
+  startDateTime: 2024-08-26 04:41
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Harris Kevin
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 04:41
+  usage: 93.0
+
+- !!org.example.database.entity.CDR
+  anum: Christopher Martinez
+  bnum: Nabil Al-Mansour
+  serviceType: CALL
+  startDateTime: 2024-08-26 04:45
+  usage: 5.0
+
+- !!org.example.database.entity.CDR
+  anum: Mary Johnson
+  bnum: Rania Al-Saadi
+  serviceType: SMS
+  startDateTime: 2024-08-26 04:45
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: David Garcia
+  bnum: Perez Melissa
+  serviceType: SMS
+  startDateTime: 2024-08-26 04:45
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Dina Al-Khalil
+  bnum: Thomas Davis
+  serviceType: CALL
+  startDateTime: 2024-08-26 04:47
+  usage: 50.0
+
+- !!org.example.database.entity.CDR
+  anum: Lee Michelle
+  bnum: Hall Brenda
+  serviceType: SMS
+  startDateTime: 2024-08-26 04:47
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Ronald King
+  bnum: Rodriguez Susan
+  serviceType: SMS
+  startDateTime: 2024-08-26 04:47
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Taylor Karen
+  bnum: Amira Riad
+  serviceType: SMS
+  startDateTime: 2024-08-26 04:53
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Linda Brown
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 04:53
+  usage: 754.0
+
+- !!org.example.database.entity.CDR
+  anum: Omar Al-Din
+  bnum: Hana Nasser
+  serviceType: SMS
+  startDateTime: 2024-08-26 05:00
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Dina Sharif
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 05:00
+  usage: 562.0
+
+- !!org.example.database.entity.CDR
+  anum: Donna Lopez
+  bnum: Heba Saeed
+  serviceType: CALL
+  startDateTime: 2024-08-26 05:00
+  usage: 27.0
+
+- !!org.example.database.entity.CDR
+  anum: Miller Elizabeth
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 05:14
+  usage: 916.0
+
+- !!org.example.database.entity.CDR
+  anum: Lee Sharon
+  bnum: Patricia Williams
+  serviceType: CALL
+  startDateTime: 2024-08-26 05:15
+  usage: 4.0
+
+- !!org.example.database.entity.CDR
+  anum: Paul Moore
+  bnum: David Miller
+  serviceType: CALL
+  startDateTime: 2024-08-26 05:27
+  usage: 12.0
+
+- !!org.example.database.entity.CDR
+  anum: Israa Tariq
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 05:27
+  usage: 440.0
+
+- !!org.example.database.entity.CDR
+  anum: King Sarah
+  bnum: Jeffrey Adams
+  serviceType: CALL
+  startDateTime: 2024-08-26 05:27
+  usage: 18.0
+
+- !!org.example.database.entity.CDR
+  anum: Khalid Al-Faisal
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 05:38
+  usage: 332.0
+
+- !!org.example.database.entity.CDR
+  anum: Zeina Al-Hadi
+  bnum: Yasmeen Al-Muhannadi
+  serviceType: SMS
+  startDateTime: 2024-08-26 05:38
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: White Donna
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 05:47
+  usage: 9.0
+
+- !!org.example.database.entity.CDR
+  anum: Lee George
+  bnum: Noor Al-Siddiq
+  serviceType: SMS
+  startDateTime: 2024-08-26 05:47
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Hassan Al-Sheikh
+  bnum: Rana Al-Muhannadi
+  serviceType: SMS
+  startDateTime: 2024-08-26 05:47
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Hiba Al-Mahdi
+  bnum: Charles Garcia
+  serviceType: CALL
+  startDateTime: 2024-08-26 05:59
+  usage: 46.0
+
+- !!org.example.database.entity.CDR
+  anum: Mentor Shaheen
+  bnum: Rodriguez Margaret
+  serviceType: CALL
+  startDateTime: 2024-08-26 05:59
+  usage: 38.0
+
+- !!org.example.database.entity.CDR
+  anum: Michelle Clark
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 05:59
+  usage: 78.0
+
+- !!org.example.database.entity.CDR
+  anum: Amin Al-Mansour
+  bnum: Zeina Al-Amin
+  serviceType: CALL
+  startDateTime: 2024-08-26 06:00
+  usage: 53.0
+
+- !!org.example.database.entity.CDR
+  anum: Jackson Andrew
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 06:00
+  usage: 534.0
+
+- !!org.example.database.entity.CDR
+  anum: Dina Al-Qadir
+  bnum: Davis Maria
+  serviceType: SMS
+  startDateTime: 2024-08-26 06:01
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Brown Barbara
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 06:05
+  usage: 520.0
+
+- !!org.example.database.entity.CDR
+  anum: Nancy Moore
+  bnum: Nehad AbdelZaher
+  serviceType: SMS
+  startDateTime: 2024-08-26 06:05
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Joshua Lee
+  bnum: Rania Al-Farouq
+  serviceType: SMS
+  startDateTime: 2024-08-26 06:05
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Karim Emad
+  bnum: Nadir Fouad
+  serviceType: CALL
+  startDateTime: 2024-08-26 06:07
+  usage: 30.0
+
+- !!org.example.database.entity.CDR
+  anum: ''
+  bnum: Rana Al-Sabbagh
+  serviceType: SMS
+  startDateTime: 2024-08-26 06:07
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Elizabeth Jones
+  bnum: Tariq Al-Zain
+  serviceType: SMS
+  startDateTime: 2024-08-26 06:09
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Timothy Nelson
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 06:09
+  usage: 215.0
+
+- !!org.example.database.entity.CDR
+  anum: Ruba Al-Qadir
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 06:09
+  usage: 402.0
+
+- !!org.example.database.entity.CDR
+  anum: Walker Angela
+  bnum: Wilson Dorothy
+  serviceType: CALL
+  startDateTime: 2024-08-26 06:24
+  usage: 13.0
+
+- !!org.example.database.entity.CDR
+  anum: Laura King
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 06:24
+  usage: 624.0
+
+- !!org.example.database.entity.CDR
+  anum: Rania Al-Khaled
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 06:29
+  usage: 814.0
+
+- !!org.example.database.entity.CDR
+  anum: Alice Johnson
+  bnum: Bob Brown
+  serviceType: SMS
+  startDateTime: 2024-08-26 06:40
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Yasmin Al-Amin
+  bnum: Basil Mahmoud
+  serviceType: CALL
+  startDateTime: 2024-08-26 06:40
+  usage: 22.0
+
+- !!org.example.database.entity.CDR
+  anum: Andrew Harris
+  bnum: Nadim Ameen
+  serviceType: CALL
+  startDateTime: 2024-08-26 06:53
+  usage: 32.0
+
+- !!org.example.database.entity.CDR
+  anum: Ruba Al-Hadi
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 06:54
+  usage: 827.0
+
+- !!org.example.database.entity.CDR
+  anum: Anderson Mark
+  bnum: Jessica Nelson
+  serviceType: SMS
+  startDateTime: 2024-08-26 06:54
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Imad Al-Qassem
+  bnum: Jane Smith
+  serviceType: SMS
+  startDateTime: 2024-08-26 06:54
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Huda Al-Zain
+  bnum: Ghada Sufyan
+  serviceType: CALL
+  startDateTime: 2024-08-26 06:59
+  usage: 57.0
+
+- !!org.example.database.entity.CDR
+  anum: Mazen Idris
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 06:59
+  usage: 928.0
+
+- !!org.example.database.entity.CDR
+  anum: Bassem Al-Aziz
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 06:59
+  usage: 481.0
+
+- !!org.example.database.entity.CDR
+  anum: Leila Al-Najjar
+  bnum: Hadi Nizar
+  serviceType: CALL
+  startDateTime: 2024-08-26 07:00
+  usage: 50.0
+
+- !!org.example.database.entity.CDR
+  anum: Donald Jackson
+  bnum: Malik Al-Aziz
+  serviceType: SMS
+  startDateTime: 2024-08-26 07:10
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Omar Al-Najjar
+  bnum: Hanan Al-Din
+  serviceType: SMS
+  startDateTime: 2024-08-26 07:10
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: White Joshua
+  bnum: Bilal Mansour
+  serviceType: SMS
+  startDateTime: 2024-08-26 07:13
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Brenda Smith
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 07:22
+  usage: 849.0
+
+- !!org.example.database.entity.CDR
+  anum: Muna Essam
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 07:30
+  usage: 411.0
+
+- !!org.example.database.entity.CDR
+  anum: Yasmin Al-Hassan
+  bnum: Robert Williams
+  serviceType: CALL
+  startDateTime: 2024-08-26 07:37
+  usage: 48.0
+
+- !!org.example.database.entity.CDR
+  anum: Yasmeen Al-Rashid
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 07:49
+  usage: 272.0
+
+- !!org.example.database.entity.CDR
+  anum: Kevin Clark
+  bnum: Saeed Al-Karim
+  serviceType: SMS
+  startDateTime: 2024-08-26 08:00
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Mohamed Shaheen
+  bnum: Lisa Hernandez
+  serviceType: SMS
+  startDateTime: 2024-08-26 08:13
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Fahad Younis
+  bnum: Tariq Al-Mansour
+  serviceType: SMS
+  startDateTime: 2024-08-26 08:28
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Saeed Al-Mansour
+  bnum: Cynthia Walker
+  serviceType: CALL
+  startDateTime: 2024-08-26 08:28
+  usage: 60.0
+
+- !!org.example.database.entity.CDR
+  anum: Tariq Al-Qadir
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 08:30
+  usage: 536.0
+
+- !!org.example.database.entity.CDR
+  anum: Anas AlSenaidy
+  bnum: Mark Anderson
+  serviceType: SMS
+  startDateTime: 2024-08-26 08:30
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Patricia Johnson
+  bnum: Ghassan Ehab
+  serviceType: CALL
+  startDateTime: 2024-08-26 08:30
+  usage: 11.0
+
+- !!org.example.database.entity.CDR
+  anum: Mahmoud Al-Muhannadi
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 08:39
+  usage: 913.0
+
+- !!org.example.database.entity.CDR
+  anum: Moore Betty
+  bnum: Deborah Adams
+  serviceType: SMS
+  startDateTime: 2024-08-26 08:49
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Yasmin Al-Mubarak
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 08:55
+  usage: 927.0
+
+- !!org.example.database.entity.CDR
+  anum: Bilal Al-Rashid
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 08:55
+  usage: 277.0
+
+- !!org.example.database.entity.CDR
+  anum: Layla Al-Hadi
+  bnum: Lama Al-Muhammad
+  serviceType: SMS
+  startDateTime: 2024-08-26 08:56
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Adel Al-Qadir
+  bnum: Rana Al-Qadir
+  serviceType: CALL
+  startDateTime: 2024-08-26 08:56
+  usage: 2.0
+
+- !!org.example.database.entity.CDR
+  anum: Huda Al-Karim
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 09:00
+  usage: 995.0
+
+- !!org.example.database.entity.CDR
+  anum: Fawaz Tamer
+  bnum: Karen Jackson
+  serviceType: CALL
+  startDateTime: 2024-08-26 09:00
+  usage: 58.0
+
+- !!org.example.database.entity.CDR
+  anum: Bassem Al-Saleh
+  bnum: Christopher Garcia
+  serviceType: SMS
+  startDateTime: 2024-08-26 09:00
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Barbara Jones
+  bnum: Anwar Al-Najjar
+  serviceType: CALL
+  startDateTime: 2024-08-26 09:09
+  usage: 24.0
+
+- !!org.example.database.entity.CDR
+  anum: Dorothy Martinez
+  bnum: Layla Al-Qadir
+  serviceType: CALL
+  startDateTime: 2024-08-26 09:09
+  usage: 27.0
+
+- !!org.example.database.entity.CDR
+  anum: Omar Al-Khatib
+  bnum: Kareem Al-Hadi
+  serviceType: SMS
+  startDateTime: 2024-08-26 09:19
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Matthew Wilson
+  bnum: Noura Khalid
+  serviceType: SMS
+  startDateTime: 2024-08-26 09:32
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Jason Green
+  bnum: Nadia Aref
+  serviceType: CALL
+  startDateTime: 2024-08-26 09:32
+  usage: 15.0
+
+- !!org.example.database.entity.CDR
+  anum: Ruba Al-Farouq
+  bnum: Samar Ihab
+  serviceType: CALL
+  startDateTime: 2024-08-26 09:32
+  usage: 34.0
+
+- !!org.example.database.entity.CDR
+  anum: Jennifer Miller
+  bnum: Faris Al-Karim
+  serviceType: CALL
+  startDateTime: 2024-08-26 09:38
+  usage: 37.0
+
+- !!org.example.database.entity.CDR
+  anum: Walid Al-Mahdi
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 09:38
+  usage: 182.0
+
+- !!org.example.database.entity.CDR
+  anum: Yasmeen Al-Qadir
+  bnum: Fatima Al-Siddiq
+  serviceType: CALL
+  startDateTime: 2024-08-26 09:38
+  usage: 29.0
+
+- !!org.example.database.entity.CDR
+  anum: Omar Al-Saeed
+  bnum: Reem Nizar
+  serviceType: CALL
+  startDateTime: 2024-08-26 09:46
+  usage: 44.0
+
+- !!org.example.database.entity.CDR
+  anum: Layla Al-Amin
+  bnum: Steven Hernandez
+  serviceType: CALL
+  startDateTime: 2024-08-26 09:46
+  usage: 43.0
+
+- !!org.example.database.entity.CDR
+  anum: Dalia Rafik
+  bnum: Amin Al-Rashid
+  serviceType: CALL
+  startDateTime: 2024-08-26 09:53
+  usage: 16.0
+
+- !!org.example.database.entity.CDR
+  anum: George Lee
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 09:53
+  usage: 803.0
+
+- !!org.example.database.entity.CDR
+  anum: Ibtisam Rafi
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 09:53
+  usage: 494.0
+
+- !!org.example.database.entity.CDR
+  anum: Zeina Al-Aziz
+  bnum: Siham Faris
+  serviceType: CALL
+  startDateTime: 2024-08-26 09:57
+  usage: 30.0
+
+- !!org.example.database.entity.CDR
+  anum: Ruth Clark
+  bnum: Susan Rodriguez
+  serviceType: CALL
+  startDateTime: 2024-08-26 09:57
+  usage: 10.0
+
+- !!org.example.database.entity.CDR
+  anum: Carol Lee
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 10:00
+  usage: 438.0
+
+- !!org.example.database.entity.CDR
+  anum: Laila Majid
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 10:00
+  usage: 739.0
+
+- !!org.example.database.entity.CDR
+  anum: Tariq Sameh
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 10:13
+  usage: 469.0
+
+- !!org.example.database.entity.CDR
+  anum: Walid Al-Mansour
+  bnum: Matthew Taylor
+  serviceType: SMS
+  startDateTime: 2024-08-26 10:13
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Imad Al-Rashid
+  bnum: Youssef Al-Din
+  serviceType: SMS
+  startDateTime: 2024-08-26 10:24
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Shadia Ibrahim
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 10:28
+  usage: 421.0
+
+- !!org.example.database.entity.CDR
+  anum: Bassam Al-Nasser
+  bnum: Sara Al-Rashid
+  serviceType: SMS
+  startDateTime: 2024-08-26 10:36
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Ali Al-Karim
+  bnum: Jennifer Davis
+  serviceType: SMS
+  startDateTime: 2024-08-26 10:36
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Bassem Al-Mansour
+  bnum: Maysa Emad
+  serviceType: SMS
+  startDateTime: 2024-08-26 10:48
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Wael Tariq
+  bnum: Khalid Saeed
+  serviceType: CALL
+  startDateTime: 2024-08-26 10:48
+  usage: 34.0
+
+- !!org.example.database.entity.CDR
+  anum: Michael Smith
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 10:48
+  usage: 690.0
+
+- !!org.example.database.entity.CDR
+  anum: John Doe
+  bnum: Zeina Al-Muhammad
+  serviceType: CALL
+  startDateTime: 2024-08-26 10:52
+  usage: 60.0
+
+- !!org.example.database.entity.CDR
+  anum: Dina Al-Karim
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 10:52
+  usage: 865.0
+
+- !!org.example.database.entity.CDR
+  anum: Mariam Al-Aziz
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 11:00
+  usage: 239.0
+
+- !!org.example.database.entity.CDR
+  anum: Munir Zubair
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 11:00
+  usage: 850.0
+
+- !!org.example.database.entity.CDR
+  anum: Yasmin Al-Farouq
+  bnum: Huda Firas
+  serviceType: SMS
+  startDateTime: 2024-08-26 11:14
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Noor Al-Khaled
+  bnum: Clark Laura
+  serviceType: CALL
+  startDateTime: 2024-08-26 11:14
+  usage: 24.0
+
+- !!org.example.database.entity.CDR
+  anum: Anas Al-Zain
+  bnum: Tariq Al-Saadi
+  serviceType: SMS
+  startDateTime: 2024-08-26 11:19
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Rania Al-Amin
+  bnum: Khalid Al-Amin
+  serviceType: SMS
+  startDateTime: 2024-08-26 11:34
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Noor Al-Qadir
+  bnum: Lila Yassin
+  serviceType: SMS
+  startDateTime: 2024-08-26 11:34
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Asad Ziad
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 11:34
+  usage: 680.0
+
+- !!org.example.database.entity.CDR
+  anum: Nabil Al-Maamoun
+  bnum: Sharon King
+  serviceType: CALL
+  startDateTime: 2024-08-26 11:36
+  usage: 50.0
+
+- !!org.example.database.entity.CDR
+  anum: Amin Al-Muhammad
+  bnum: Anthony Martinez
+  serviceType: CALL
+  startDateTime: 2024-08-26 11:36
+  usage: 35.0
+
+- !!org.example.database.entity.CDR
+  anum: Anthony Hernandez
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 11:36
+  usage: 619.0
+
+- !!org.example.database.entity.CDR
+  anum: Jamal Munir
+  bnum: Yasmeen Al-Mahdi
+  serviceType: CALL
+  startDateTime: 2024-08-26 11:48
+  usage: 25.0
+
+- !!org.example.database.entity.CDR
+  anum: Yara Hakim
+  bnum: Jason Walker
+  serviceType: CALL
+  startDateTime: 2024-08-26 11:48
+  usage: 55.0
+
+- !!org.example.database.entity.CDR
+  anum: Sana Youssef
+  bnum: Sharif Karam
+  serviceType: SMS
+  startDateTime: 2024-08-26 11:48
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Anwar Basem
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 11:57
+  usage: 235.0
+
+- !!org.example.database.entity.CDR
+  anum: Nabil Al-Karim
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 12:00
+  usage: 249.0
+
+- !!org.example.database.entity.CDR
+  anum: Khalid Al-Din
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 12:15
+  usage: 25.0
+
+- !!org.example.database.entity.CDR
+  anum: Elizabeth Miller
+  bnum: Karim Al-Saad
+  serviceType: SMS
+  startDateTime: 2024-08-26 12:29
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Thomas Wilson
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 12:44
+  usage: 94.0
+
+- !!org.example.database.entity.CDR
+  anum: Mary Smith
+  bnum: Yasmin Anwar
+  serviceType: SMS
+  startDateTime: 2024-08-26 12:44
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Timothy Scott
+  bnum: Susan Martinez
+  serviceType: SMS
+  startDateTime: 2024-08-26 12:52
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Majid Malik
+  bnum: null
+  serviceType: DATA
+  startDateTime: 2024-08-26 12:59
+  usage: 24.0
+
+- !!org.example.database.entity.CDR
+  anum: Maria Garcia
+  bnum: Saeed Al-Din
+  serviceType: CALL
+  startDateTime: 2024-08-26 12:59
+  usage: 48.0
+
+- !!org.example.database.entity.CDR
+  anum: Adnan Al-Tamimi
+  bnum: James Smith
+  serviceType: CALL
+  startDateTime: 2024-08-26 12:59
+  usage: 43.0
+
+- !!org.example.database.entity.CDR
+  anum: Hall Melissa
+  bnum: Nada Badr
+  serviceType: SMS
+  startDateTime: 2024-08-26 13:00
+  usage: 1.0
+
+- !!org.example.database.entity.CDR
+  anum: Kenneth Thompson
+  bnum: Nahla Kamal
+  serviceType: CALL
+  startDateTime: 2024-08-26 13:00
+  usage: 26.0
+
+- !!org.example.database.entity.CDR
+  anum: Richard Davis
+  bnum: Bassem Al-Rashid
+  serviceType: CALL
+  startDateTime: 2024-08-26 13:00
+  usage: 17.0
+

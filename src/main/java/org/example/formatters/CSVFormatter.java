@@ -1,6 +1,6 @@
 package org.example.formatters;
 
-import org.example.CDR;
+import org.example.database.entity.CDR;
 import org.example.display.LoginMenu;
 import org.example.display.Menu;
 

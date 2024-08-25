@@ -1,5 +1,4 @@
 package org.example.utils;
-import org.example.CDR;
 import java.util.Random;
 
 public class UsageGenerator {

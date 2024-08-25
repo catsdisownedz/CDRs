@@ -3,7 +3,7 @@ package org.example.formatters;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.databind.SerializationFeature;
-import org.example.CDR;
+import org.example.database.entity.CDR;
 
 import java.io.FileWriter;
 import java.io.IOException;
