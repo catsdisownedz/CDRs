@@ -1,165 +1,164 @@
 ANUM , BNUM , SERVICE_TYPE , USAGE , START_DATE_TIME
 
-Maha Al-Amin,Lee George,SMS,1.0,2024-08-26 00:00
-Hernandez Karen,Amin Al-Rashid,SMS,1.0,2024-08-26 00:19
-Edward Green,Heba Al-Fawaz,SMS,1.0,2024-08-26 00:19
-Zeina Al-Muhammad,Zeina Al-Rashid,CALL,5.0,2024-08-26 00:40
-Basil Mahmoud,Laura King,SMS,1.0,2024-08-26 01:00
-Ibrahim Al-Amin,null,DATA,796.0,2024-08-26 01:27
-Garcia Maria,null,DATA,689.0,2024-08-26 01:44
-Basim Al-Saleh,Michael Brown,CALL,45.0,2024-08-26 01:44
-Nancy Taylor,Richard Davis,CALL,12.0,2024-08-26 01:52
-Ruba Al-Hadi,Hassan Al-Sheikh,SMS,1.0,2024-08-26 02:00
-Davis Thomas,null,DATA,889.0,2024-08-26 02:00
-Maria Garcia,Rana Al-Khatib,SMS,1.0,2024-08-26 02:02
-Zainab Al-Sabbagh,null,DATA,739.0,2024-08-26 02:15
-Andrew Harris,Daniel Anderson,CALL,55.0,2024-08-26 02:43
-King Ronald,null,DATA,263.0,2024-08-26 02:52
-Ronald Adams,null,DATA,334.0,2024-08-26 02:52
-Walker Angela,Melissa Hall,SMS,1.0,2024-08-26 02:54
-Ryan Nelson,Donald Jackson,SMS,1.0,2024-08-26 02:54
-Brian King,null,DATA,906.0,2024-08-26 02:57
-Kevin Clark,Mark Moore,CALL,7.0,2024-08-26 02:57
-Zeina Al-Siddiq,null,DATA,762.0,2024-08-26 03:00
-Faris Al-Din,Clark Edward,CALL,43.0,2024-08-26 03:05
-Sawsan Omar,null,DATA,781.0,2024-08-26 03:05
-Jane Smith,null,DATA,789.0,2024-08-26 03:29
-Siham Faris,Kevin Harris,SMS,1.0,2024-08-26 03:37
-Ziad Abdelkader,Ryan Hall,SMS,1.0,2024-08-26 04:00
-Laila Al-Najjar,null,DATA,727.0,2024-08-26 04:27
-Jamal Munir,null,DATA,532.0,2024-08-26 04:54
-Khalid Al-Din,Fahad Younis,SMS,1.0,2024-08-26 05:00
-Green Deborah,Farah Al-Din,SMS,1.0,2024-08-26 05:00
-Bob Brown,Farah Al-Rashid,SMS,1.0,2024-08-26 05:12
-Lila Yassin,Leila Al-Khatib,SMS,1.0,2024-08-26 05:12
-Taylor Donald,Mariam Al-Hassan,SMS,1.0,2024-08-26 05:42
-David Garcia,null,DATA,471.0,2024-08-26 05:42
-John Johnson,Adnan Al-Din,SMS,1.0,2024-08-26 06:00
-Khaled Al-Mansour,Lee Sharon,CALL,2.0,2024-08-26 06:00
-Jennifer Davis,null,DATA,66.0,2024-08-26 06:03
-Noura Iman,null,DATA,662.0,2024-08-26 06:19
-Yasmeen Al-Khaled,Lisa Anderson,SMS,1.0,2024-08-26 06:19
-Sarah Scott,null,DATA,771.0,2024-08-26 06:20
-Zeina Al-Hassan,null,DATA,912.0,2024-08-26 06:20
-Zain Al-Khalil,Barbara Brown,CALL,37.0,2024-08-26 06:22
-Nelson Ryan,Omar Al-Khatib,SMS,1.0,2024-08-26 06:22
-Jones Elizabeth,Patricia Williams,SMS,1.0,2024-08-26 06:28
-Lopez Brian,Hatem Abbas,CALL,2.0,2024-08-26 06:46
-Fahad Al-Mansour,Jackson Andrew,CALL,29.0,2024-08-26 07:00
-Noor Al-Qassem,Sara Al-Karim,SMS,1.0,2024-08-26 07:00
-Bilal Al-Rashid,Alice Johnson,SMS,1.0,2024-08-26 07:19
-Miller Elizabeth,Anwar Basem,CALL,44.0,2024-08-26 07:19
-King Sarah,Perez Angela,CALL,48.0,2024-08-26 07:27
-Matthew Taylor,Barbara Jones,CALL,40.0,2024-08-26 07:27
-Jeffrey Adams,Rodriguez Daniel,SMS,1.0,2024-08-26 07:56
-Huda Al-Bashir,Nasir Al-Muhannadi,CALL,12.0,2024-08-26 08:00
-Rodriguez Margaret,Harris Kevin,CALL,17.0,2024-08-26 08:00
-Patricia Johnson,Anas Al-Zain,CALL,4.0,2024-08-26 08:15
-Joshua Lee,Jason Walker,CALL,36.0,2024-08-26 08:15
-Harris Carol,Yasmeen Al-Muhannadi,CALL,13.0,2024-08-26 08:44
-Lopez Ruth,Leila Al-Najjar,SMS,1.0,2024-08-26 08:51
-Adams Jessica,Jeffrey Perez,SMS,1.0,2024-08-26 08:51
-Layla Al-Amin,Rodriguez Susan,SMS,1.0,2024-08-26 09:00
-Zeina Al-Sabbagh,Thompson Donna,SMS,1.0,2024-08-26 09:25
-Ahmed Al-Mansour,null,DATA,561.0,2024-08-26 09:28
-Tariq Al-Din,Sarah Al-Aziz,SMS,1.0,2024-08-26 09:28
-Paul Moore,Lisa Hernandez,SMS,1.0,2024-08-26 09:55
-Linda Williams,Kenneth Thompson,CALL,30.0,2024-08-26 09:55
-William Johnson,Ruba Al-Farouq,SMS,1.0,2024-08-26 10:00
-Saeed Al-Mahdi,null,DATA,934.0,2024-08-26 10:00
-Nada Al-Hadi,Robert Williams,CALL,33.0,2024-08-26 10:12
-Fatima Al-Najjar,Anas Al-Din,SMS,1.0,2024-08-26 10:12
-Harris Ruth,Daniel Rodriguez,SMS,1.0,2024-08-26 10:27
-Thompson Kenneth,Yasmin Anwar,SMS,1.0,2024-08-26 10:53
-Tariq Jameel,Wilson Dorothy,CALL,25.0,2024-08-26 10:57
-Faisal Al-Amin,null,DATA,4.0,2024-08-26 10:57
-David Miller,null,DATA,609.0,2024-08-26 11:00
-Kimberly Green,null,DATA,13.0,2024-08-26 11:00
-Yasmeen Al-Rashid,Anas Al-Karim,SMS,1.0,2024-08-26 11:02
-Rania Al-Amin,Imad Al-Mansour,CALL,38.0,2024-08-26 11:15
-Rania Al-Khaled,Adnan Al-Tamimi,SMS,1.0,2024-08-26 11:40
-Christopher Garcia,Rami Al-Muhanna,CALL,5.0,2024-08-26 11:43
-Amin Al-Saleh,null,DATA,547.0,2024-08-26 11:55
-Omar Al-Saeed,Zeina Al-Aziz,CALL,42.0,2024-08-26 11:55
-Dorothy Martinez,Hamza Maher,CALL,8.0,2024-08-26 12:00
-Layla Al-Karim,Asad Ziad,SMS,1.0,2024-08-26 12:10
-Christopher Martinez,Mazen Al-Mansour,SMS,1.0,2024-08-26 12:32
-Rania Al-Farouq,null,DATA,354.0,2024-08-26 12:38
-Mary Johnson,Mohamed AbdelZaher,SMS,1.0,2024-08-26 12:38
-Rana Al-Sabbagh,Betty Thompson,SMS,1.0,2024-08-26 12:39
-Majid Al-Rashid,Samar Ihab,CALL,49.0,2024-08-26 12:39
-John Doe,Dina Al-Qadir,CALL,38.0,2024-08-26 12:57
-Jennifer Miller,Anderson Nancy,SMS,1.0,2024-08-26 13:00
-Ghada Sufyan,White Donna,SMS,1.0,2024-08-26 13:10
-Ruba Al-Saadi,Mazen Idris,SMS,1.0,2024-08-26 13:21
-Ronald King,Martinez Lisa,SMS,1.0,2024-08-26 13:21
-Laila Majid,null,DATA,48.0,2024-08-26 13:42
-Mustafa Al-Maamoun,Garcia Susan,SMS,1.0,2024-08-26 13:42
-Maha Tarek,Moore Paul,CALL,8.0,2024-08-26 14:00
-Imad Al-Rashid,null,DATA,624.0,2024-08-26 14:00
-Nabil Al-Muhannadi,null,DATA,243.0,2024-08-26 14:20
-Habiba Ahmed,null,DATA,714.0,2024-08-26 14:27
-Yasmeen Al-Faisal,Sharon King,CALL,45.0,2024-08-26 14:30
-Doaa Saleh,Zeina Al-Amin,SMS,1.0,2024-08-26 14:30
-Yasmeen Al-Hassan,null,DATA,545.0,2024-08-26 14:54
-Hernandez Steven,Hana Nasser,SMS,1.0,2024-08-26 15:00
-Charles Garcia,null,DATA,320.0,2024-08-26 15:00
-Amin Al-Muhammad,null,DATA,96.0,2024-08-26 15:24
-Layla Al-Farouq,null,DATA,338.0,2024-08-26 15:24
-Walid Al-Qadir,null,DATA,483.0,2024-08-26 15:40
-Layla Al-Hassan,Shadia Ibrahim,SMS,1.0,2024-08-26 15:52
-Miller Jennifer,Adams Jeffrey,CALL,24.0,2024-08-26 16:00
-Nadia Aref,Yasmin Al-Hassan,CALL,51.0,2024-08-26 16:27
-Kimberly Scott,Fatima Al-Siddiq,SMS,1.0,2024-08-26 16:34
-Brown Barbara,Yasmin Al-Amin,CALL,24.0,2024-08-26 16:34
-Youssef Al-Din,White Joshua,SMS,1.0,2024-08-26 16:44
-Mahmoud Al-Zain,null,DATA,477.0,2024-08-26 16:44
-Omar Al-Najjar,null,DATA,377.0,2024-08-26 16:51
-George Scott,null,DATA,83.0,2024-08-26 17:00
-Maysa Emad,null,DATA,751.0,2024-08-26 17:07
-Reem Al-Sabbagh,null,DATA,283.0,2024-08-26 17:30
-Lama Al-Muhammad,David Johnson,CALL,12.0,2024-08-26 17:33
-Maria Davis,Deborah Adams,SMS,1.0,2024-08-26 17:33
-Tariq Jawad,Joseph Rodriguez,CALL,59.0,2024-08-26 17:38
-Hamid Nour,Paul White,SMS,1.0,2024-08-26 18:00
-Nancy Moore,Jamal Al-Mansour,CALL,38.0,2024-08-26 18:00
-Mary Smith,Charles Jones,CALL,25.0,2024-08-26 18:21
-Imran Al-Mansour,Ruba Al-Qadir,SMS,1.0,2024-08-26 18:21
-Salma Al-Najjar,null,DATA,679.0,2024-08-26 18:40
-Hernandez Betty,null,DATA,707.0,2024-08-26 18:40
-Donald Taylor,null,DATA,493.0,2024-08-26 19:00
-Amira Riad,null,DATA,750.0,2024-08-26 19:00
-White Carol,Faris Al-Karim,SMS,1.0,2024-08-26 19:12
-Elizabeth Jones,Steven Thompson,CALL,37.0,2024-08-26 19:15
-Bilal Al-Mansour,Susan Rodriguez,CALL,46.0,2024-08-26 19:15
-Roula Ashraf,Anthony Hernandez,SMS,1.0,2024-08-26 19:19
-Hall Brenda,null,DATA,924.0,2024-08-26 19:19
-Jackson Helen,null,DATA,829.0,2024-08-26 19:36
-Khalid Al-Mansour,Dina Al-Khalil,CALL,28.0,2024-08-26 20:00
-Sara Al-Rashid,Aisha Al-Mubarak,CALL,18.0,2024-08-26 20:18
-Israa Tariq,Layla Al-Qadir,SMS,1.0,2024-08-26 20:22
-Ruba Al-Qassim,null,DATA,432.0,2024-08-26 20:42
-Perez Melissa,null,DATA,881.0,2024-08-26 20:42
-Garcia Christopher,Susan Martinez,CALL,10.0,2024-08-26 20:55
-Maha Al-Bashir,null,DATA,528.0,2024-08-26 20:55
-Moore Helen,Kenneth Lopez,CALL,46.0,2024-08-26 21:00
-Nada Al-Muhammad,Nehad Mohamed,CALL,43.0,2024-08-26 21:24
-Dorothy Taylor,Ziyad Nabil,CALL,42.0,2024-08-26 21:31
-Michael Smith,Michelle Clark,CALL,37.0,2024-08-26 21:49
-Basma Zaki,Amin Al-Din,CALL,31.0,2024-08-26 21:49
-Yasmeen Al-Qasim,James Smith,CALL,58.0,2024-08-26 21:58
-Wilson Matthew,Imran Al-Mubarak,SMS,1.0,2024-08-26 22:00
-Lee Michelle,null,DATA,182.0,2024-08-26 22:10
-Scott Timothy,null,DATA,688.0,2024-08-26 22:10
-Miller Joseph,Margaret Wilson,CALL,55.0,2024-08-26 22:27
-Nelson Cynthia,null,DATA,183.0,2024-08-26 22:31
-Hanan Al-Rashid,null,DATA,348.0,2024-08-26 22:55
-Richard Brown,Rana Al-Farouq,SMS,1.0,2024-08-26 22:55
-Saeed Al-Mansour,Mark Anderson,CALL,2.0,2024-08-26 23:00
-David Williams,Huda Al-Qadir,SMS,1.0,2024-08-26 23:23
-Yasmeen Al-Mansour,Thompson Sandra,SMS,1.0,2024-08-26 23:23
-Susan Williams,Taylor Karen,CALL,45.0,2024-08-26 23:33
-Ruba Al-Najjar,Martinez Anthony,CALL,17.0,2024-08-26 23:33
-Cynthia Walker,Nabil Al-Maamoun,SMS,1.0,2024-08-26 23:50
-Kareem Al-Hadi,Lopez Sharon,SMS,1.0,2024-08-26 23:59
-Timothy Nelson,null,DATA,224.0,2024-08-26 23:59
+Joseph Rodriguez,null,DATA,59.0,2024-08-26 00:00
+Richard Davis,null,DATA,273.0,2024-08-26 00:00
+Ruba Al-Qadir,Anwar Al-Najjar,SMS,1.0,2024-08-26 00:00
+Richard Brown,Ruba Al-Hadi,SMS,1.0,2024-08-26 00:00
+Garcia Maria,Miller Joseph,CALL,12.0,2024-08-26 00:16
+Noor Al-Khaled,Ibrahim Al-Tamimi,SMS,1.0,2024-08-26 00:16
+Walker Angela,Roula Ashraf,SMS,1.0,2024-08-26 00:40
+Samir Hassan,Walid Al-Qadir,SMS,1.0,2024-08-26 00:40
+Lisa Anderson,Engy ELBatran,SMS,1.0,2024-08-26 00:43
+Kimberly Green,Melissa Hall,CALL,26.0,2024-08-26 00:43
+Maysa Emad,null,DATA,937.0,2024-08-26 00:43
+Amin Al-Muhammad,Donald Jackson,CALL,9.0,2024-08-26 00:43
+Tareq Al-Najjar,Rami Al-Muhanna,SMS,1.0,2024-08-26 00:43
+Rodriguez Margaret,null,DATA,480.0,2024-08-26 00:43
+Nadir Fouad,Imran Al-Mansour,CALL,22.0,2024-08-26 00:43
+Zainab Al-Sabbagh,null,DATA,819.0,2024-08-26 01:00
+Moore Paul,null,DATA,57.0,2024-08-26 01:00
+Laura King,Joshua Lee,SMS,1.0,2024-08-26 01:00
+Nancy Taylor,Dalia Rafik,SMS,1.0,2024-08-26 01:00
+Hernandez Betty,null,DATA,921.0,2024-08-26 01:02
+Khalid Al-Amin,Zeina Al-Siddiq,CALL,3.0,2024-08-26 01:02
+White Carol,Kenneth Lopez,SMS,1.0,2024-08-26 01:02
+David Williams,Khalid Saeed,CALL,32.0,2024-08-26 01:02
+Amin Al-Rashid,Clark Edward,CALL,15.0,2024-08-26 01:02
+Harris Carol,Khalid Al-Mansour,CALL,47.0,2024-08-26 01:11
+Lopez Brian,null,DATA,885.0,2024-08-26 01:11
+Daniel Rodriguez,null,DATA,258.0,2024-08-26 01:11
+Deborah Adams,Rania Fady,SMS,1.0,2024-08-26 01:11
+Sandra Harris,Sara Al-Rashid,SMS,1.0,2024-08-26 01:32
+White Donna,Bilal Al-Mansour,SMS,1.0,2024-08-26 01:32
+John Doe,null,DATA,574.0,2024-08-26 01:32
+Yasmin Al-Faisal,Hall Brenda,SMS,1.0,2024-08-26 01:32
+Huda Al-Karim,Timothy Scott,SMS,1.0,2024-08-26 01:32
+Imran Al-Mubarak,Layla Al-Karim,CALL,58.0,2024-08-26 01:32
+Ziad Al-Majid,Hernandez Steven,SMS,1.0,2024-08-26 02:00
+Hana Nasser,Laila Majid,CALL,29.0,2024-08-26 02:00
+Maha Al-Amin,Lee Michelle,CALL,25.0,2024-08-26 02:00
+Dorothy Taylor,Khalid Al-Faisal,SMS,1.0,2024-08-26 02:14
+Adnan Al-Tamimi,Layla Al-Amin,SMS,1.0,2024-08-26 02:14
+Mira Adel,Youssef Al-Khatib,SMS,1.0,2024-08-26 02:14
+Kevin Clark,Anthony Hernandez,CALL,26.0,2024-08-26 02:14
+Lee George,Edward Clark,SMS,1.0,2024-08-26 02:14
+Charles Jones,null,DATA,711.0,2024-08-26 02:14
+James Smith,null,DATA,352.0,2024-08-26 02:37
+Harris Ruth,null,DATA,773.0,2024-08-26 02:37
+Ruba Al-Najjar,Rodriguez Susan,SMS,1.0,2024-08-26 02:37
+Doaa Saleh,Layla Al-Farouq,CALL,60.0,2024-08-26 02:37
+William Johnson,George Scott,CALL,26.0,2024-08-26 02:55
+Khalid Al-Muhannadi,Huda Al-Zain,CALL,14.0,2024-08-26 02:55
+Yasmin Al-Hadi,Huda Al-Faisal,SMS,1.0,2024-08-26 02:55
+Bassem Al-Aziz,null,DATA,441.0,2024-08-26 02:55
+Huda Al-Qadir,null,DATA,533.0,2024-08-26 02:55
+Amin Al-Din,null,DATA,259.0,2024-08-26 02:55
+Maria Garcia,Amin Al-Farouq,SMS,1.0,2024-08-26 03:00
+Samer Najm,Green Deborah,CALL,25.0,2024-08-26 03:00
+Garcia Susan,Tariq Al-Hassan,CALL,48.0,2024-08-26 03:00
+Walid Al-Mahdi,Timothy Nelson,SMS,1.0,2024-08-26 03:00
+Patricia Williams,Leila Al-Khatib,SMS,1.0,2024-08-26 03:00
+Hernandez Karen,Leila Al-Muhannadi,SMS,1.0,2024-08-26 03:05
+Bassam Al-Nasser,Salma Amin,CALL,17.0,2024-08-26 03:24
+Margaret Wilson,Fahad Al-Mansour,CALL,52.0,2024-08-26 03:24
+Margaret Anderson,Rana Al-Mansour,SMS,1.0,2024-08-26 03:24
+Ashraf Qasim,Mary Smith,SMS,1.0,2024-08-26 03:24
+Brown Barbara,Andrew Harris,CALL,20.0,2024-08-26 03:24
+Bassem Al-Mansour,Bob Brown,CALL,56.0,2024-08-26 03:24
+Clark Laura,null,DATA,197.0,2024-08-26 03:24
+Yasmin Al-Muhammad,null,DATA,964.0,2024-08-26 03:46
+Lina Al-Faraj,null,DATA,350.0,2024-08-26 03:46
+Sahar Ziyad,Lopez Ruth,CALL,57.0,2024-08-26 03:46
+Lopez Sharon,Omar Al-Mansour,CALL,49.0,2024-08-26 03:56
+Yara Hakim,Karim Emad,CALL,39.0,2024-08-26 03:56
+Basim Al-Saleh,null,DATA,123.0,2024-08-26 03:56
+Yasmin Al-Amin,Martinez Anthony,CALL,1.0,2024-08-26 03:56
+David Johnson,null,DATA,429.0,2024-08-26 03:56
+Ronald Adams,Yasmin Al-Mubarak,SMS,1.0,2024-08-26 03:56
+Michael Brown,Jackson Sandra,CALL,25.0,2024-08-26 04:00
+Susan Williams,Loujain AbdelZaher,CALL,44.0,2024-08-26 04:00
+Perez Angela,Munir Zubair,SMS,1.0,2024-08-26 04:00
+Alice Johnson,null,DATA,506.0,2024-08-26 04:26
+Daniel Anderson,Omar Al-Din,SMS,1.0,2024-08-26 04:31
+Rodriguez Daniel,null,DATA,375.0,2024-08-26 04:31
+Jeffrey Perez,Rana Al-Qadir,CALL,36.0,2024-08-26 04:31
+Tariq Al-Mansour,King Ronald,CALL,2.0,2024-08-26 04:31
+Barbara Jones,null,DATA,597.0,2024-08-26 04:31
+Ruba Al-Saadi,null,DATA,121.0,2024-08-26 04:31
+Mariam Al-Amin,Shahd Mohamed,SMS,1.0,2024-08-26 05:00
+Zayd Mustafa,Edward Green,CALL,27.0,2024-08-26 05:26
+Tahir Ayman,Jackson Helen,SMS,1.0,2024-08-26 05:26
+Thomas Wilson,Sarah Scott,CALL,17.0,2024-08-26 05:26
+Dina Sharif,Davis Thomas,CALL,18.0,2024-08-26 05:26
+Garcia Christopher,Rania Al-Farouq,SMS,1.0,2024-08-26 05:55
+Green Jason,Tariq Mahdi,CALL,4.0,2024-08-26 05:55
+Salma Bassem,Rana Al-Siddiq,CALL,5.0,2024-08-26 06:00
+Mark Moore,Donald Taylor,SMS,1.0,2024-08-26 06:00
+Fatima Al-Amin,Davis Jennifer,CALL,48.0,2024-08-26 06:00
+Adnan Zaki,Paul White,CALL,50.0,2024-08-26 06:09
+Laila Al-Najjar,Zeina Al-Hadi,SMS,1.0,2024-08-26 06:09
+Youssef Al-Din,Ghada Sufyan,SMS,1.0,2024-08-26 06:09
+Omar Al-Khatib,Jones Elizabeth,CALL,34.0,2024-08-26 06:09
+Jane Smith,Charles Garcia,SMS,1.0,2024-08-26 06:09
+John Johnson,Zeina Al-Sabbagh,SMS,1.0,2024-08-26 06:11
+Anas Al-Din,Rana Al-Sabbagh,SMS,1.0,2024-08-26 06:11
+Adams Jessica,Brian King,CALL,26.0,2024-08-26 06:11
+Sawsan Omar,Hall Melissa,CALL,52.0,2024-08-26 06:11
+White Joshua,null,DATA,828.0,2024-08-26 06:11
+Taylor Donald,Jessica Nelson,CALL,0.0,2024-08-26 06:11
+Christopher Garcia,Anderson Mark,SMS,1.0,2024-08-26 06:19
+Anderson Nancy,Hamza Maher,SMS,1.0,2024-08-26 06:19
+Thompson Donna,Adams Jeffrey,SMS,1.0,2024-08-26 06:19
+Yasmeen Al-Rashid,null,DATA,789.0,2024-08-26 06:29
+Ziad Abdelkader,Nabil Al-Maamoun,CALL,9.0,2024-08-26 06:29
+Mary Johnson,Mariam Al-Hassan,CALL,29.0,2024-08-26 06:29
+Anthony Martinez,null,DATA,269.0,2024-08-26 06:54
+Kimberly Scott,null,DATA,170.0,2024-08-26 07:00
+Faris Al-Qadir,Rima Walid,SMS,1.0,2024-08-26 07:23
+Riyad Jawad,Lina Qasim,SMS,1.0,2024-08-26 07:23
+Layla Al-Hassan,Thompson Kenneth,SMS,1.0,2024-08-26 07:23
+Michelle Clark,Zeina Al-Muhammad,CALL,37.0,2024-08-26 07:36
+Yasmin Al-Din,null,DATA,983.0,2024-08-26 07:36
+Yasmeen Al-Qasim,Taylor Karen,SMS,1.0,2024-08-26 07:36
+Nahla Kamal,Reem Nizar,CALL,31.0,2024-08-26 08:00
+Nada Al-Muhammad,null,DATA,906.0,2024-08-26 08:00
+Layla Sameer,Basil Mahmoud,SMS,1.0,2024-08-26 08:00
+Sohair ShamselDin,null,DATA,71.0,2024-08-26 08:00
+Donna Lopez,King Sarah,CALL,12.0,2024-08-26 08:00
+Nelson Ryan,Adel Al-Qadir,CALL,31.0,2024-08-26 08:00
+Matthew Taylor,Ahmed Al-Mansour,SMS,1.0,2024-08-26 08:00
+Israa Tariq,Mohamed Shaheen,SMS,1.0,2024-08-26 08:10
+Susan Rodriguez,Harris Kevin,CALL,37.0,2024-08-26 08:10
+Thompson Sandra,null,DATA,963.0,2024-08-26 08:10
+Jackson Andrew,Dorothy Martinez,CALL,26.0,2024-08-26 08:10
+Adnan Al-Mansour,Christopher Martinez,SMS,1.0,2024-08-26 08:10
+Miller Elizabeth,Ryan Hall,SMS,1.0,2024-08-26 08:10
+Amira Riad,Cynthia Walker,SMS,1.0,2024-08-26 08:10
+Fatima Al-Siddiq,Hazem Yasser,CALL,58.0,2024-08-26 08:13
+Davis Maria,null,DATA,304.0,2024-08-26 08:13
+Bassem Al-Din,Brenda Smith,SMS,1.0,2024-08-26 08:13
+Tariq Jawad,null,DATA,407.0,2024-08-26 08:37
+Sharon King,null,DATA,662.0,2024-08-26 08:37
+Rana Samir,Mahmoud Shaheen,SMS,1.0,2024-08-26 08:39
+Saeed Al-Mahdi,Wilson Dorothy,CALL,13.0,2024-08-26 08:39
+Lisa Hernandez,null,DATA,516.0,2024-08-26 08:39
+Talal Rami,Moore Betty,CALL,56.0,2024-08-26 08:56
+Ghassan Ehab,null,DATA,973.0,2024-08-26 08:56
+Moore Helen,Maria Davis,SMS,1.0,2024-08-26 08:56
+Rania Al-Khaled,Martinez Lisa,CALL,0.0,2024-08-26 08:56
+Faris Al-Din,Saeed Al-Karim,SMS,1.0,2024-08-26 08:56
+Miller Jennifer,Perez Melissa,SMS,1.0,2024-08-26 08:56
+David Miller,Linda Brown,SMS,1.0,2024-08-26 09:00
+Inas Hariri,William Jones,SMS,1.0,2024-08-26 09:00
+Layla Al-Qadir,Reem Al-Sabbagh,CALL,14.0,2024-08-26 09:00
+Kareem Al-Hadi,Bilal Mansour,SMS,1.0,2024-08-26 09:00
+Zeina Al-Rashid,Jason Walker,CALL,7.0,2024-08-26 09:21
+Robert Williams,Yasmeen Al-Hassan,SMS,1.0,2024-08-26 09:35
+Rana Al-Khatib,Hatem Abbas,SMS,1.0,2024-08-26 09:35
+Noor Al-Aziz,Faris Al-Aziz,SMS,1.0,2024-08-26 09:35
+Steven Thompson,Sami Al-Mansour,SMS,1.0,2024-08-26 09:35
+Wilson Matthew,Basma Zaki,CALL,9.0,2024-08-26 09:35
+Bilal Al-Rashid,null,DATA,9.0,2024-08-26 09:35
+Jason Green,Maha Al-Bashir,CALL,15.0,2024-08-26 09:35
+Michael Smith,Anas Al-Karim,CALL,57.0,2024-08-26 09:52
+Noor Al-Amin,Lee Sharon,CALL,27.0,2024-08-26 09:52

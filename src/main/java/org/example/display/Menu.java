@@ -18,6 +18,7 @@ public class Menu {
     private static String username;
     public static LoginMenu mn = new LoginMenu(formatters);
     private static Random rd = new Random();
+    private static List<CDR> todayList = new ArrayList<>();
 
     public Menu(String username, BaseFormatter[] formatters) {
         this.username = username;
@@ -336,9 +337,9 @@ public class Menu {
             }
         }
 
-        double smsRevenuePerMinute = smsRevenue;
-        double dataRevenuePerMinute = dataRevenue;
-        double callRevenuePerMinute = callRevenue;
+        double smsRevenuePerMinute = smsRevenue / (24 * 60 * 60);
+        double dataRevenuePerMinute = dataRevenue / (24 * 60 * 60);
+        double callRevenuePerMinute = callRevenue/ (24 * 60 * 60);
 
         double smsRevenuePerHour = smsRevenue * 60;
         double dataRevenuePerHour = dataRevenue * 60;
@@ -346,21 +347,20 @@ public class Menu {
 
         System.out.println("Revenue Stats for " + date + ":");
         System.out.println(Color.colorText("SMS:", Color.yellow));
-        System.out.printf("    Revenue per minute: $%.2f\n", smsRevenuePerMinute);
-        System.out.printf("    Revenue per hour: $%.2f\n", smsRevenuePerHour);
+        System.out.printf("    Average revenue per minute: $%.2f\n", smsRevenuePerMinute);
+        System.out.printf("    Average revenue per hour: $%.2f\n", smsRevenuePerHour);
         System.out.printf("    Total revenue on this day: $%.2f\n", smsRevenue);
         System.out.println(Color.colorText("CALL:", Color.purple));
-        System.out.printf("    Revenue per minute: $%.2f\n", callRevenuePerMinute);
-        System.out.printf("    Revenue per hour: $%.2f\n", callRevenuePerHour);
+        System.out.printf("    Average revenue per minute: $%.2f\n", callRevenuePerMinute);
+        System.out.printf("    Average revenue per hour: $%.2f\n", callRevenuePerHour);
         System.out.printf("    Total revenue on this day: $%.2f\n", callRevenue);
         System.out.println(Color.colorText("DATA:", Color.cyan));
-        System.out.printf("    Revenue per minute: $%.2f\n", dataRevenuePerMinute);
-        System.out.printf("    Revenue per hour: $%.2f\n", dataRevenuePerHour);
+        System.out.printf("    Average revenue per minute: $%.2f\n", dataRevenuePerMinute);
+        System.out.printf("    Average revenue per hour: $%.2f\n", dataRevenuePerHour);
         System.out.printf("    Total revenue on this day: $%.2f\n", dataRevenue);
 
         double totalRevenue = smsRevenue + dataRevenue + callRevenue;
         System.out.printf("Total Revenue: $%.2f\n", totalRevenue);
-        //openFileOrExit(scanner,listaya );
     }
 
 
@@ -394,7 +394,7 @@ public class Menu {
                     System.out.print(Color.colorText("In what format? (XML, JSON, YAML, CSV)\nType it here: ", Color.lavender));
                     format = scanner.nextLine().toLowerCase();
                     if (format.equals("xml") || format.equals("json") || format.equals("yaml") || format.equals("csv")) {
-                        break; // Valid format, exit loop
+                        break;
                     } else {
                         System.out.println(Color.colorText("Invalid file type. Please enter one of the following formats: \nXML, JSON, YAML, CSV. (Capitalization doesn't matter)\n", Color.red));
                         try {

@@ -13,6 +13,9 @@ import java.util.Random;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
 
 public class Main {
     public static final String OUTPUT_DIR = "cdr_output";
@@ -22,7 +25,6 @@ public class Main {
 
     public static void main(String[] args) throws InterruptedException {
         DirectoryControls dir = new DirectoryControls();
-
         dir.deleteDirectory(Paths.get(OUTPUT_DIR));
         dir.createDirectory(OUTPUT_DIR);
 
@@ -39,9 +41,8 @@ public class Main {
             for (int i = 0; i < NUM_RECORDS; i++) {
                 try {
                     CDR cdr = randomDataGenerator.generateRandomRecord();
-                    cdrQueue.put(cdr); // Add CDR to the queue in order
+                    cdrQueue.put(cdr);
                 } catch (IllegalArgumentException | InterruptedException e) {
-                    // Handle exceptions
                     i--;
                 }
             }
@@ -53,12 +54,11 @@ public class Main {
         Runnable processTask = () -> {
             while (cdrList.size() < NUM_RECORDS) {
                 try {
-                    CDR cdr = cdrQueue.poll(55, TimeUnit.MILLISECONDS); // Reduced wait time to 50ms
+                    CDR cdr = cdrQueue.poll(55, TimeUnit.MILLISECONDS);
                     if (cdr != null) {
                         cdrList.add(cdr);
                     }
                 } catch (InterruptedException e) {
-                    // Handle interruption
                     Thread.currentThread().interrupt();
                 }
             }
@@ -74,14 +74,14 @@ public class Main {
 
         System.out.println("Please wait while we retrieve the files...");
 
-        // Start tasks
+
         multiThreader.runUserTask(generateTask);
         multiThreader.runUserTask(processTask);
 
-        // Wait for tasks to complete and shutdown
+
         multiThreader.shutdown();
         try {
-            if (!multiThreader.executorService.awaitTermination(20, TimeUnit.SECONDS)) { // Reduced shutdown wait time
+            if (!multiThreader.executorService.awaitTermination(20, TimeUnit.SECONDS)) {
                 multiThreader.executorService.shutdownNow();
             }
         } catch (InterruptedException e) {
