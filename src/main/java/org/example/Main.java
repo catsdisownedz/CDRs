@@ -13,17 +13,30 @@ import java.util.Random;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Component;
 
-public class Main {
+@SpringBootApplication
+public class Main implements CommandLineRunner {
+
     public static final String OUTPUT_DIR = "cdr_output";
     private static final Random rd = new Random();
-    public static int NUM_RECORDS = rd.nextInt(300)+100;
-    private static final BlockingQueue<CDR> cdrQueue = new LinkedBlockingQueue<>();
+    public static int NUM_RECORDS = rd.nextInt(300) + 100;
+    private final BlockingQueue<CDR> cdrQueue = new LinkedBlockingQueue<>();
 
-    public static void main(String[] args) throws InterruptedException {
+    @Autowired
+    private CDRService cdrService;
+
+    public static void main(String[] args) {
+        SpringApplication.run(Main.class, args);
+    }
+
+    @Override
+    public void run(String... args) throws Exception {
         DirectoryControls dir = new DirectoryControls();
         dir.deleteDirectory(Paths.get(OUTPUT_DIR));
         dir.createDirectory(OUTPUT_DIR);
@@ -91,6 +104,8 @@ public class Main {
 
         String[] extensions = {".csv", ".json", ".xml", ".yaml"};
 
+        cdrService.saveAllCDRs(cdrList);
+        System.out.println("CDRS saved to database successfully");
         for (int i = 0; i < formatters.length; i++) {
             String fileName = Paths.get(OUTPUT_DIR, "cdr" + extensions[i]).toString();
             formatters[i].write(fileName, cdrList);

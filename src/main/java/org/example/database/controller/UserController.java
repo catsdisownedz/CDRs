@@ -5,6 +5,8 @@ import org.example.database.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Optional;
+
 @RestController
 @RequestMapping("/users")
 public class UserController {
@@ -18,7 +20,7 @@ public class UserController {
     }
 
     @GetMapping("/{username}")
-    public User getUserByUsername(@PathVariable String username) {
+    public Optional<User> getUserByUsername(@PathVariable String username) {
         return userRepository.findByUsername(username);
     }
 }

@@ -2,6 +2,7 @@ version: '3.8'
 
 services:
   cdrs-app:
+    container_name: cdrs-app
     image: cdrs-app:latest
     build:
       context: .
@@ -11,22 +12,31 @@ services:
     depends_on:
       - postgres
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/cdrsdb
-      SPRING_DATASOURCE_USERNAME: postgres
-      SPRING_DATASOURCE_PASSWORD: password
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/db
+      SPRING_DATASOURCE_USERNAME: z
+      SPRING_DATASOURCE_PASSWORD: pp18
     restart: always
+    networks:
+      - cdr-network
 
   postgres:
-    image: postgres:15
+    image: postgres:latest
+    container_name: postgres
     environment:
-      POSTGRES_DB: cdrsdb
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: password
+      POSTGRES_DB: db
+      POSTGRES_USER: z
+      POSTGRES_PASSWORD: pp18
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
       - "5432:5432"
     restart: always
+    networks:
+      - cdr-network
 
 volumes:
   postgres_data:
+
+networks:
+  cdr-network:
+    driver: bridge

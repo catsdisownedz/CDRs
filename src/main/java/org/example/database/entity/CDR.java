@@ -3,14 +3,25 @@ package org.example.database.entity;
 import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import org.example.display.Color;
-
+import jakarta.persistence.*;
+import java.time.LocalDateTime;
 
 @XmlRootElement(name = "cdr")
+@Entity
+@Table(name = "cdrs")
 public class CDR {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    @Column(name = "anum", nullable = false)
     private String anum;
+    @Column(name = "bnum",nullable = false)
     private String bnum;
+    @Column(name = "serviceType",nullable = false)
     private String serviceType;
+    @Column(name = "usage",nullable = false)
     private double usage;
+    @Column(name = "startDateTime",nullable = false)
     private String startDateTime;
 
     //default no-arg constructor required for JAXB

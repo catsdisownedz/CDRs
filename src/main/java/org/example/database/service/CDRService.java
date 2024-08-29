@@ -1,38 +1,54 @@
 package org.example.database.service;
 
-
 import org.example.database.entity.CDR;
 import org.example.database.repository.CDRRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Service
 public class CDRService {
 
     @Autowired
-    private CDRRepository cdrHistoryRepository;
+    private CDRRepository cdrRepository;
 
-    public List<CDR> getCDRHistory(LocalDateTime date) {
-        List<CDR> history = cdrHistoryRepository.findByStartDateTime(date);
-        if (history.isEmpty()) {
-            // Generate CDRs and save to history
-            generateAndSaveCDR(date);
-            history = cdrHistoryRepository.findByStartDateTime(date);
+    @Transactional
+    public CDR saveCDR(CDR cdr) {
+        return cdrRepository.save(cdr);
+    }
+
+    public List<CDR> getAllCDRs() {
+        return cdrRepository.findAll();
+    }
+
+    public List<CDR> getCDRsByANUM(String name) {
+        return cdrRepository.findByANUM(name);
+    }
+    public List<CDR> getCDRsByBNUM(String name) {
+        return cdrRepository.findByBNUM(name);
+    }
+    public List<CDR> findByANUMOrBNUM(String num) {
+        return cdrRepository.findByANUM(num).isEmpty() ?
+                cdrRepository.findByBNUM(num) :
+                cdrRepository.findByANUM(num);
+    }
+
+    public void saveAllCDRs(List<CDR> cdrList) {
+        cdrRepository.saveAll(cdrList);
+    }
+
+    public void displayCDRs(List<CDR> cdrs) {
+        System.out.printf("%-10s | %-10s | %-10s | %-20s | %-10s\n",
+                "ANUM", "BNUM", "Service", "Start Time", "Usage");
+        System.out.println("---------------------------------------------------------------");
+
+        for (CDR cdr : cdrs) {
+            System.out.printf("%-10s | %-10s | %-10s | %-20s | %-10.2f\n",
+                    cdr.getAnum(), cdr.getBnum(), cdr.getServiceType(),
+                    cdr.getStartDateTime().toString(), cdr.getUsage());
         }
-        return history;
-    }
-
-    private void generateAndSaveCDR(LocalDateTime date) {
-        // Your logic to generate CDRs
-        // Example:
-        //CDR cdr = new CDR("username", "sd","sd",4.523, "call", "10 minutes");
-        //cdrHistoryRepository.save(cdr);
-    }
-    public void deleteCDRHistory(Long id) {
-        cdrHistoryRepository.deleteById(id);
     }
 
 }
