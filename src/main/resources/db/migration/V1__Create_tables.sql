@@ -4,7 +4,7 @@ CREATE TABLE cdrs (
     anum VARCHAR(255),
     bnum VARCHAR(255),
     service_type VARCHAR(255),
-    usage double_precision,
+    usage double precision,
     start_date_time TIMESTAMP
 );
 
