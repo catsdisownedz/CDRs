@@ -2,20 +2,27 @@ package org.example.database.entity;
 
 import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.example.display.Color;
 import jakarta.persistence.*;
-import java.time.LocalDateTime;
 
 @XmlRootElement(name = "cdr")
 @Entity
 @Table(name = "cdrs")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class CDR {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(name = "anum", nullable = false)
     private String anum;
-    @Column(name = "bnum",nullable = false)
+    @Column(name = "bnum")
     private String bnum;
     @Column(name = "serviceType",nullable = false)
     private String serviceType;
@@ -23,10 +30,6 @@ public class CDR {
     private double usage;
     @Column(name = "startDateTime",nullable = false)
     private String startDateTime;
-
-    //default no-arg constructor required for JAXB
-    public CDR() {
-    }
 
     public CDR(String anum, String bnum, String serviceType, double usage, String startDateTime) {
         this.anum = anum;

@@ -10,11 +10,11 @@ import java.util.List;
 
 @Repository
 public interface CDRRepository extends JpaRepository<CDR, Long> {
-    List<CDR> findAllByOrderByStartTimeAsc();
-    List<CDR> findByANUM(String anum);
-    List<CDR> findByBNUM(String bnum);
+    //List<CDR> findAllByOrderByStartTimeAsc();
+    List<CDR> findByAnum(String anum);
+    List<CDR> findByBnum(@Param("bnum") String bnum);
 
-    @Query("SELECT c FROM CDR c WHERE c.anum = :num OR c.bnum = :num")
-    List<CDR> findByANUMOrBNUM(@Param("num") String num);
+//    @Query("SELECT c FROM CDR c WHERE c.anum = :num OR c.bnum = :num")
+//    List<CDR> findByAnumOrBnum(@Param("num") String num);
 
 }

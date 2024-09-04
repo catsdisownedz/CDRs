@@ -69,6 +69,14 @@ The Call Data Records (CDR) Management System is a comprehensive Java-based appl
    ```bash
    docker-compose up --build
    ```
+   or 
+    ```bash
+   docker-compose up --build -d
+   ```
+   to run in detached mode and interact with the container, ou can access the logs later at
+    ```bash
+    docker-compose up --build -d
+    ```
 
 5. **Access the Application**:
    Navigate to `http://localhost:8080` to use the application.
@@ -77,7 +85,7 @@ The Call Data Records (CDR) Management System is a comprehensive Java-based appl
    - **View CDR and User Data**: Use the command-line interface to interact with the system.
    - **Access PostgreSQL**:
      ```bash
-     docker exec -it <container_name> psql -U <your_postgres_user> -d <your_database_name>
+     docker exec -it cdrs-app psql -U z -d db
      ```
      
 

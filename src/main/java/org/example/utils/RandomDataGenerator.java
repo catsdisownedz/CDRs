@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+
 public class RandomDataGenerator {
     private final NameExtracter nameExtracter;
     private final ServiceTypeGenerator serviceTypeGenerator;
@@ -17,11 +18,9 @@ public class RandomDataGenerator {
     private final StartDateTimeGenerator startDateTimeGenerator;
     public static final LocalDateTime time = LocalDateTime.now();
     public static List<String> callLogDates;
-   // private final MultiThreader multi;
     private final List<String> names;
     private final List<String> usedNames;
     private final Random rd = new Random();
-   // public static int numNames = rd.nextInt(500)+200;
     public RandomDataGenerator(NameExtracter nameExtracter, ServiceTypeGenerator serviceTypeGenerator, UsageGenerator usageGenerator, StartDateTimeGenerator startDateTimeGenerator) {
         this.nameExtracter = nameExtracter;
         this.serviceTypeGenerator = serviceTypeGenerator;
@@ -48,13 +47,11 @@ public class RandomDataGenerator {
         }
         String date = callLogDates.get(0);
         callLogDates.remove(0);
-        //System.out.println("Generated record date: " + date);
         return date;
     }
 
     // Generates a random CDR record
     public CDR generateRandomRecord() {
-        //System.out.println("Generating random record...");
         String anum = personGenerator();
         String bnum = null;
         String serviceType = serviceTypeGenerator.randomServiceType();

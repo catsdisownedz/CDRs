@@ -1,26 +1,26 @@
 package org.example.database.controller;
 
 import org.example.database.entity.CDR;
-import org.example.database.repository.CDRRepository;
+import org.example.database.service.CDRService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/cdr")
+@RequestMapping("/api")
 public class CDRController {
 
     @Autowired
-    private CDRRepository cdrRepository;
+    private CDRService cdrService;
 
-    @GetMapping
+    @GetMapping("/cdrs")
     public List<CDR> getAllCDRs() {
-        return cdrRepository.findAll();
+        return cdrService.getAllCDRs();
     }
 
-    @PostMapping
+    @PostMapping("/cdrs")
     public CDR createCDR(@RequestBody CDR cdr) {
-        return cdrRepository.save(cdr);
+        return cdrService.saveCDR(cdr);
     }
 }

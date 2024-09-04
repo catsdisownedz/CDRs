@@ -4,8 +4,8 @@ import org.example.database.entity.CDR;
 import org.example.database.repository.CDRRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
-import javax.transaction.Transactional;
 import java.util.List;
 
 @Service
@@ -24,17 +24,18 @@ public class CDRService {
     }
 
     public List<CDR> getCDRsByANUM(String name) {
-        return cdrRepository.findByANUM(name);
+        return cdrRepository.findByAnum(name);
     }
     public List<CDR> getCDRsByBNUM(String name) {
-        return cdrRepository.findByBNUM(name);
+        return cdrRepository.findByBnum(name);
     }
     public List<CDR> findByANUMOrBNUM(String num) {
-        return cdrRepository.findByANUM(num).isEmpty() ?
-                cdrRepository.findByBNUM(num) :
-                cdrRepository.findByANUM(num);
+        return cdrRepository.findByAnum(num).isEmpty() ?
+                cdrRepository.findByBnum(num) :
+                cdrRepository.findByAnum(num);
     }
 
+    @Transactional
     public void saveAllCDRs(List<CDR> cdrList) {
         cdrRepository.saveAll(cdrList);
     }

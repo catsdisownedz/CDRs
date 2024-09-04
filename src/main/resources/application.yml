@@ -1,17 +1,46 @@
-spring:
-  profiles:
-    active: dev
-  datasource:
-    url: jdbc:postgresql://localhost:5432/cdrsdb
-    username: postgres
-    password: password
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
-  flyway:
-    enabled: true
-    locations: classpath:db/migration
+version: '3.8'
 
-server:
-  port: 8080
+services:
+  cdrs-app:
+    container_name: cdrs-app
+    image: cdrs-app:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data/names.csv:/app/data/names.csv
+    depends_on:
+      - postgres
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/db
+      SPRING_DATASOURCE_USERNAME: z
+      SPRING_DATASOURCE_PASSWORD: pp18
+    restart: always
+    networks:
+      - cdr-network
+    stdin_open: true   # Keep stdin open
+    tty: true          # Allocate a pseudo-TTY
+
+  postgres:
+    image: postgres:16
+    container_name: postgres
+    environment:
+      POSTGRES_DB: db
+      POSTGRES_USER: z
+      POSTGRES_PASSWORD: pp18
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    restart: always
+    networks:
+      - cdr-network
+
+volumes:
+  postgres_data:
+
+networks:
+  cdr-network:
+    driver: bridge
