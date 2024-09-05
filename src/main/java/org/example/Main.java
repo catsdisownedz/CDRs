@@ -7,7 +7,6 @@ import org.example.formatters.*;
 import org.example.utils.*;
 
 import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.*;
@@ -38,7 +37,9 @@ public class Main implements CommandLineRunner {
         dir.deleteDirectory(Paths.get(OUTPUT_DIR));
         dir.createDirectory(OUTPUT_DIR);
 
-        ExecutorService executorService = Executors.newFixedThreadPool(2);
+        CountDownLatch latch = new CountDownLatch(2);
+
+        ExecutorService executorService = Executors.newFixedThreadPool(4);
 
         RandomDataGenerator randomDataGenerator = new RandomDataGenerator(
                 new NameExtracter(),
@@ -47,22 +48,28 @@ public class Main implements CommandLineRunner {
                 new StartDateTimeGenerator()
         );
 
+        List<CDR> cdrList = new CopyOnWriteArrayList<>();
+
         Runnable generateTask = () -> {
-            for (int i = 0; i < NUM_RECORDS; i++) {
-                try {
-                    CDR cdr = randomDataGenerator.generateRandomRecord();
-                    if (cdrQueue.offer(cdr, 100, TimeUnit.MILLISECONDS)) {
-                        // Successfully added to the queue
-                    } else {
-                        i--;
+            try {
+                for (int i = 0; i < NUM_RECORDS; i++) {
+                    try {
+                        CDR cdr = randomDataGenerator.generateRandomRecord();
+                        if (cdrQueue.offer(cdr, 100, TimeUnit.MILLISECONDS)) {
+                        } else {
+                            i--;
+                        }
+                    } catch (IllegalArgumentException e) {
+                        System.err.println("Error generating CDR: " + e.getMessage());
                     }
-                } catch (IllegalArgumentException | InterruptedException e) {
-                    Thread.currentThread().interrupt();
                 }
+            } catch (Exception e) {
+                System.err.println("Error in generateTask: " + e.getMessage());
+            } finally {
+                latch.countDown();
             }
         };
 
-        List<CDR> cdrList = new ArrayList<>(NUM_RECORDS);
 
         Runnable processTask = () -> {
             try {
@@ -74,6 +81,9 @@ public class Main implements CommandLineRunner {
                 }
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
+                System.err.println("Processing task interrupted.");
+            } finally {
+                latch.countDown();
             }
         };
 
@@ -86,15 +96,16 @@ public class Main implements CommandLineRunner {
 
         System.out.println("Please wait while we retrieve the files...");
 
+
         executorService.execute(generateTask);
         executorService.execute(processTask);
 
+
         executorService.shutdown();
         try {
-            if (!executorService.awaitTermination(30, TimeUnit.SECONDS)) {
-                executorService.shutdownNow();
-            }
+            latch.await();
         } catch (InterruptedException e) {
+            System.err.println("Task interrupted: " + e.getMessage());
             executorService.shutdownNow();
             Thread.currentThread().interrupt();
         }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDR and User Management</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script defer src="/scripts.js"></script>
+</head>
+<body>
+<header>
+    <h1>CDR and User Management</h1>
+</header>
+<main>
+    <section>
+        <h2>CDRs</h2>
+        <button onclick="fetchCDRs()">Fetch All CDRs</button>
+        <pre id="cdrs-list"></pre>
+        <button onclick="createCDR()">Create Sample CDR</button>
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>ANUM</th>
+                <th>BNUM</th>
+                <th>Service Type</th>
+                <th>Usage</th>
+                <th>Start Date-Time</th>
+            </tr>
+            </thead>
+            <tbody id="cdrs-table-body">
+            <!-- CDR rows will be injected here by JavaScript -->
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Users</h2>
+        <button onclick="fetchUsers()">Fetch All Users</button>
+        <pre id="users-list"></pre>
+        <input type="text" id="new-username" placeholder="Username">
+        <input type="password" id="new-password" placeholder="Password">
+        <button onclick="createUser()">Create User</button>
+
+        <h3>Get User by Username</h3>
+        <input type="text" id="username-search" placeholder="Username">
+        <button onclick="fetchUser(document.getElementById('username-search').value)">Fetch User</button>
+        <pre id="user-details"></pre>
+
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+            </tr>
+            </thead>
+            <tbody id="users-table-body">
+            <!-- User rows will be injected here by JavaScript -->
+            </tbody>
+        </table>
+    </section>
+</main>
+</body>
+</html>

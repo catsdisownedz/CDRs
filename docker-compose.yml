@@ -1,3 +1,4 @@
+version: '3.8'
 
 services:
   cdrs-app:
@@ -9,7 +10,7 @@ services:
     ports:
       - "8080:8080"
     volumes:
-          - ./data/names.csv:/app/data/names.csv
+      - ./data/names.csv:/app/data/names.csv
     depends_on:
       - postgres
     environment:
@@ -19,6 +20,8 @@ services:
     restart: always
     networks:
       - cdr-network
+    stdin_open: true
+    tty: true
 
   postgres:
     image: postgres:16
