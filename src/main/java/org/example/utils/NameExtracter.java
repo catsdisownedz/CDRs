@@ -13,7 +13,7 @@ public class NameExtracter {
 
         try (RandomAccessFile raf = new RandomAccessFile(filePath, "r")) {
             long fileLength = raf.length();
-            int maxAttempts = numNames * 2; //to control the attempts at unique names!
+            int maxAttempts = numNames * 4; //to control the attempts at unique names!
 
             for (int i = 0; i < maxAttempts && names.size() < numNames; i++) {
                 long randomPosition = Math.abs(rd.nextLong()) % fileLength;

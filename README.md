@@ -65,18 +65,15 @@ The Call Data Records (CDR) Management System is a comprehensive Java-based appl
 3. **Database Migrations**:
    Flyway will automatically apply any pending migrations when the application starts.
 
-4. **Build and Run the Docker Containers**:
+4. **Build the Docker Container**:
    ```bash
    docker-compose up --build
    ```
-   or 
-    ```bash
-   docker-compose up --build -d
+  then run it interactively 
+
+   ```bash
+     docker-compose run cdrs-app sh
    ```
-   to run in detached mode and interact with the container, ou can access the logs later at
-    ```bash
-    docker-compose up --build -d
-    ```
 
 5. **Access the Application**:
    Navigate to `http://localhost:8080` to use the application.
@@ -85,9 +82,39 @@ The Call Data Records (CDR) Management System is a comprehensive Java-based appl
    - **View CDR and User Data**: Use the command-line interface to interact with the system.
    - **Access PostgreSQL**:
      ```bash
-     docker exec -it cdrs-app psql -U z -d db
+     docker exec -it <postgres container ID> psql -U z -d db
      ```
-     
+            
+       Once you're inside the PostgreSQL interactive terminal (`psql`), you can use the following commands:
+        
+        - **List all databases:**
+        ```sql
+        \l
+        ```
+        
+        - **Connect to a specific database:**
+        ```sql
+        \c <database_name>
+        ```
+        
+        - **List all tables in the current database:**
+        ```sql
+        \dt
+        ```
+        
+        - **Show the structure of a specific table:**
+        ```sql
+        \d <table_name>
+        ```
+        
+        - **Select all records from a specific table:**
+        ```sql
+        SELECT * FROM <table_name>;
+        ```
+       - **Exit `psql` shell**
+        ```sql
+     \q
+     ```
 
 
 7. **Running the Application Without Docker** (Optional):
@@ -96,38 +123,6 @@ The Call Data Records (CDR) Management System is a comprehensive Java-based appl
      ```bash
      ./mvnw spring-boot:run
      ```
-
-
-### PostgreSQL Commands for Inspecting Database and Tables
-
-Once you're inside the PostgreSQL interactive terminal (`psql`), you can use the following commands:
-
-- **List all databases:**
-  ```sql
-  \l
-  ```
-
-- **Connect to a specific database:**
-  ```sql
-  \c <database_name>
-  ```
-
-- **List all tables in the current database:**
-  ```sql
-  \dt
-  ```
-
-- **Show the structure of a specific table:**
-  ```sql
-  \d <table_name>
-  ```
-
-- **Select all records from a specific table:**
-  ```sql
-  SELECT * FROM <table_name>;
-  ```
-
-These commands help you inspect the contents of the database and tables directly from the terminal.
 
 ---
 

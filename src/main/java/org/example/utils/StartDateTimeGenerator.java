@@ -11,23 +11,29 @@ import java.util.concurrent.*;
 import java.util.stream.Collectors;
 
 public class StartDateTimeGenerator {
-    private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
+    static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
     private static final Random rd = new Random();
     private static final int THREAD_COUNT = Runtime.getRuntime().availableProcessors();
 
     public static List<String> randomStartDateTime(LocalDateTime datee) {
-        List<Callable<List<String>>> tasks = new ArrayList<>();
         ExecutorService executorService = Executors.newFixedThreadPool(THREAD_COUNT);
         LocalDate date = datee.toLocalDate();
         int startHour = 0;
         int endHour = 23;
         int maxRepetitions = rd.nextInt(7) + 1;
 
+        // Initialize an array to hold results in order
+        List<String>[] results = new ArrayList[endHour - startHour + 1];
+        for (int i = 0; i < results.length; i++) {
+            results[i] = new ArrayList<>();
+        }
+
+        List<Callable<Void>> tasks = new ArrayList<>();
         for (int hour = startHour; hour <= endHour; hour++) {
             final int currentHour = hour;
             tasks.add(() -> {
                 List<String> hourDates = new ArrayList<>();
-                for (int minute = 0; minute < 60; minute += (rd.nextInt(30) + 1)) {
+                for (int minute = 0; minute < 60; minute += (rd.nextInt(15) + 1)) {
                     LocalTime time = LocalTime.of(currentHour, minute);
                     int repetitions = rd.nextInt(maxRepetitions) + 1;
                     for (int i = 0; i < repetitions; i++) {
@@ -35,29 +41,40 @@ public class StartDateTimeGenerator {
                         hourDates.add(dateTime.format(formatter));
                     }
                 }
-                return hourDates;
+                // Store the results in the corresponding index
+                synchronized (results) {
+                    results[currentHour - startHour].addAll(hourDates);
+                }
+                return null;
             });
         }
 
         try {
-            List<Future<List<String>>> futures = executorService.invokeAll(tasks);
-            List<String> dates = futures.stream()
-                    .map(future -> {
-                        try {
-                            return future.get();
-                        } catch (InterruptedException | ExecutionException e) {
-                            throw new RuntimeException(e);
-                        }
-                    })
-                    .flatMap(List::stream)
-                    .collect(Collectors.toList());
-
+            executorService.invokeAll(tasks);
+            // Flatten the list and maintain order
+            List<String> dates = new ArrayList<>();
+            for (List<String> hourList : results) {
+                dates.addAll(hourList);
+            }
             return dates;
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            Thread.currentThread().interrupt(); // Preserve interrupt status
+            System.err.println("Date generation interrupted: " + e.getMessage());
             return new ArrayList<>();
         } finally {
+
             executorService.shutdown();
+            //System.out.println("generation ended");
+            try {
+                if (!executorService.awaitTermination(30, TimeUnit.SECONDS)) {
+                    executorService.shutdownNow();
+                }
+            } catch (InterruptedException e) {
+
+                executorService.shutdownNow();
+                Thread.currentThread().interrupt();
+            }
         }
+
     }
 }

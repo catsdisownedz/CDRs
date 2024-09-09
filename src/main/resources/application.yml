@@ -6,6 +6,13 @@ spring:
     username: z
     password: pp18
     driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 30
+      minimum-idle: 8
+      idle-timeout: 30000
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      auto-commit: true
   jpa:
     hibernate:
       ddl-auto: update
@@ -13,6 +20,11 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+        jdbc:
+          batch_size: 50
+          order_inserts: true
+          order_updates: true
   flyway:
     enabled: true
     locations: classpath:db/migration
@@ -29,8 +41,16 @@ spring:
       enabled: true
     debug:
       enabled: true
+
 logging:
   level:
-    root: DEBUG
+    root: WARN
+    org.springframework: WARN
+    org.hibernate: WARN
+    org.hibernate.SQL: WARN
+    org.hibernate.type.descriptor.sql.BasicBinder: WARN
+    org.hibernate.engine.internal: WARN
+    org.hibernate.engine.spi: WARN
+
 server:
   port: 8080

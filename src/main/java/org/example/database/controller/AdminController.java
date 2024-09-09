@@ -31,6 +31,6 @@ public class AdminController {
         List<CDR> cdrs = cdrRepository.findAll();
         model.addAttribute("users", users);
         model.addAttribute("cdrs", cdrs);
-        return "index"; // This refers to src/main/resources/templates/index.html
+        return "index";
     }
 }
