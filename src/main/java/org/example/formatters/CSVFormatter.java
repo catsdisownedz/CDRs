@@ -1,9 +1,12 @@
 package org.example.formatters;
 
 import org.example.database.entity.CDR;
+import org.example.database.entity.User;
 import org.example.display.LoginMenu;
 import org.example.display.Menu;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
@@ -29,6 +32,27 @@ public class CSVFormatter implements BaseFormatter {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public static List<User> extractUsersFromCSV(String filePath) {
+        List<User> users = new ArrayList<>();
+        String line;
+        String csvSplitBy = ",";  // Assuming CSV is comma-separated
+
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+            while ((line = br.readLine()) != null) {
+                String[] userDetails = line.split(csvSplitBy);
+                if (userDetails.length == 2) {
+                    String username = userDetails[0].trim();
+                    String password = userDetails[1].trim();
+                    users.add(new User(username, password));
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return users;
     }
 
     public static List<CDR> normalList(){

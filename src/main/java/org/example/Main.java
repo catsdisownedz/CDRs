@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.database.entity.CDR;
+import org.example.database.entity.User;
 import org.example.database.service.*;
 import org.example.display.*;
 import org.example.formatters.*;
@@ -30,6 +31,8 @@ public class Main implements CommandLineRunner {
 
     @Autowired
     private CDRService cdrService;
+    @Autowired
+    private UserService userService;
 
     public static void main(String[] args) {
         SpringApplication.run(Main.class, args);
@@ -58,24 +61,17 @@ public class Main implements CommandLineRunner {
         Runnable generateTask = () -> {
             try {
                 for (int i = 0; i < NUM_RECORDS; i++) {
-                    System.out.println("EL TRY EYE numbar" + i );
                     try {
-                        System.out.println("abl generation");
+
                         CDR cdr = randomDataGenerator.generateRandomRecord();
-                        System.out.println("QUEUE SIZE: " + cdrQueue.size());
                         cdrQueue.put(cdr);
-                        System.out.println(cdr + "added to queue: " +i);
+                        //System.out.println(cdr + "added to queue: " +i);
                     } catch (Exception e) {
-                        System.out.println("ana bayez 1");
                         i--;
-                        System.out.println("ana bayez 2");
                     }
-                    System.out.println("EL TRY EYE COMPLETED "+ i);
                 }
-                System.out.println("generateTask completed");
             } finally {
-                System.out.println("entered finally of generateTask");
-                latch.countDown(); // Signal that the generateTask is complete
+                latch.countDown();
             }
         };
 
@@ -86,7 +82,7 @@ public class Main implements CommandLineRunner {
                     CDR cdr = cdrQueue.poll(5000, TimeUnit.MILLISECONDS);
                     if (cdr != null) {
                         cdrList.add(cdr);
-                        System.out.println("Added CDR to list, size: " + cdrList.size());
+                        //System.out.println("Added CDR to list, size: " + cdrList.size());
                     }
                     else {
                         System.out.println("Polling timeout occurred, queue might be empty");
@@ -94,10 +90,9 @@ public class Main implements CommandLineRunner {
                 }
             } catch (Exception e) {
                 System.err.println("Process task was interrupted: " + e.getMessage());
-                Thread.currentThread().interrupt(); // Preserve interrupt status
+                Thread.currentThread().interrupt();
             } finally {
-                System.out.println("latch 2 completed");
-                latch.countDown(); // Signal that the processTask is complete
+                latch.countDown();
             }
         };
 
@@ -105,19 +100,15 @@ public class Main implements CommandLineRunner {
         multiThreader.runUserTask(processTask);
 
         try {
-            System.out.println("before latch waiting");
             latch.await();
-            System.out.println("after latch waiting");// Wait for both tasks to complete
-            multiThreader.shutdown(); // Gracefully shutdown after tasks are complete
+            multiThreader.shutdown();
             if (!multiThreader.executorService.awaitTermination(30, TimeUnit.SECONDS)) {
-                System.out.println("error 1");
                 multiThreader.executorService.shutdownNow();
                 if (!multiThreader.executorService.awaitTermination(30, TimeUnit.SECONDS)) {
                     System.err.println("Executor did not terminate");
                 }
             }
         } catch (InterruptedException e) {
-            System.out.println("forcing shutdown");
             multiThreader.executorService.shutdownNow();
             Thread.currentThread().interrupt();
         }
@@ -132,11 +123,13 @@ public class Main implements CommandLineRunner {
 
 
         String[] extensions = {".csv", ".json", ".xml", ".yaml"};
+        List<User> users = new ArrayList<>(CSVFormatter.extractUsersFromCSV("data/users.csv"));
+
 
         try {
-            System.out.println("trying to save to database");
             cdrService.saveAllCDRs(cdrList);
             System.out.println("CDRs saved to database successfully");
+            userService.saveAllUsers(users);
         } catch (Exception e) {
             System.err.println("Error saving CDRs to database: " + e.getMessage());
             e.printStackTrace();

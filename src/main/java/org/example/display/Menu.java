@@ -1,6 +1,9 @@
 package org.example.display;
 
 import org.example.database.entity.CDR;
+import org.example.database.entity.User;
+import org.example.database.service.CDRService;
+import org.example.database.service.UserService;
 import org.example.formatters.BaseFormatter;
 import org.example.formatters.CSVFormatter;
 import org.example.utils.*;
@@ -20,6 +23,7 @@ public class Menu {
     private static Random rd = new Random();
     private static List<CDR> todayList = new ArrayList<>();
 
+
     public Menu(String username, BaseFormatter[] formatters) {
         this.username = username;
         this.formatters = formatters;
@@ -34,7 +38,8 @@ public class Menu {
             System.out.println(Color.colorText("2)", Color.green) + " Filter Results By");
             System.out.println(Color.colorText("3)", Color.orange) + " View Service Type Volume");
             System.out.println(Color.colorText("4)", Color.lavender) + " Revenue calculator");
-            System.out.println(Color.colorText("5)", Color.red) + " Logout");
+            System.out.println(Color.colorText("5)", Color.baby_pink) + " Access Database");
+            System.out.println(Color.colorText("6)", Color.red) + " Logout");
             System.out.print("Choose an option: ");
             int choice = 0;
             try {
@@ -52,7 +57,7 @@ public class Menu {
 
             switch (choice) {
                 case 1:
-                    viewDataFiles(scanner);
+                    viewDataFiles();
                     break;
                 case 2:
                     filterResultsBy(scanner);
@@ -76,6 +81,8 @@ public class Menu {
                     revenueCalculator(scanner);
                     break;
                 case 5:
+                    databaseMenu(scanner);
+                case 6:
                     System.out.println("Logging out...\n");
                     mn.display();
                     return;
@@ -92,7 +99,39 @@ public class Menu {
         }
     }
 
-    private static void viewDataFiles(Scanner scanner) {
+    private static void databaseMenu(Scanner scanner) {
+        System.out.println(Color.colorText("1) Check CDR table", Color.blue));
+        System.out.println(Color.colorText("2) Check User table", Color.blue));
+        System.out.println("Choose a number: ");
+        int choice = 0;
+
+        try {
+            choice = scanner.nextInt();
+            scanner.nextLine();
+        } catch (Exception ex) {
+            System.out.println(Color.colorText("You need to enter a number between 1-2\n", Color.red));
+        }
+
+        switch (choice) {
+            case 1:
+                CDRService cdrService = new CDRService();
+                List<CDR> cdrs = cdrService.getAllCDRs();
+                cdrService.displayCDRs(cdrs);
+                break;
+
+            case 2:
+                UserService userService = new UserService();
+                List<User> users = userService.getAllUsers();
+                userService.displayUsers(users);
+                break;
+
+            default:
+                System.out.println(Color.colorText("Invalid choice. Please enter 1 or 2.", Color.red));
+                break;
+        }
+        }
+
+    private static void viewDataFiles() {
         List<CDR> cdrList = CSVFormatter.normalList();
         printList(cdrList);
     }
@@ -219,7 +258,7 @@ public class Menu {
 
 
     private static void revenueCalculator(Scanner scanner) {
-        Boolean validDate = false;
+        boolean validDate = false;
         LocalDateTime specificDate = null;
 
         System.out.println(Color.colorText("\nRevenue calculator:", Color.blue));

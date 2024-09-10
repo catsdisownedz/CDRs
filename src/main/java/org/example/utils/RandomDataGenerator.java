@@ -25,7 +25,8 @@ public class RandomDataGenerator {
     private final Random rd = new Random();
     private String lastDateUsed;
 
-    public RandomDataGenerator(NameExtracter nameExtracter, ServiceTypeGenerator serviceTypeGenerator, UsageGenerator usageGenerator, StartDateTimeGenerator startDateTimeGenerator) {
+    public RandomDataGenerator(NameExtracter nameExtracter, ServiceTypeGenerator serviceTypeGenerator,
+                               UsageGenerator usageGenerator, StartDateTimeGenerator startDateTimeGenerator) {
         this.nameExtracter = nameExtracter;
         this.serviceTypeGenerator = serviceTypeGenerator;
         this.usageGenerator = usageGenerator;

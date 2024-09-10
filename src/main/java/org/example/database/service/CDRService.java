@@ -37,13 +37,12 @@ public class CDRService {
 
     @Transactional
     public void saveAllCDRs(List<CDR> cdrList) {
-        final int BATCH_SIZE = 100;  // Adjust batch size as needed
+        final int BATCH_SIZE = 100;
         int size = cdrList.size();
         for (int i = 0; i < size; i += BATCH_SIZE) {
             int end = Math.min(size, i + BATCH_SIZE);
             List<CDR> batch = cdrList.subList(i, end);
             cdrRepository.saveAll(batch);
-            // Flush and clear the persistence context to avoid memory issues
             cdrRepository.flush();
         }
     }
