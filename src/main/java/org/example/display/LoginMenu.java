@@ -3,19 +3,27 @@ package org.example.display;
 import org.example.database.entity.User;
 import org.example.formatters.BaseFormatter;
 import org.example.utils.TerminalUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.io.*;
 import java.util.*;
 
+@Component
 public class LoginMenu {
     private static final String USERS_FILE = "data/users.csv";
     private final BaseFormatter[] formatters;
     private List<User> users;
 
-    public LoginMenu(BaseFormatter[] formatters) {
+    @Autowired
+    private Menu menu;
+
+    @Autowired
+    public LoginMenu(Menu menu, BaseFormatter[] formatters) {
         this.formatters = formatters;
         users = new ArrayList<>();
         loadUsers();
+        this.menu = menu;
     }
 
     private void loadUsers() {
@@ -81,9 +89,9 @@ public class LoginMenu {
                 .anyMatch(user -> user.getUsername().equals(username) && user.verifyPassword(password));
 
         if (authenticated) {
+            menu.initialize(username, formatters);
             displayRedirectingMessage();
-            Menu main = new Menu(username, formatters);
-            main.display();
+            menu.display();
         } else {
             System.out.println(Color.colorText("Invalid username or password.", Color.red));
             try {

@@ -1,6 +1,7 @@
 package org.example.database.config;
 
 import jakarta.persistence.EntityManagerFactory;
+import org.example.formatters.*;
 import org.flywaydb.core.Flyway;
 import org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder;
 import org.springframework.context.annotation.Bean;
@@ -39,5 +40,15 @@ public class JpaConfig {
         flyway.migrate();
 
         return flyway;
+    }
+
+    @Bean
+    public BaseFormatter[] formatters() {
+        return new BaseFormatter[] {
+                new CSVFormatter(),
+                new JSONFormatter(),
+                new XMLFormatter(),
+                new YAMLFormatter(),
+        };
     }
 }

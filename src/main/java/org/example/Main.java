@@ -20,7 +20,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 @SpringBootApplication
 public class Main implements CommandLineRunner {
 
@@ -34,6 +33,8 @@ public class Main implements CommandLineRunner {
     @Autowired
     private UserService userService;
 
+    @Autowired
+    private Menu menu;
     public static void main(String[] args) {
         SpringApplication.run(Main.class, args);
     }
@@ -56,7 +57,7 @@ public class Main implements CommandLineRunner {
 
         System.out.println("Please wait while we retrieve the " + NUM_RECORDS +  " files...");
         MultiThreader multiThreader = new MultiThreader();
-        CountDownLatch latch = new CountDownLatch(2); // For two tasks
+        CountDownLatch latch = new CountDownLatch(2);
 
         Runnable generateTask = () -> {
             try {
@@ -65,7 +66,7 @@ public class Main implements CommandLineRunner {
 
                         CDR cdr = randomDataGenerator.generateRandomRecord();
                         cdrQueue.put(cdr);
-                        //System.out.println(cdr + "added to queue: " +i);
+                        System.out.println(cdr + "added to queue: " +(i+1));
                     } catch (Exception e) {
                         i--;
                     }
@@ -78,14 +79,15 @@ public class Main implements CommandLineRunner {
         List<CDR> cdrList = new ArrayList<>();
         Runnable processTask = () -> {
             try {
-                while (cdrList.size() < NUM_RECORDS || !cdrQueue.isEmpty()) {
+                while (cdrList.size() <= NUM_RECORDS && !cdrQueue.isEmpty()) {
                     CDR cdr = cdrQueue.poll(5000, TimeUnit.MILLISECONDS);
                     if (cdr != null) {
                         cdrList.add(cdr);
-                        //System.out.println("Added CDR to list, size: " + cdrList.size());
+                        System.out.println("Added CDR to list, size: " + cdrList.size());
                     }
                     else {
                         System.out.println("Polling timeout occurred, queue might be empty");
+                        System.out.println("cdr list size: "+cdrList.size() + " / queue size:"+ cdrQueue.size());
                     }
                 }
             } catch (Exception e) {
@@ -112,7 +114,6 @@ public class Main implements CommandLineRunner {
             multiThreader.executorService.shutdownNow();
             Thread.currentThread().interrupt();
         }
-
 
         BaseFormatter[] formatters = {
                 new CSVFormatter(),
@@ -143,6 +144,6 @@ public class Main implements CommandLineRunner {
 
         LoginMenu.displayRedirectingMessage();
         TerminalUtils.clearTerminal();
-        new LoginMenu(formatters).display();
+        new LoginMenu(menu,formatters).display();
     }
 }

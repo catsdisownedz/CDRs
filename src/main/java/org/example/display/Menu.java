@@ -7,6 +7,8 @@ import org.example.database.service.UserService;
 import org.example.formatters.BaseFormatter;
 import org.example.formatters.CSVFormatter;
 import org.example.utils.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.nio.file.Paths;
 import java.time.LocalDate;
@@ -16,15 +18,24 @@ import java.util.*;
 
 import static org.example.Main.OUTPUT_DIR;
 
+@Component
 public class Menu {
     private static BaseFormatter[] formatters = new BaseFormatter[0];
     private static String username;
-    public static LoginMenu mn = new LoginMenu(formatters);
+    private static org.example.display.Menu Menu;
+    public static LoginMenu mn = new LoginMenu(Menu, formatters);
     private static Random rd = new Random();
     private static List<CDR> todayList = new ArrayList<>();
+    private static UserService userService;
+    private static CDRService cdrService;
 
+    @Autowired
+    public Menu(CDRService cdrService, UserService userService) {
+        this.cdrService = cdrService;
+        this.userService = userService;
+    }
 
-    public Menu(String username, BaseFormatter[] formatters) {
+    public void initialize(String username, BaseFormatter[] formatters) {
         this.username = username;
         this.formatters = formatters;
     }
@@ -114,13 +125,11 @@ public class Menu {
 
         switch (choice) {
             case 1:
-                CDRService cdrService = new CDRService();
                 List<CDR> cdrs = cdrService.getAllCDRs();
                 cdrService.displayCDRs(cdrs);
                 break;
 
             case 2:
-                UserService userService = new UserService();
                 List<User> users = userService.getAllUsers();
                 userService.displayUsers(users);
                 break;
