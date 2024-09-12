@@ -66,16 +66,6 @@ public class UserService {
         userRepository.save(user);
     }
 
-    public void displayUsers(List<User> users) {
-        // Print the header for the user display
-        System.out.printf("%-5s | %-20s | %-20s\n", "ID", "Username", "Password");
-        System.out.println("---------------------------------------------------------------");
 
-        // Print each user's details
-        for (User user : users) {
-            System.out.printf("%-5d | %-20s | %-20s\n",
-                    user.getId(), user.getUsername(), user.getPassword());
-        }
-    }
 
 }

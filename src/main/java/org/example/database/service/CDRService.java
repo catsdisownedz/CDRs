@@ -19,7 +19,7 @@ public class CDRService {
         return cdrRepository.save(cdr);
     }
 
-    public List<CDR> getAllCDRs() {
+    public  List<CDR> getAllCDRs() {
         return cdrRepository.findAll();
     }
 
@@ -47,16 +47,6 @@ public class CDRService {
         }
     }
 
-    public void displayCDRs(List<CDR> cdrs) {
-        System.out.printf("%-10s | %-10s | %-10s | %-20s | %-10s\n",
-                "ANUM", "BNUM", "Service", "Start Time", "Usage");
-        System.out.println("---------------------------------------------------------------");
 
-        for (CDR cdr : cdrs) {
-            System.out.printf("%-10s | %-10s | %-10s | %-20s | %-10.2f\n",
-                    cdr.getAnum(), cdr.getBnum(), cdr.getServiceType(),
-                    cdr.getStartDateTime().toString(), cdr.getUsage());
-        }
-    }
 
 }

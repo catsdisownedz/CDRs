@@ -1,8 +1,11 @@
 package org.example.display;
 
+import org.example.Main;
+import org.example.database.config.ApplicationContextProvider;
 import org.example.database.entity.CDR;
 import org.example.database.entity.User;
 import org.example.database.service.CDRService;
+import org.example.database.service.ServiceAccessUtil;
 import org.example.database.service.UserService;
 import org.example.formatters.BaseFormatter;
 import org.example.formatters.CSVFormatter;
@@ -24,6 +27,7 @@ public class Menu {
     private static List<CDR> todayList = new ArrayList<>();
 
 
+
     public Menu(String username, BaseFormatter[] formatters) {
         this.username = username;
         this.formatters = formatters;
@@ -31,7 +35,7 @@ public class Menu {
 
     public static void display() {
         Scanner scanner = new Scanner(System.in);
-
+        TerminalUtils.clearTerminal();
         while (true) {
             System.out.println(Color.colorText("Hello", Color.underline) + ", " + Color.colorText(username, Color.blue) + "!");
             System.out.println(Color.colorText("1)", Color.baby_blue) + " View Data files");
@@ -114,23 +118,50 @@ public class Menu {
 
         switch (choice) {
             case 1:
-                CDRService cdrService = new CDRService();
+                CDRService cdrService = ServiceAccessUtil.getCdrService();
                 List<CDR> cdrs = cdrService.getAllCDRs();
-                cdrService.displayCDRs(cdrs);
+                displayCDRs(cdrs);
+                display();
                 break;
 
             case 2:
-                UserService userService = new UserService();
+                UserService userService = ServiceAccessUtil.getUserService();
                 List<User> users = userService.getAllUsers();
-                userService.displayUsers(users);
+                displayUsers(users);
+                display();
                 break;
 
             default:
                 System.out.println(Color.colorText("Invalid choice. Please enter 1 or 2.", Color.red));
+                display();
                 break;
         }
-        }
+    }
 
+
+
+    public static void displayUsers(List<User> users) {
+        // Print the header for the user display
+        System.out.printf("%-5s | %-20s | %-20s\n", "ID", "Username", "Password");
+        System.out.println("---------------------------------------------------------------");
+
+        // Print each user's details
+        for (User user : users) {
+            System.out.printf("%-5d | %-20s | %-20s\n",
+                    user.getId(), user.getUsername(), user.getPassword());
+        }
+    }
+    public static void displayCDRs(List<CDR> cdrs) {
+        System.out.printf("%-20s | %-20s | %-10s | %-20s | %-10s\n",
+                "ANUM", "BNUM", "Service", "Start Time", "Usage");
+        System.out.println("--------------------------------------------------------------------------");
+
+        for (CDR cdr : cdrs) {
+            System.out.printf("%-20s | %-20s | %-10s | %-20s | %-10.2f\n",
+                    cdr.getAnum(), cdr.getBnum(), cdr.getServiceType(),
+                    cdr.getStartDateTime().toString(), cdr.getUsage());
+        }
+    }
     private static void viewDataFiles() {
         List<CDR> cdrList = CSVFormatter.normalList();
         printList(cdrList);
@@ -209,7 +240,7 @@ public class Menu {
         openFileOrExit(scanner, sortedList);
     }
 
-    //finished function
+
     private static void viewServiceTypeVolume(Scanner scanner, int choice) {
         List<CDR> filteredList = new ArrayList<>();
         if (choice == 1) {

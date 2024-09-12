@@ -145,4 +145,6 @@ public class Main implements CommandLineRunner {
         TerminalUtils.clearTerminal();
         new LoginMenu(formatters).display();
     }
+
+
 }
