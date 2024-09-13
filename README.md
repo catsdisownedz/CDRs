@@ -76,7 +76,7 @@ The Call Data Records (CDR) Management System is a comprehensive Java-based appl
    ```
 
 5. **Access the Application**:
-   Navigate to `http://localhost:8080` to use the application.
+   Navigate to `http://localhost:8080/admin/dashboard` to use the application.
 
 6. **Interacting with the Database**:
    - **View CDR and User Data**: Use the command-line interface to interact with the system.

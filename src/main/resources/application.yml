@@ -40,6 +40,19 @@ spring:
       enabled: true
     debug:
       enabled: true
+  mail:
+    host: smtp.office365.com
+    port: 587
+    username: CDRapplication@hotmail.com
+    password: cdrtest18
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  application:
+    version: 1.0.0
 
 logging:
   level:
